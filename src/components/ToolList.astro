@@ -1,0 +1,43 @@
+---
+import { useState, useEffect } from 'astro/jsx-client';
+let tools = [];
+let query = '';
+let loading = true;
+let error = false;
+
+useEffect(async () => {
+  try {
+    const res = await fetch('/api/generate');
+    const data = await res.json();
+    tools = data.tools;
+  } catch (e) {
+    console.error(e);
+    error = true;
+  } finally {
+    loading = false;
+  }
+}, []);
+---
+
+<div class="mb-6">
+  <input
+    type="text"
+    placeholder="Search tools..."
+    class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+    onInput={(e) => query = e.target.value.toLowerCase()}
+  />
+</div>
+
+<div class="grid gap-4 md:grid-cols-2">
+  {loading && <p class="col-span-full text-center text-gray-500">Loading tools...</p>}
+  {error && <p class="col-span-full text-center text-red-500">Failed to load tools.</p>}
+  {tools
+    .filter(tool => tool.name.toLowerCase().includes(query))
+    .map(tool => (
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h3 class="text-xl font-semibold mb-2">{tool.name}</h3>
+        <p class="text-gray-700">{tool.description}</p>
+      </div>
+    ))
+  }
+</div>
