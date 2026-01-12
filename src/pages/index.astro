@@ -11,20 +11,25 @@ import ToolList from '../components/ToolList.jsx';
   </head>
 
   <body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+
     <!-- Hero Section -->
     <header class="w-full max-w-5xl text-center py-16 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl shadow-lg mb-12">
       <h1 class="text-5xl font-bold mb-3">Toolaroo 🛠️</h1>
       <p class="text-lg sm:text-xl">Discover useful AI tools in seconds!</p>
+      <a href="#tools" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition-colors">
+        Discover Tools
+      </a>
     </header>
 
     <!-- Main Content -->
-    <main class="w-full max-w-5xl px-4 mx-auto">
-      <ToolList client:load />
+    <main id="tools" class="w-full max-w-5xl px-4 mx-auto">
+      <ToolList client:load featuredOnly={true} />
     </main>
 
     <!-- Footer -->
     <footer class="mt-16 w-full max-w-5xl text-center text-gray-500 text-sm pb-8">
       © 2026 Toolaroo. All rights reserved.
     </footer>
+
   </body>
 </html>

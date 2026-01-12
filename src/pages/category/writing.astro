@@ -1,0 +1,44 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing AI Tools – Toolaroo</title>
+    <meta
+      name="description"
+      content="Discover the best AI writing tools to write faster, better, and more creatively."
+    />
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+
+    <!-- Category Hero -->
+    <header
+      class="w-full max-w-5xl text-center py-10 px-4
+             bg-gradient-to-r from-blue-500 to-purple-600
+             text-white rounded-xl shadow-lg mb-10"
+    >
+      <h1 class="text-3xl sm:text-4xl font-bold mb-2">
+        Writing AI Tools
+      </h1>
+      <p class="text-base sm:text-lg">
+        Discover AI tools that help you write faster and better.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full max-w-5xl px-4 mx-auto">
+      <ToolList category="writing" client:load />
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 w-full max-w-5xl text-center text-gray-500 text-sm pb-8">
+      © 2026 Toolaroo. All rights reserved.
+    </footer>
+
+  </body>
+</html>
