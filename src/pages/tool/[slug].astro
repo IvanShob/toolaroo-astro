@@ -5,7 +5,14 @@ import slugify from '../../utils/slugify.js';
 import SEO from '../../components/SEO.astro';
 import Layout from '../../components/Layout.astro';
 
-export const prerender = false;
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const toolsData = (await import('../../data/tools.js')).default;
+  return toolsData.map(tool => ({
+    params: { slug: slugify(tool.name) }
+  }));
+}
 
 const { slug } = Astro.params;
 const tool = tools.find(t => slugify(t.name) === slug);
