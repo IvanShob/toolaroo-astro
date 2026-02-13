@@ -5,6 +5,12 @@ import slugify from '../../utils/slugify.js';
 import SEO from '../../components/SEO.astro';
 import Layout from '../../components/Layout.astro';
 
+export async function getStaticPaths() {
+  return tools.map(tool => ({
+    params: { slug: slugify(tool.name) }
+  }));
+}
+
 const { slug } = Astro.params;
 const tool = tools.find(t => slugify(t.name) === slug);
 if (!tool) {

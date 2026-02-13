@@ -6,6 +6,12 @@ import slugify from '../../utils/slugify.js';
 import SEO from '../../components/SEO.astro';
 import Layout from '../../components/Layout.astro';
 
+export async function getStaticPaths() {
+  return categories.map(cat => ({
+    params: { slug: cat.slug }
+  }));
+}
+
 const { slug } = Astro.params;
 const category = categories.find(cat => cat.slug === slug);
 if (!category) {
