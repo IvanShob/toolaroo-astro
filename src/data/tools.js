@@ -89,7 +89,80 @@ Whether you need long-form content, concise answers, structured data, creative i
     featured: true, 
     rank: 2,
     slug: "claude",
-    url: "https://www.anthropic.com/claude"
+    url: "https://www.anthropic.com/claude",
+    longDescription: `Claude is a next-generation AI assistant created by Anthropic, known for its deep reasoning abilities, long-context understanding, and safety-focused design. Unlike many AI writing tools that primarily generate text, Claude is built as a high-level cognitive assistant — capable of analysing long documents, summarising research, generating structured content, and solving complex tasks with impressive clarity.
+
+One of Claude's biggest advantages is its ability to process extremely long inputs. Thanks to its extended context window, Claude can read full PDFs, research papers, technical documentation, or entire books and still respond with accurate, coherent summaries or insights. This makes it especially valuable for researchers, analysts, writers, students, and knowledge-intensive professionals.
+
+Claude also produces some of the cleanest, most human-like writing on the market. Its tone is natural, logical, and consistent — ideal for editorial content, essays, reports, or professional communication. Many users choose Claude over other AI models when they need precision, structure, or complex reasoning rather than raw creativity.
+
+The assistant is also known for its strong ethical baseline. Anthropic focuses on AI safety, transparency, and responsible model alignment. This reduces hallucinations and improves reliability when working with factual or sensitive information. When writing or reasoning, Claude often provides clear chains of thought, structured explanations, and balanced perspective.
+
+Beyond writing, Claude is widely used for brainstorming, UX copy, legal analysis, coding assistance, data extraction, business strategy, and document clean-up. With file uploads, image understanding, and integrations through the Anthropic API, it can be embedded into applications and workflows across industries. Power users especially appreciate how well Claude maintains structure, follows constraints, and produces output that requires minimal editing.
+
+Combined with its premium reasoning performance, long context, and reliability, Claude has quickly become one of the top AI assistants for professionals who need accuracy, clarity, and depth in their work.`,
+    features: [
+      "Exceptional reasoning capabilities for complex or multi-step problems",
+      "Ultra-long context window — analyse large PDFs and documents",
+      "Natural, high-quality writing excellent for essays, reports, and editorial content",
+      "Advanced research summarisation with low hallucination rates",
+      "File + image uploads",
+      "Structured output (tables, lists, JSON, reports)",
+      "Safety-first design with strong factual consistency",
+      "API and workflow integrations",
+      "Multilingual support for writing and translation"
+    ],
+    useCases: [
+      "Research synthesis and academic writing",
+      "Professional writing (reports, briefs, documentation)",
+      "Reading, summarising, and analysing long PDFs",
+      "Brainstorming and idea development",
+      "Coding assistance",
+      "Business strategy analysis",
+      "Legal, technical, or scientific explanation",
+      "Structured data extraction or reformatting"
+    ],
+    pricing: {
+      "Claude Free": "Access to the basic model with limited usage",
+      "Claude Pro": "Faster responses, higher limits, premium model access",
+      "Claude Team": "Collaboration features + admin tools",
+      "Anthropic API": "Pay-as-you-go usage for developers and apps"
+    },
+    pros: [
+      "Best-in-class reasoning and clarity",
+      "Extremely long context window",
+      "Great with research and analysis",
+      "Reliable and low hallucination rate",
+      "Clean, human-like writing style"
+    ],
+    cons: [
+      "Slightly less creative than some competing models",
+      "Full capabilities require a paid plan",
+      "Sometimes conservative in responses due to safety system"
+    ],
+    alternatives: [
+      { name: "ChatGPT", reason: "More creative and versatile, strong multimodal abilities" },
+      { name: "Perplexity", reason: "Best for research + real-time citations" },
+      { name: "Jasper", reason: "Marketing-focused AI for branded content" }
+    ],
+    faqItems: [
+      {
+        question: "Is Claude better than ChatGPT?",
+        answer: "Claude is often better for long documents, research, and structured reasoning, while ChatGPT excels at creativity and versatility."
+      },
+      {
+        question: "Can Claude analyse PDFs and research papers?",
+        answer: "Yes — it has one of the longest context windows available."
+      },
+      {
+        question: "Is Claude good for writing?",
+        answer: "Absolutely. It produces clean, coherent, and natural prose with minimal editing."
+      },
+      {
+        question: "Does Claude work well for coding?",
+        answer: "Yes, though not as code-specialised as tools like Copilot or Cursor."
+      }
+    ]
   },
   { 
     name: "Grammarly", 
@@ -98,7 +171,78 @@ Whether you need long-form content, concise answers, structured data, creative i
     featured: true, 
     rank: 3,
     slug: "grammarly",
-    url: "https://www.grammarly.com"
+    url: "https://www.grammarly.com",
+    longDescription: `Grammarly is one of the most widely used AI writing assistants in the world, trusted by millions of writers, students, professionals, and teams to improve clarity, correctness, and communication effectiveness. What started as a grammar-checking tool has evolved into a powerful AI writing platform that enhances tone, style, structure, and intent across every type of written content.
+
+At its core, Grammarly analyses your writing in real time and provides suggestions for grammar, punctuation, spelling, and sentence structure. But the real strength of the tool comes from its advanced AI engine, which interprets context and meaning to deliver writing improvements that go far beyond surface-level corrections. It can clarify complicated sentences, strengthen your tone, rewrite weak phrasing, and help your message sound more professional or more friendly depending on your goal.
+
+The platform integrates seamlessly with your daily communication workflow. Grammarly works across email clients like Gmail and Outlook, collaboration tools like Google Docs and Notion, messaging apps like Slack, and even social media platforms. Its browser extension and desktop app ensure that high-quality writing follows you everywhere.
+
+Grammarly also offers a powerful premium tier that includes full-sentence rewrites, tone transformations, formality adjustments, plagiarism detection, and AI-powered content creation. With GrammarlyGO, the tool adds generative AI capabilities that help you draft emails, rewrite large paragraphs, create outlines, and speed up everyday writing tasks.
+
+Students use Grammarly to improve academic papers, essays, and research writing. Professionals rely on it for email communication, presentations, and reports. Teams use Grammarly Business to maintain a consistent writing standard across entire organizations with style guides, brand tone settings, and team management features.
+
+The platform's accuracy and ease of use make it a must-have productivity tool for anyone who writes daily. Whether you want error-free writing, clearer communication, or faster drafting, Grammarly provides a reliable, AI-enhanced solution tailored to modern writing demands.`,
+    features: [
+      "Grammar & spelling correction in real time",
+      "Advanced clarity suggestions to enhance readability",
+      "Tone detection — identify whether your message sounds formal, friendly, confident, etc.",
+      "Sentence rewrites & tone transformations",
+      "Plagiarism checker (premium)",
+      "Email rewrite and drafting tools via GrammarlyGO",
+      "Cross-platform integration (Chrome, Safari, desktop app, mobile app)",
+      "Business features including brand tone, style guides, and team analytics",
+      "Multilingual text support and translation assistance"
+    ],
+    useCases: [
+      "Academic writing, essays, reports, research",
+      "Email drafting and professional communication",
+      "Business documentation and client messaging",
+      "Blog posts, articles, and content marketing",
+      "Resume and cover letter polishing",
+      "Daily communication (Slack, social media, messaging apps)",
+      "Team-wide writing consistency for companies"
+    ],
+    pricing: {
+      "Free Plan": "Grammar and spelling corrections, tone detection",
+      "Premium": "Full rewrites, advanced clarity, plagiarism detection, generative AI",
+      "Business": "Admin control, brand tone, team style guides, analytics"
+    },
+    pros: [
+      "Best grammar checker on the market",
+      "Easy to use with seamless integration",
+      "Excellent tone and clarity suggestions",
+      "Strong rewriting and generative AI tools",
+      "Works across all devices and platforms"
+    ],
+    cons: [
+      "Full capabilities locked behind Premium",
+      "Rewrites sometimes sound too polished or formal",
+      "Not ideal for long-form creative writing"
+    ],
+    alternatives: [
+      { name: "Jasper", reason: "Marketing-focused AI writing" },
+      { name: "QuillBot", reason: "Strong paraphrasing tool" },
+      { name: "ChatGPT", reason: "Best for creativity and ideation" }
+    ],
+    faqItems: [
+      {
+        question: "Is Grammarly good for academic writing?",
+        answer: "Yes, especially with plagiarism detection and clarity improvements."
+      },
+      {
+        question: "Is Grammarly free?",
+        answer: "The free version covers basic corrections, while Premium unlocks advanced AI features."
+      },
+      {
+        question: "Does Grammarly rewrite full sentences?",
+        answer: "Yes — Premium and GrammarlyGO provide powerful rewriting capabilities."
+      },
+      {
+        question: "Can it be used in Google Docs and Gmail?",
+        answer: "Absolutely — it integrates directly through browser extensions."
+      }
+    ]
   },
   { 
     name: "Jasper", 
