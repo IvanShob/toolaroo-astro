@@ -1,5 +1,6 @@
 ---
 import SEO from './SEO.astro';
+import MobileNav from './MobileNav.jsx';
 
 interface Props {
   title: string;
@@ -39,11 +40,14 @@ const { title, description, children, seoProps = {} } = Astro.props;
               Toolaroo 🛠️
             </span>
           </a>
+          <!-- Desktop Navigation -->
           <nav class="hidden sm:flex items-center gap-8">
             <a href="/" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Home</a>
             <a href="/category" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Categories</a>
             <a href="/tools" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">All Tools</a>
           </nav>
+          <!-- Mobile Navigation -->
+          <MobileNav client:load />
         </div>
       </div>
     </nav>

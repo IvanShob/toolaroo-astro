@@ -66,13 +66,24 @@ export default function ToolList({ category, featuredOnly = false }) {
             key={tool.slug}
             className="group bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden border border-slate-200 hover:border-blue-300"
           >
-            {/* Header with Category Badge */}
-            <div className="flex items-start justify-between p-6 pb-4">
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 flex-1 group-hover:text-blue-600 transition-colors">
-                {tool.name}
-              </h3>
+            {/* Header with Logo and Category Badge */}
+            <div className="flex items-start justify-between p-6 pb-4 gap-3">
+              <div className="flex items-start gap-3 flex-1">
+                {/* Tool Logo */}
+                <img
+                  src={`https://www.google.com/s2/favicons?sz=32&domain=${tool.url}`}
+                  alt={`${tool.name} logo`}
+                  className="w-8 h-8 rounded flex-shrink-0 mt-1"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 flex-1 group-hover:text-blue-600 transition-colors">
+                  {tool.name}
+                </h3>
+              </div>
               {tool.featured && (
-                <span className="ml-2 px-2.5 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full whitespace-nowrap">
+                <span className="px-2.5 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full whitespace-nowrap flex-shrink-0">
                   ⭐ Featured
                 </span>
               )}

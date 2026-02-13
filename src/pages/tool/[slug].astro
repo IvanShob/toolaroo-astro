@@ -36,10 +36,19 @@ const seoProps = {
 
 <Layout title={tool.name} description={tool.description} seoProps={seoProps}>
   <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-        {tool.name} <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI Tool</span>
-      </h1>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Tool Logo and Title in Row -->
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <img
+          src={`https://www.google.com/s2/favicons?sz=64&domain=${tool.url}`}
+          alt={`${tool.name} logo`}
+          class="w-16 h-16 rounded-lg shadow-md flex-shrink-0"
+        />
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+          {tool.name} <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI Tool</span>
+        </h1>
+      </div>
+      <div class="text-center">
       <p class="text-lg sm:text-xl text-slate-600 mb-6">{tool.description}</p>
       <div class="flex flex-wrap gap-3 justify-center">
         <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium capitalize">{tool.category}</span>
