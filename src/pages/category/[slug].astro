@@ -1,0 +1,49 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import categories from '../../data/categories.js';
+import slugify from '../../utils/slugify.js';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+export const prerender = false;
+
+const { slug } = Astro.params;
+const category = categories.find(cat => cat.slug === slug);
+if (!category) {
+  throw new Error(`Category "${slug}" not found`);
+}
+
+const categoryName = category.name;
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${categoryName} AI Tools - Toolaroo`,
+  "description": `Directory of ${category.count} AI tools in the ${categoryName} category`,
+  "url": `https://toolaroo.com/category/${slug}`
+};
+
+const seoProps = {
+  title: `${categoryName} AI Tools - Toolaroo Directory`,
+  description: `Discover ${category.count} best ${categoryName.toLowerCase()} AI tools.`,
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title={`${categoryName} Tools`} description={`${categoryName} AI tools`} seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight capitalize">
+        {categoryName} <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Discover {category.count} tools in this category</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ToolList client:load category={slug} />
+    </div>
+  </section>
+</Layout>

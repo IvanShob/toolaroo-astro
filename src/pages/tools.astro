@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import ToolList from '../components/ToolList.jsx';
+import SEO from '../components/SEO.astro';
+import Layout from '../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "All AI Tools - Toolaroo",
+  "description": "Complete directory of AI tools across all categories",
+  "url": "https://toolaroo.com/tools"
+};
+
+const seoProps = {
+  title: "All AI Tools Directory – Toolaroo",
+  description: "Explore 30+ AI tools across all categories: writing, image, coding, video, audio & more. Find your perfect AI tool.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="All AI Tools" description="Complete AI tools directory" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        All<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> AI Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Explore our complete directory of AI tools</p>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ToolList client:load />
+    </div>
+  </section>
+</Layout>

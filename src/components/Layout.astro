@@ -1,0 +1,101 @@
+---
+import SEO from './SEO.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  children: any;
+  seoProps?: any;
+}
+
+const { title, description, children, seoProps = {} } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <SEO 
+      title={seoProps.title || title}
+      description={seoProps.description || description}
+      imageUrl={seoProps.imageUrl}
+      canonical={seoProps.canonical}
+      type={seoProps.type}
+    />
+    {seoProps.schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(seoProps.schema)} />
+    )}
+  </head>
+
+  <body class="bg-slate-50 min-h-screen flex flex-col">
+    
+    <!-- Global Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex justify-between items-center">
+          <a href="/" class="flex items-center gap-2">
+            <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Toolaroo 🛠️
+            </span>
+          </a>
+          <nav class="hidden sm:flex items-center gap-8">
+            <a href="/" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+            <a href="/category" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Categories</a>
+            <a href="/tools" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">All Tools</a>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="mt-20 bg-slate-900 text-slate-300 py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 class="text-white font-semibold mb-4">Toolaroo</h3>
+            <p class="text-sm text-slate-400">Discover, compare, and find the perfect AI tools for your needs.</p>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+              <li><a href="/category" class="hover:text-white transition-colors">Categories</a></li>
+              <li><a href="/tools" class="hover:text-white transition-colors">All Tools</a></li>
+              <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold mb-4">Support</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="mailto:hello@toolaroo.com" class="hover:text-white transition-colors">Email</a></li>
+              <li><a href="mailto:suggest@toolaroo.com" class="hover:text-white transition-colors">Suggest Tool</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-slate-700 pt-8 text-sm text-center text-slate-400">
+          <p>&copy; 2026 Toolaroo. All rights reserved. | Discover AI Tools Directory</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>

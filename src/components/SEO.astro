@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  imageUrl?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+}
+
+const { title, description, imageUrl = '/og-image.png', canonical, type = 'website' } = Astro.props;
+const fullUrl = canonical || Astro.url.pathname;
+---
+
+<!-- Essential Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content={description} />
+<meta name="theme-color" content="#3b82f6" />
+<meta name="robots" content="index, follow" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={`https://toolaroo.com${fullUrl}`} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={`https://toolaroo.com${fullUrl}`} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={`https://toolaroo.com${imageUrl}`} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={`https://toolaroo.com${fullUrl}`} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={`https://toolaroo.com${imageUrl}`} />
+
+<!-- Additional -->
+<meta name="author" content="Toolaroo" />
+<meta name="keywords" content="AI tools, AI directory, AI software, AI applications" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="alternate" hreflang="en" href={`https://toolaroo.com${fullUrl}`} />

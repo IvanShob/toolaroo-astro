@@ -1,0 +1,15 @@
+# Allow all robots
+User-agent: *
+Allow: /
+Allow: /category
+Allow: /tools
+Allow: /tool/*
+
+# Disallow
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://toolaroo.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

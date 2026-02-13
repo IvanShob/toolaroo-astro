@@ -1,0 +1,49 @@
+---
+import '../../styles/global.css';
+import categories from '../../data/categories.js';
+import CategoryGrid from '../../components/CategoryGrid.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+export const prerender = false;
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "AI Tool Categories - Toolaroo",
+  "description": "Browse all AI tool categories and find the perfect tool for your needs",
+  "url": "https://toolaroo.com/category",
+  "hasPart": categories.map(cat => ({
+    "@type": "Collection",
+    "name": cat.name,
+    "url": `https://toolaroo.com/category/${cat.slug}`,
+    "numberOfItems": cat.count
+  }))
+};
+
+const seoProps = {
+  title: "AI Tool Categories – Toolaroo Directory",
+  description: "Browse all AI tool categories: writing, image generation, coding, video, audio, productivity, design & more.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="AI Tool Categories" description="Browse all categories" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        AI Tool<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Categories</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Browse tools by category to find exactly what you need</p>
+    </div>
+  </section>
+
+  <!-- Categories Grid -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <CategoryGrid client:load categories={categories} />
+    </div>
+  </section>
+</Layout>

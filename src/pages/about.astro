@@ -1,0 +1,138 @@
+---
+import '../styles/global.css';
+import SEO from '../components/SEO.astro';
+import Layout from '../components/Layout.astro';
+
+const seoProps = {
+  title: "About Toolaroo – AI Tools Directory",
+  description: "Learn about Toolaroo - your ultimate directory for discovering, comparing, and finding the perfect AI tools for any task.",
+  type: "website"
+};
+---
+
+<Layout title="About Toolaroo" description="Learn about our mission" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        About<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Toolaroo</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Our story and mission</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Mission -->
+      <div class="mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Our Mission</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">
+          Toolaroo is on a mission to help individuals and businesses discover, compare, and leverage the most powerful AI tools available. We believe that AI tools should be accessible, discoverable, and easy to understand for everyone.
+        </p>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          With thousands of AI tools launching every month, it's becoming increasingly difficult to find the right tool for your needs. That's where Toolaroo comes in - we curate and organize the best AI tools across all categories so you can find exactly what you're looking for.
+        </p>
+      </div>
+
+      <!-- What We Do -->
+      <div class="mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">What We Do</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <div class="text-3xl mb-3">🔍</div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Curate</h3>
+            <p class="text-slate-600">We carefully select the best AI tools from hundreds of options and organize them by category.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <div class="text-3xl mb-3">⚖️</div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Compare</h3>
+            <p class="text-slate-600">Easily compare different AI tools to find the perfect match for your workflow and budget.</p>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <div class="text-3xl mb-3">✨</div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Discover</h3>
+            <p class="text-slate-600">Find new and innovative AI tools that can transform the way you work and create.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Our Categories</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-6">
+          We organize AI tools across 8 main categories to make it easy for you to find what you need:
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">✍️</div>
+            <p class="font-semibold text-slate-900">Writing</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">🎨</div>
+            <p class="font-semibold text-slate-900">Image</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">💻</div>
+            <p class="font-semibold text-slate-900">Coding</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">🎬</div>
+            <p class="font-semibold text-slate-900">Video</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">🎵</div>
+            <p class="font-semibold text-slate-900">Audio</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">⚡</div>
+            <p class="font-semibold text-slate-900">Productivity</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">🔬</div>
+            <p class="font-semibold text-slate-900">Research</p>
+          </div>
+          <div class="p-4 bg-slate-100 rounded-lg text-center">
+            <div class="text-2xl mb-2">🖼️</div>
+            <p class="font-semibold text-slate-900">Design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us -->
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Why Choose Toolaroo?</h2>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-1">✓</span>
+            <div>
+              <strong class="text-slate-900">Handpicked Selection:</strong>
+              <p class="text-slate-600">We carefully review and test every tool before adding it to our directory.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-1">✓</span>
+            <div>
+              <strong class="text-slate-900">Regular Updates:</strong>
+              <p class="text-slate-600">We continuously add new tools and update information to keep our directory current.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-1">✓</span>
+            <div>
+              <strong class="text-slate-900">Complete Information:</strong>
+              <p class="text-slate-600">Each tool comes with descriptions, categories, and direct links to get started.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-1">✓</span>
+            <div>
+              <strong class="text-slate-900">Free Forever:</strong>
+              <p class="text-slate-600">Toolaroo is completely free to use. No subscriptions, no hidden fees.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>

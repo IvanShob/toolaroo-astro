@@ -1,35 +1,110 @@
 ---
 import '../styles/global.css';
 import ToolList from '../components/ToolList.jsx';
+import SEO from '../components/SEO.astro';
+import Layout from '../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Toolaroo",
+  "description": "Discover useful AI tools in seconds! Browse and compare the best AI tools across all categories.",
+  "url": "https://toolaroo.com",
+  "image": "https://toolaroo.com/og-image.png",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://toolaroo.com/tools?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const seoProps = {
+  title: "Toolaroo 🛠️ - Discover AI Tools & Software",
+  description: "Discover useful AI tools in seconds! Browse and compare 30+ AI tools across categories: writing, image generation, coding, video, audio & more.",
+  type: "website",
+  schema: schemaData
+};
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toolaroo 🛠️ - Discover AI Tools</title>
-  </head>
+<Layout title="Toolaroo" description="Discover AI tools" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-20 sm:py-32">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-block mb-6 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+        ✨ Discover the best AI tools in one place
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Find and Compare  
+        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> AI Tools</span>
+      </h1>
+      
+      <p class="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+        Explore powerful AI tools across writing, coding, design, video and more. Save time discovering the right tool for your workflow.
+      </p>
 
-  <body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a href="#featured" class="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg hover:shadow-xl">
+          Explore Featured Tools
+        </a>
+        <a href="/tools" class="px-8 py-4 bg-slate-200 text-slate-900 rounded-lg hover:bg-slate-300 transition-colors font-semibold">
+          View All Tools
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <header class="w-full max-w-5xl text-center py-16 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl shadow-lg mb-12">
-      <h1 class="text-5xl font-bold mb-3">Toolaroo 🛠️</h1>
-      <p class="text-lg sm:text-xl">Discover useful AI tools in seconds!</p>
-      <a href="#tools" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition-colors">
-        Discover Tools
-      </a>
-    </header>
+  <!-- Stats Section -->
+  <section class="bg-slate-50 py-12 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-slate-900">30+</div>
+          <p class="text-slate-600 text-sm mt-1">AI Tools</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-slate-900">8</div>
+          <p class="text-slate-600 text-sm mt-1">Categories</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-slate-900">100%</div>
+          <p class="text-slate-600 text-sm mt-1">Free to Use</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-slate-900">⭐</div>
+          <p class="text-slate-600 text-sm mt-1">Curated</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main id="tools" class="w-full max-w-5xl px-4 mx-auto">
+  <!-- Featured Tools -->
+  <section id="featured" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Featured Tools</h2>
+        <p class="text-slate-600">Our handpicked selection of the best AI tools</p>
+      </div>
       <ToolList client:load featuredOnly={true} />
-    </main>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="mt-16 w-full max-w-5xl text-center text-gray-500 text-sm pb-8">
-      © 2026 Toolaroo. All rights reserved.
-    </footer>
-
-  </body>
-</html>
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to explore more?</h2>
+      <p class="text-lg text-blue-100 mb-8">Browse all AI tools by category or search for what you need.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/category" class="px-8 py-3 bg-white text-blue-600 rounded-lg hover:bg-slate-100 transition-colors font-semibold">
+          Browse Categories
+        </a>
+        <a href="/tools" class="px-8 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded-lg transition-colors font-semibold border border-white border-opacity-20">
+          View All Tools
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
