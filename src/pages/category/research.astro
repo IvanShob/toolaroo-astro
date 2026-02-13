@@ -1,0 +1,78 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "AI Research Tools - Toolaroo",
+  "description": "AI research tools for fast analysis, summarization, and insights.",
+  "url": "https://toolaroo.com/category/research"
+};
+
+const seoProps = {
+  title: "AI Research Tools – Toolaroo Directory",
+  description: "AI research tools for fast analysis, summarization, and insights.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="AI Research Tools" description="AI tools for research and analysis" seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Research Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Analyze information, summarize data, and uncover insights.</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI research tools help students, analysts, and professionals gather information faster and understand complex topics with ease. These intelligent platforms can search through vast amounts of data, synthesize information, and provide cited sources — transforming hours of research into minutes.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          Whether you're conducting academic research, competitive analysis, or market research, AI research tools accelerate discovery and improve decision-making. They go beyond traditional search engines by understanding context and providing synthesized answers rather than mere results.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          From students to PhD researchers to business analysts, AI-powered research is becoming the standard way to explore complex information landscapes.
+        </p>
+      </div>
+
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Research faster with AI.</p>
+      </div>
+
+      <ToolList client:load category="research" />
+
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">AI-Powered Research: Finding Answers Faster</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          They summarize long texts, extract insights, analyze scientific papers, and assist with data interpretation. Modern AI research tools provide cited sources and detailed explanations, making them valuable for both casual research and academic work.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Capabilities of AI Research Tools</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>Fast text summarization and key point extraction</li>
+          <li>Scientific paper analysis and literature review assistance</li>
+          <li>Citation tracking and source verification</li>
+          <li>Complex question answering with evidence</li>
+          <li>Data interpretation and trend analysis</li>
+          <li>Multi-document synthesis and comparison</li>
+          <li>Academic research database integration</li>
+          <li>Export and citation formatting support</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The best AI research tools combine speed with accuracy, providing reliable information for everything from student projects to enterprise-level research initiatives.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

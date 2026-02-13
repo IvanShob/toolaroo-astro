@@ -1,0 +1,78 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Best AI Video Tools - Toolaroo",
+  "description": "Explore top AI video creation and editing tools.",
+  "url": "https://toolaroo.com/category/video"
+};
+
+const seoProps = {
+  title: "Best AI Video Tools – Toolaroo Directory",
+  description: "Explore top AI video creation and editing tools.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="Best AI Video Tools" description="AI video creation and editing tools" seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Best AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Video Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Create, edit, and enhance videos with AI automation.</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI video tools simplify content creation, editing, animation, and post-production. From generating videos from text to automatically editing footage, AI transforms the traditionally time-consuming video production process into something anyone can do in minutes.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          Content creators, marketers, educators, and businesses can now produce professional-quality videos without expensive equipment, software licenses, or production teams. AI handles the heavy lifting — editing, color grading, audio mixing, caption generation, and effects — while you focus on storytelling.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Whether you're creating YouTube videos, TikTok content, corporate training, or marketing campaigns, AI video tools dramatically reduce production time and cost.
+        </p>
+      </div>
+
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Create better videos with AI.</p>
+      </div>
+
+      <ToolList client:load category="video" />
+
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">Professional Video Production Simplified</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          They automate editing, provide instant captions, generate avatars, and produce professional visuals for marketing, social media, and education. AI video tools bring broadcast-quality production within reach of individual creators.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Features of AI Video Tools</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>Text-to-video generation from scripts</li>
+          <li>Automatic video editing and scene detection</li>
+          <li>AI avatar and talking head generation</li>
+          <li>Real-time caption and subtitle generation</li>
+          <li>Background removal and replacement</li>
+          <li>Color grading and color correction</li>
+          <li>Audio enhancement and voice generation</li>
+          <li>Template-based video creation and customization</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The best AI video tools combine ease of use with professional results, making high-quality video production accessible to creators of all skill levels.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

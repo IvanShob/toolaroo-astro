@@ -1,0 +1,78 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "AI Productivity Tools - Toolaroo",
+  "description": "Boost your workflow with top AI productivity tools.",
+  "url": "https://toolaroo.com/category/productivity"
+};
+
+const seoProps = {
+  title: "AI Productivity Tools – Toolaroo Directory",
+  description: "Boost your workflow with top AI productivity tools.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="AI Productivity Tools" description="AI tools to automate tasks and boost workflow" seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Productivity Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Work smarter, automate tasks, and save hours every day.</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI productivity tools automate repetitive tasks, organize information, and help streamline workflows for individuals and teams. These tools handle scheduling, note-taking, meeting transcription, task management, and information synthesis — freeing you to focus on high-value work.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          For remote teams and distributed workers, AI productivity tools become the connective tissue that keeps everyone organized and aligned. They transform chaotic conversations into structured, searchable knowledge bases and automate routine administrative tasks that drain productivity.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Whether you're a solo entrepreneur or managing large teams, AI-powered productivity transformation leads to significant time savings and reduced cognitive load.
+        </p>
+      </div>
+
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Upgrade your productivity with AI.</p>
+      </div>
+
+      <ToolList client:load category="productivity" />
+
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">AI Automation: Reclaim Hours Every Week</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          From smart schedulers to knowledge assistants and workflow automators, AI increases efficiency and reduces mental load. Modern productivity tools go beyond simple task management — they learn your preferences, adapt to your workflow, and proactively suggest optimizations.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Essential AI Productivity Features</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>AI-powered meeting transcription and summarization</li>
+          <li>Intelligent task prioritization and scheduling</li>
+          <li>Automated email and message organization</li>
+          <li>Knowledge base and note synthesis</li>
+          <li>Calendar and time blocking optimization</li>
+          <li>Workflow automation and integration</li>
+          <li>Smart reminders and deadline tracking</li>
+          <li>Team collaboration acceleration</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The best AI productivity tools integrate seamlessly with your existing tech stack, removing friction and making them indispensable parts of your daily routine.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

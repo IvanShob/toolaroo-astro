@@ -1,0 +1,78 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Top AI Image Tools - Toolaroo",
+  "description": "Discover the best AI tools for image generation, editing, and enhancement.",
+  "url": "https://toolaroo.com/category/image"
+};
+
+const seoProps = {
+  title: "Top AI Image Tools – Toolaroo Directory",
+  description: "Discover the best AI tools for image generation, editing, and enhancement.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="Top AI Image Tools" description="AI image generation and editing tools" seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Top AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Image Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Generate, enhance, and manipulate images effortlessly.</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI image tools cover image generation, editing, upscaling, and manipulation. From photorealistic renders to artistic transformations, AI makes high-quality visual content accessible to everyone. Whether you need to generate original images from text descriptions, enhance low-resolution photos, or automate batches of image edits, AI handles it all.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          These tools have democratized visual content creation. Content creators, e-commerce businesses, and marketers no longer need expensive photography or designer services. What used to require days of professional work can now be done in minutes. AI image generation is particularly valuable for creating unique assets for social media, ads, and product listings.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          From concept art to photo enhancement, AI image technology continues to improve, offering results that rival professional photography and illustration work.
+        </p>
+      </div>
+
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Create powerful imagery with AI.</p>
+      </div>
+
+      <ToolList client:load category="image" />
+
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">AI Image Generation and Editing: Endless Creative Possibilities</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          AI image tools support photographers, marketers, e-commerce teams, and artists by offering background removal, enhancement, upscaling, retouching, and creative image synthesis. These tools eliminate the need for expensive equipment, software subscriptions, or hiring professionals for routine tasks.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Capabilities of AI Image Tools</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>Text-to-image generation with realistic and artistic styles</li>
+          <li>Background removal and replacement</li>
+          <li>Photo upscaling and quality enhancement</li>
+          <li>Portrait retouching and beautification</li>
+          <li>Image inpainting and content-aware editing</li>
+          <li>Style transfer and artistic filters</li>
+          <li>Batch processing and automation for multiple images</li>
+          <li>Custom model training for brand-specific assets</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The best AI image tools combine powerful generation capabilities with intuitive interfaces, making professional-quality results achievable for everyone from social media managers to digital artists.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

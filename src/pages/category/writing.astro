@@ -1,0 +1,79 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Top AI Writing Tools - Toolaroo",
+  "description": "Best AI writing tools for content creation, editing, and ideation.",
+  "url": "https://toolaroo.com/category/writing"
+};
+
+const seoProps = {
+  title: "Top AI Writing Tools – Toolaroo Directory",
+  description: "Best AI writing tools for content creation, editing, and ideation.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="Top AI Writing Tools" description="AI writing tools for content creators" seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Top AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Writing Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Write faster, clearer, and more creatively using AI.</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI writing tools assist with content creation, grammar improvement, brainstorming, rewriting, and long-form writing. These tools handle everything from generating article ideas to polishing final copy, helping writers overcome writer's block and improve productivity.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          For content teams, AI writing acceleration means more output in less time. For individual writers and creators, AI becomes a collaborative partner that helps refine ideas, improve clarity, and maintain consistent tone across all content. Marketers benefit from faster campaign copy generation, while students can get help organizing their thoughts and improving academic writing.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          AI writing tools don't replace human creativity — they amplify it, handling the repetitive parts and freeing writers to focus on strategy, voice, and storytelling.
+        </p>
+      </div>
+
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Write better with AI.</p>
+      </div>
+
+      <ToolList client:load category="writing" />
+
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">Transform Your Content Writing Process</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          From marketers to authors, these tools help users produce polished content at scale — blogs, emails, ads, scripts, and more. AI writing assistants have become indispensable for content teams looking to scale without sacrificing quality.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Features of AI Writing Tools</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>Content idea generation and brainstorming</li>
+          <li>Full-length article and blog post generation</li>
+          <li>Email copywriting and subject line optimization</li>
+          <li>Ad copy and landing page generation</li>
+          <li>Grammar, style, and tone checking</li>
+          <li>Content paraphrasing and rewriting</li>
+          <li>Multi-language content generation</li>
+          <li>SEO optimization and keyword incorporation</li>
+          <li>Plagiarism detection and originality checking</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The best AI writing tools combine powerful generation capabilities with quality control features, ensuring content is not just created quickly, but is actually good.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

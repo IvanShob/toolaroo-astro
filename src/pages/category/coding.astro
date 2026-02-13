@@ -1,0 +1,82 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Top AI Coding Tools - Toolaroo",
+  "description": "AI coding tools that help you write, debug, and optimize code faster and smarter.",
+  "url": "https://toolaroo.com/category/coding"
+};
+
+const seoProps = {
+  title: "Top AI Coding Tools – Toolaroo Directory",
+  description: "AI coding tools that help you write, debug, and optimize code faster and smarter.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="Top AI Coding Tools" description="AI coding assistants for faster development" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Top AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Coding Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Accelerate your development with intelligent coding assistants.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Intro Section -->
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI coding tools are reshaping software development. From automated code suggestions to debugging, documentation, and test generation, AI dramatically improves both speed and accuracy. Developers can now write complex functionality faster, reduce errors, and learn new technologies efficiently — all with AI assistance in their IDE or browser.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          These tools benefit beginners learning to code, as well as senior engineers managing large codebases. Modern AI assistants understand context, read entire files or repositories, and generate high-quality functions, components, and APIs. They also explain code, refactor existing logic, optimize performance, and help teams maintain clean and consistent architecture.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          AI coding tools are essential for building MVPs quickly, supporting agile workflows, and boosting productivity across the entire development lifecycle.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Boost your coding speed with the top AI tools.</p>
+      </div>
+
+      <!-- Tools List -->
+      <ToolList client:load category="coding" />
+
+      <!-- SEO Bottom Content Section -->
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">AI Coding Assistants: Your Virtual Pair Programmer</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          AI coding assistants now serve as virtual pair programmers capable of analyzing your code in real time. They can generate multi-file updates, automatically fix bugs, and create documentation based on your codebase's logic. Some tools specialize in backend development, others in front-end components, APIs, or automated testing.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Capabilities of AI Coding Tools</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>Code autocompletion</li>
+          <li>Bug detection and debugging</li>
+          <li>Code explanation and learning</li>
+          <li>Automatic test generation</li>
+          <li>Performance optimization</li>
+          <li>Multi-language support</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          This technology significantly reduces repetitive work and helps teams ship features faster. As AI models continue to evolve, the quality and reliability of generated code improves, making these tools indispensable for modern engineering workflows.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
