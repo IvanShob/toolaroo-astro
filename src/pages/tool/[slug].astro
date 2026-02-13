@@ -60,7 +60,8 @@ const seoProps = {
   </section>
 
   <section class="py-8 sm:py-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <!-- Stats -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
           <h3 class="text-sm font-semibold text-slate-600 uppercase mb-2">Rank</h3>
@@ -71,11 +72,12 @@ const seoProps = {
           <p class="text-xl font-bold text-slate-900">{tool.featured ? '⭐ Featured' : 'Listed'}</p>
         </div>
         <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
-          <h3 class="text-sm font-semibold text-slate-600 uppercase mb-2">Visit</h3>
-          <p class="text-xl font-bold text-slate-900">External Link</p>
+          <h3 class="text-sm font-semibold text-slate-600 uppercase mb-2">Category</h3>
+          <p class="text-xl font-bold text-slate-900 capitalize">{tool.category}</p>
         </div>
       </div>
 
+      <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-4">
         <a
           href={tool.url}
@@ -92,6 +94,116 @@ const seoProps = {
           More {tool.category} Tools
         </a>
       </div>
+
+      {/* Long Description */}
+      {tool.longDescription && (
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">About {tool.name}</h2>
+          {tool.longDescription.split('\n\n').map((para) => (
+            <p class="text-lg text-slate-700 leading-relaxed mb-4">{para}</p>
+          ))}
+        </div>
+      )}
+
+      {/* Key Features */}
+      {tool.features && tool.features.length > 0 && (
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Key Features</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 list-none pl-0">
+            {tool.features.map((feature) => (
+              <li class="flex items-start gap-3 text-lg text-slate-700">
+                <span class="text-blue-600 font-bold text-xl mt-1">✨</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Best Use Cases */}
+      {tool.useCases && tool.useCases.length > 0 && (
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Best Use Cases</h2>
+          <ul class="space-y-2 list-disc list-inside text-lg text-slate-700">
+            {tool.useCases.map((useCase) => (
+              <li>{useCase}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Pricing */}
+      {tool.pricing && (
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Pricing Plans</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {Object.entries(tool.pricing).map(([plan, description]) => (
+              <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h3 class="font-bold text-lg text-slate-900 mb-2 capitalize">{plan}</h3>
+                <p class="text-slate-700">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Pros & Cons */}
+      {(tool.pros || tool.cons) && (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {tool.pros && (
+            <div class="prose prose-slate max-w-none">
+              <h3 class="text-2xl font-bold text-green-600 mb-4">✅ Pros</h3>
+              <ul class="space-y-2 list-disc list-inside text-slate-700">
+                {tool.pros.map((pro) => (
+                  <li>{pro}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {tool.cons && (
+            <div class="prose prose-slate max-w-none">
+              <h3 class="text-2xl font-bold text-red-600 mb-4">❌ Cons</h3>
+              <ul class="space-y-2 list-disc list-inside text-slate-700">
+                {tool.cons.map((con) => (
+                  <li>{con}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Alternatives */}
+      {tool.alternatives && tool.alternatives.length > 0 && (
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Alternatives to {tool.name}</h2>
+          <div class="space-y-3">
+            {tool.alternatives.map((alt) => (
+              <div class="flex items-start gap-3 text-lg text-slate-700">
+                <span class="text-blue-600 font-bold">→</span>
+                <div>
+                  <strong>{alt.name}</strong> — {alt.reason}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* FAQ */}
+      {tool.faqItems && tool.faqItems.length > 0 && (
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            {tool.faqItems.map((item, idx) => (
+              <div key={idx} class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <h3 class="font-bold text-lg text-slate-900 mb-2">{item.question}</h3>
+                <p class="text-slate-700">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </section>
 </Layout>

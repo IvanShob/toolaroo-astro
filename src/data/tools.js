@@ -7,7 +7,80 @@ const tools = [
     featured: true, 
     rank: 1,
     slug: "chatgpt",
-    url: "https://chat.openai.com"
+    url: "https://chat.openai.com",
+    longDescription: `ChatGPT is one of the most powerful and widely used AI models available today. Developed by OpenAI, it acts as a versatile language assistant that can understand context, generate high-quality text, write code, analyse information, create ideas, automate tasks, and help users work significantly faster. Thanks to its natural language abilities, ChatGPT feels more like collaborating with a human expert than using traditional software.
+
+The tool can be applied to nearly every digital workflow — writing content, summarising research, building applications, drafting emails, improving communication, producing creative assets, and even solving complex technical problems. Its large-scale training on text, code, and real-world data allows it to reason about instructions, follow constraints, and provide contextually aware answers that maintain coherence across long conversations.
+
+ChatGPT stands out from competing AI writing tools because it's not limited to "copywriting" or "blog text generation." It functions as a general-purpose intelligence assistant. It not only writes but also analyses, corrects, explains, recommends, strategises, and integrates deeply into business processes. Advanced plans (ChatGPT Plus, Team, and Enterprise) unlock even more capabilities, including multimodal reasoning, custom GPTs, file uploads, image understanding, and access to the latest models such as GPT-5.1.
+
+Creators, professionals, and businesses use ChatGPT to reduce repetitive work, improve output quality, and speed up production. Writers use it to brainstorm ideas. Developers use it to debug and write code. Students use it to understand complex topics. Companies use it for customer support, automation, and internal knowledge retrieval.
+
+Whether you need long-form content, concise answers, structured data, creative ideas, or technical guidance, ChatGPT adapts to your goals. With plugins, custom instructions, and workflow automation features, it becomes a personalised digital partner that evolves over time. Its strength comes from its ability to combine creativity, logic, and language understanding in a single interface — making it one of the most impactful AI tools available today.`,
+    features: [
+      "Natural language understanding and reasoning",
+      "High-quality text generation for any writing style",
+      "Code writing, debugging, and technical guidance",
+      "Research assistance and summarisation",
+      "Creative ideation for content, marketing, and storytelling",
+      "Document uploads and advanced data analysis",
+      "Multimodal input: understand images, screenshots, PDFs",
+      "Custom GPTs for personalised workflows",
+      "Integrations with automation tools (Zapier, Make, APIs)",
+      "Memory system for persistent personalization"
+    ],
+    useCases: [
+      "Content writing (blogs, articles, newsletters)",
+      "Copywriting (ads, landing pages, social media posts)",
+      "Coding and software development",
+      "Research and fact summarisation",
+      "Brainstorming and creative work",
+      "Task automation",
+      "Email and business communication",
+      "UX writing, product descriptions, SEO optimisation"
+    ],
+    pricing: {
+      "Free Plan": "Limited features, slower model, capped messages",
+      "ChatGPT Plus": "Access to GPT-5.1, faster speeds, priority access",
+      "ChatGPT Team": "Collaboration spaces + enhanced privacy",
+      "ChatGPT Enterprise": "Unlimited usage, admin controls, highest accuracy",
+      "API Pricing": "Pay-as-you-go for developers"
+    },
+    pros: [
+      "Extremely versatile — not limited to writing",
+      "Best-in-class reasoning and accuracy",
+      "Handles long, complex tasks",
+      "Customizable workflows",
+      "Strong ecosystem (custom GPTs, plugins, API)"
+    ],
+    cons: [
+      "Quality depends on prompts",
+      "Some advanced features require a paid plan",
+      "Occasional factual inaccuracies"
+    ],
+    alternatives: [
+      { name: "Claude", reason: "better for long documents and advanced reasoning" },
+      { name: "Jasper", reason: "specialised in marketing and brand-consistent copywriting" },
+      { name: "Copy.ai", reason: "built for teams creating sales and outreach content" }
+    ],
+    faqItems: [
+      {
+        question: "Is ChatGPT good for long-form writing?",
+        answer: "Yes — it can generate entire articles, outlines, or drafts with a consistent voice."
+      },
+      {
+        question: "Does ChatGPT replace writers?",
+        answer: "No. It accelerates writing, but human editing and strategy still matter."
+      },
+      {
+        question: "Can ChatGPT analyse files?",
+        answer: "Yes — PDFs, documents, images, and datasets (paid plans)."
+      },
+      {
+        question: "Is ChatGPT safe for business use?",
+        answer: "Enterprise plans provide enhanced security and data privacy."
+      }
+    ]
   },
   { 
     name: "Claude", 
