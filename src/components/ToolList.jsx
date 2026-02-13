@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import tools_data from '../data/tools.js';
 
 // Category emoji mapping
 const categoryEmojis = {
@@ -13,18 +14,12 @@ const categoryEmojis = {
 };
 
 export default function ToolList({ category, featuredOnly = false }) {
-  const [tools, setTools] = useState([]);
+  const [tools, setTools] = useState(tools_data);
   const [query, setQuery] = useState('');
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
-    fetch('/api/generate')
-      .then(res => res.json())
-      .then(data => setTools(data.tools))
-      .catch(() => setError(true))
-      .finally(() => setLoading(false));
-  }, []);
+  // Data is already loaded, no need for useEffect
 
   if (loading)
     return <p className="text-center py-12 text-slate-500">Loading tools...</p>;
