@@ -1,0 +1,87 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Best AI Marketing Tools - Toolaroo",
+  "description": "Discover the best AI-powered marketing tools to automate campaigns, optimize ad performance, and create high-converting content.",
+  "url": "https://toolaroo.com/category/ai-marketing"
+};
+
+const seoProps = {
+  title: "Best AI Marketing Tools – Toolaroo Directory",
+  description: "Discover the best AI-powered marketing tools to automate campaigns, optimize ad performance, and create high-converting content.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="Best AI Marketing Tools" description="AI marketing tools for campaigns, ad optimization, and content creation" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Best AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Marketing Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Automate campaigns, optimize ads, and create high-converting content with AI.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Intro Section -->
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI marketing tools are revolutionizing how businesses, agencies, and creators approach their campaigns. From generating persuasive ad copy to automating social media scheduling, AI-powered platforms streamline marketing workflows and boost ROI. These intelligent solutions use machine learning to understand audience behavior, optimize ad performance, personalize messaging, and generate compelling content at scale.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          Whether you're managing paid ads, running email campaigns, creating landing pages, or optimizing SEO, AI marketing tools save time and improve results. Tasks that once required teams of copywriters and analysts are now automated, allowing marketers to focus on strategy and creative direction.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The AI marketing category is growing rapidly as businesses demand faster content creation, better targeting, and higher conversion rates. With AI-generated copy, predictive analytics, automated optimization, and personalization at scale, modern marketers have unprecedented power to reach the right audience with the right message.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Supercharge your marketing with the best AI tools below.</p>
+      </div>
+
+      <!-- Tools List -->
+      <ToolList client:load category="ai-marketing" />
+
+      <!-- SEO Bottom Content Section -->
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">AI Marketing Tools: Industry-Leading Solutions</h2>
+        
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          AI marketing tools offer transformative value for businesses of all sizes. For agencies, they accelerate campaign production and enable teams to serve more clients with the same resources. For startups, they level the playing field by providing enterprise-grade marketing capabilities. For established brands, they optimize spending and improve conversion rates across multiple channels.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Features in AI Marketing Tools</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>AI-generated ad and email copy</li>
+          <li>Landing page and blog post creation</li>
+          <li>SEO optimization and keyword research</li>
+          <li>Social media content scheduling</li>
+          <li>Campaign performance analytics</li>
+          <li>Audience targeting and personalization</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          Modern AI marketing tools integrate seamlessly with existing platforms like WordPress, Google Ads, Facebook, LinkedIn, and email service providers. This allows marketers to leverage AI without disrupting their existing workflows or technology stack.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">How to Choose the Right AI Marketing Tool</h3>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          When selecting an AI marketing tool, consider your specific needs: Do you need ad copy generation, email marketing, SEO optimization, or social media automation? Evaluate factors like ease of use, customization options, pricing, integrations, and the quality of AI-generated content. The best tool for you depends on your marketing channels, team size, and budget.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

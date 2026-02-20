@@ -657,6 +657,26 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 31, 
     slug: "spline-ai",
     url: "https://spline.design"
+  },
+
+  // AI Marketing
+  { 
+    name: "Writesonic", 
+    description: "AI platform that generates marketing copy, ads, blog posts, and landing pages with a focus on conversions and engagement.", 
+    category: "ai-marketing", 
+    featured: true, 
+    rank: 1,
+    slug: "writesonic",
+    url: "https://writesonic.com"
+  },
+  { 
+    name: "Surfer SEO", 
+    description: "AI-powered SEO platform that helps marketers optimise content for higher search engine rankings and analyse competitors.", 
+    category: "ai-marketing", 
+    featured: false, 
+    rank: 2,
+    slug: "surfer-seo",
+    url: "https://surferseo.com"
   }
 ];
 

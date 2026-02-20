@@ -5,7 +5,7 @@ const toolsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    category: z.enum(['writing', 'image', 'coding', 'video', 'audio', 'productivity', 'research', 'design']).optional(),
+    category: z.enum(['writing', 'image', 'coding', 'video', 'audio', 'productivity', 'research', 'design', 'ai-marketing']).optional(),
     featured: z.boolean().optional(),
     rank: z.number().optional(),
     slug: z.string().optional(),
