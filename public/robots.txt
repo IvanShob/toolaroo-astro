@@ -9,7 +9,7 @@ Allow: /tool/*
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://toolaroo.com/sitemap.xml
+Sitemap: https://toolaroo.net/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1
