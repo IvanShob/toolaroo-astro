@@ -5,10 +5,12 @@ interface Props {
   imageUrl?: string;
   canonical?: string;
   type?: 'website' | 'article';
+  schemaData?: any;
 }
 
-const { title, description, imageUrl = '/og-image.png', canonical, type = 'website' } = Astro.props;
+const { title, description, imageUrl = '/og-image.png', canonical, type = 'website', schemaData } = Astro.props;
 const fullUrl = canonical || Astro.url.pathname;
+const siteUrl = 'https://www.toolaroo.net';
 ---
 
 <!-- Essential Meta Tags -->
@@ -16,29 +18,47 @@ const fullUrl = canonical || Astro.url.pathname;
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content={description} />
 <meta name="theme-color" content="#3b82f6" />
-<meta name="robots" content="index, follow" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
 <!-- Canonical URL -->
-<link rel="canonical" href={`https://toolaroo.com${fullUrl}`} />
+<link rel="canonical" href={`${siteUrl}${fullUrl}`} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={type} />
-<meta property="og:url" content={`https://toolaroo.com${fullUrl}`} />
+<meta property="og:url" content={`${siteUrl}${fullUrl}`} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={`https://toolaroo.com${imageUrl}`} />
+<meta property="og:image" content={`${siteUrl}${imageUrl}`} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Toolaroo - AI Tools Directory" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={`https://toolaroo.com${fullUrl}`} />
+<meta property="twitter:url" content={`${siteUrl}${fullUrl}`} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={`https://toolaroo.com${imageUrl}`} />
+<meta property="twitter:image" content={`${siteUrl}${imageUrl}`} />
+<meta name="twitter:creator" content="@toolaroo" />
 
 <!-- Additional -->
 <meta name="author" content="Toolaroo" />
-<meta name="keywords" content="AI tools, AI directory, AI software, AI applications" />
+<meta name="keywords" content="AI tools, AI directory, AI software, AI applications, best AI tools, AI tools review" />
+<meta name="language" content="English" />
+<meta name="revisit-after" content="7 days" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="alternate" hreflang="en" href={`https://toolaroo.com${fullUrl}`} />
+<link rel="alternate" hreflang="en" href={`${siteUrl}${fullUrl}`} />
+
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J2BKBV90W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J2BKBV90W1');
+</script>
+
+<!-- Structured Data (JSON-LD) -->
+{schemaData && (
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+)}

@@ -7,9 +7,14 @@ Allow: /tool/*
 
 # Disallow
 Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
 
 # Sitemap
-Sitemap: https://toolaroo.net/sitemap.xml
+Sitemap: https://www.toolaroo.net/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1
+
+# Rate limiting
+Request-rate: 10/1s
