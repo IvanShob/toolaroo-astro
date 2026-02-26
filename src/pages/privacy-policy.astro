@@ -1,0 +1,170 @@
+---
+import '../styles/global.css';
+import Layout from '../components/Layout.astro';
+
+const seoProps = {
+  title: "Privacy Policy – Toolaroo",
+  description: "Toolaroo privacy policy. Learn how we collect, use, and protect your data when using our AI tools directory.",
+  type: "website"
+};
+---
+
+<Layout title="Privacy Policy" description="How we collect and use your data" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Privacy<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Policy</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Last updated: February 2026</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Who We Are -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">1. Who We Are</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">
+          Toolaroo (<strong class="text-slate-900">toolaroo.net</strong>) is an AI tools directory that helps users discover and compare software tools.
+          We are the data controller for the personal data described in this policy.
+        </p>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Contact: <a href="mailto:hello@toolaroo.com" class="text-blue-600 hover:underline">hello@toolaroo.com</a>
+        </p>
+      </div>
+
+      <!-- What Data We Collect -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">2. What Data We Collect</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">We collect the following types of data:</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600"><strong class="text-slate-900">Analytics data</strong> – page views, device type, country, referrer (via Google Analytics 4 and Microsoft Clarity)</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600"><strong class="text-slate-900">Contact form data</strong> – your name, email address, and message when you submit our contact form</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600"><strong class="text-slate-900">Cookies</strong> – analytics cookies set by Google Analytics and Microsoft Clarity</p>
+          </li>
+        </ul>
+        <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+          <p class="text-lg text-slate-600">
+            We do <strong class="text-slate-900">not</strong> collect payment information, create user accounts, or store sensitive personal data.
+          </p>
+        </div>
+      </div>
+
+      <!-- How We Use Your Data -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">3. How We Use Your Data</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">To understand how visitors use the site and improve the user experience (analytics)</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">To respond to contact form submissions</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">To monitor site performance and fix issues</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Third-Party Services -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">4. Third-Party Services</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-6">We use the following third-party services that may process your data:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Google Analytics 4</h3>
+            <p class="text-slate-600 text-sm">Measures site traffic and user behaviour. Data processed by Google.</p>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm mt-2 inline-block">Google Privacy Policy →</a>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Microsoft Clarity</h3>
+            <p class="text-slate-600 text-sm">Session recordings and heatmaps for UX improvement.</p>
+            <a href="https://privacy.microsoft.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm mt-2 inline-block">Microsoft Privacy Policy →</a>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Formspree</h3>
+            <p class="text-slate-600 text-sm">Processes contact form submissions securely.</p>
+            <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm mt-2 inline-block">Formspree Privacy Policy →</a>
+          </div>
+          <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="text-lg font-semibold text-slate-900 mb-2">Vercel</h3>
+            <p class="text-slate-600 text-sm">Website hosting. Server logs may include your IP address.</p>
+          </div>
+        </div>
+        <p class="text-lg text-slate-600 leading-relaxed mt-6">
+          When you click on tool links, you are directed to third-party websites. We are not responsible for their privacy practices.
+        </p>
+      </div>
+
+      <!-- Affiliate Links -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">5. Affiliate Links</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Some links on Toolaroo are affiliate links. When you click these links and make a purchase, we may earn a commission at no extra cost to you.
+          Affiliate links do not affect our editorial independence or rankings.
+          See our <a href="/affiliate-disclosure/" class="text-blue-600 hover:underline">Affiliate Disclosure</a> for full details.
+        </p>
+      </div>
+
+      <!-- Cookies -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">6. Cookies</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          We use analytics cookies (Google Analytics, Microsoft Clarity) to understand how visitors interact with the site.
+          You can disable cookies in your browser settings at any time. Note that disabling cookies may affect your browsing experience.
+        </p>
+      </div>
+
+      <!-- Your Rights -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">7. Your Rights (GDPR / CCPA)</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">Depending on your location, you may have the right to:</p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">Access the personal data we hold about you</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">Request correction or deletion of your data</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">Opt out of analytics tracking via browser controls or extensions like uBlock Origin</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <p class="text-lg text-slate-600">Lodge a complaint with your local data protection authority</p>
+          </li>
+        </ul>
+        <p class="text-lg text-slate-600 leading-relaxed mt-4">
+          To exercise your rights, contact us at <a href="mailto:hello@toolaroo.com" class="text-blue-600 hover:underline">hello@toolaroo.com</a>.
+        </p>
+      </div>
+
+      <!-- Changes -->
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">8. Changes to This Policy</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          We may update this policy from time to time. Changes will be posted on this page with an updated date.
+          Continued use of Toolaroo after changes constitutes acceptance of the updated policy.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

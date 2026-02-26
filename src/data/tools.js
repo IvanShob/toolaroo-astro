@@ -172,6 +172,7 @@ Combined with its premium reasoning performance, long context, and reliability, 
     rank: 3,
     slug: "grammarly",
     url: "https://www.grammarly.com",
+    affiliateUrl: null, // TODO: Sign up at https://www.grammarly.com/affiliates - up to $20/premium signup
     longDescription: `Grammarly is one of the most widely used AI writing assistants in the world, trusted by millions of writers, students, professionals, and teams to improve clarity, correctness, and communication effectiveness. What started as a grammar-checking tool has evolved into a powerful AI writing platform that enhances tone, style, structure, and intent across every type of written content.
 
 At its core, Grammarly analyses your writing in real time and provides suggestions for grammar, punctuation, spelling, and sentence structure. But the real strength of the tool comes from its advanced AI engine, which interprets context and meaning to deliver writing improvements that go far beyond surface-level corrections. It can clarify complicated sentences, strengthen your tone, rewrite weak phrasing, and help your message sound more professional or more friendly depending on your goal.
@@ -252,6 +253,7 @@ The platform's accuracy and ease of use make it a must-have productivity tool fo
     rank: 4,
     slug: "jasper",
     url: "https://www.jasper.ai",
+    affiliateUrl: null, // TODO: Sign up at https://www.jasper.ai/affiliates - ~30% recurring commission
     longDescription: `Jasper (formerly known as Jarvis) is one of the most powerful AI writing tools built specifically for marketing teams and content creators who need to produce large amounts of high-quality text quickly. Unlike generic AI writing assistants, Jasper focuses heavily on brand voice, conversion-oriented copy, and professional content workflows, making it a favorite among agencies, startups, and enterprise teams.
 
 The platform uses a combination of large-language models, including its custom Jasper Engine, to generate content that is not only accurate and well-written but also aligned with your brand style. You can upload existing brand guidelines, specify tone preferences, and let Jasper maintain consistency across every type of content—from blog posts and email campaigns to ad copy, scripts, and social content.
@@ -334,6 +336,7 @@ Overall, Jasper stands out for anyone who creates content professionally—not j
     rank: 5,
     slug: "copy-ai",
     url: "https://www.copy.ai",
+    affiliateUrl: null, // TODO: Sign up at https://www.copy.ai/affiliates
     longDescription: `Copy.ai is one of the most widely used AI writing tools, known for its simplicity, speed, and marketing-focused templates. The platform helps individuals and teams rapidly generate digital content—from email sequences and ad copy to product descriptions, blog posts, and social media updates—without requiring deep writing or marketing skills.
 
 Built on top of advanced language models, Copy.ai's core strength lies in workflow automation. It provides pre-built templates and structured flows designed for marketers, growth teams, and small businesses who need to launch content quickly. Whether you're crafting a Facebook ad, creating a drip email campaign, or writing website copy, Copy.ai offers templates that guide you through each step and deliver ready-to-use copy in seconds.
@@ -446,9 +449,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 9,
     slug: "canva-ai",
-    url: "https://www.canva.com"
+    url: "https://www.canva.com",
+    affiliateUrl: null, // TODO: Sign up at https://www.canva.com/affiliates - ~$36/new Pro signup
   },
-  { 
+  {
     name: "Adobe Firefly", 
     description: "AI-powered creative tools integrated into Adobe suite.", 
     category: "image", 
@@ -522,25 +526,28 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 17,
     slug: "synthesia",
-    url: "https://www.synthesia.io"
+    url: "https://www.synthesia.io",
+    affiliateUrl: null, // TODO: Sign up at https://www.synthesia.io/affiliates
   },
-  { 
+  {
     name: "Descript", 
     description: "Video and podcast editing through text-based interface.", 
     category: "video", 
     featured: false, 
     rank: 18,
     slug: "descript",
-    url: "https://www.descript.com"
+    url: "https://www.descript.com",
+    affiliateUrl: null, // TODO: Sign up at https://www.descript.com/affiliates
   },
-  { 
+  {
     name: "Pictory", 
     description: "Converts long-form content into short videos automatically.", 
     category: "video", 
     featured: false, 
     rank: 19,
     slug: "pictory",
-    url: "https://pictory.ai"
+    url: "https://pictory.ai",
+    affiliateUrl: null, // TODO: Sign up at https://pictory.ai/affiliates - ~20% recurring
   },
 
   // Audio
@@ -560,9 +567,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 21,
     slug: "murf-ai",
-    url: "https://murf.ai"
+    url: "https://murf.ai",
+    affiliateUrl: null, // TODO: Sign up at https://murf.ai/affiliates
   },
-  { 
+  {
     name: "Soundraw", 
     description: "AI music generator for creating royalty-free tracks.", 
     category: "audio", 
@@ -667,16 +675,18 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 1,
     slug: "writesonic",
-    url: "https://writesonic.com"
+    url: "https://writesonic.com",
+    affiliateUrl: null, // TODO: Sign up at https://writesonic.com/affiliates - ~30% recurring
   },
-  { 
+  {
     name: "Surfer SEO", 
     description: "AI-powered SEO platform that helps marketers optimise content for higher search engine rankings and analyse competitors.", 
     category: "ai-marketing", 
     featured: false, 
     rank: 2,
     slug: "surfer-seo",
-    url: "https://surferseo.com"
+    url: "https://surferseo.com",
+    affiliateUrl: null, // TODO: Sign up at https://surferseo.com/affiliate - ~25% recurring
   }
 ];
 

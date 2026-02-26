@@ -1,0 +1,110 @@
+---
+import '../styles/global.css';
+import Layout from '../components/Layout.astro';
+
+const seoProps = {
+  title: "Affiliate Disclosure – Toolaroo",
+  description: "Toolaroo affiliate disclosure. We may earn commissions when you click certain tool links. Your trust matters to us.",
+  type: "website"
+};
+---
+
+<Layout title="Affiliate Disclosure" description="How affiliate links work on Toolaroo" seoProps={seoProps}>
+  <!-- Hero Section -->
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        Affiliate<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Disclosure</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Transparency is important to us</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-8 sm:py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- FTC Notice -->
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg text-slate-700 leading-relaxed">
+          In accordance with the <strong class="text-slate-900">FTC guidelines</strong>, Toolaroo discloses that some links on this website are
+          affiliate links. If you click a link and make a purchase, we may earn a commission —
+          at <strong class="text-slate-900">no additional cost to you</strong>.
+        </p>
+      </div>
+
+      <!-- How It Works -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">How Affiliate Links Work on Toolaroo</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">
+          When you click an "Open Tool" button, you may be redirected through our
+          <strong class="text-slate-900">/go/[tool-name]/</strong> tracking URL before arriving at the tool's website.
+          You always land on the exact tool listed — we never redirect you to a different product.
+        </p>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Not all tool links on Toolaroo are affiliate links. Many are direct, non-affiliate links.
+        </p>
+      </div>
+
+      <!-- Our Commitment -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Our Editorial Independence</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-6">
+          Affiliate commissions help us keep Toolaroo free and maintain the site. However, they <strong class="text-slate-900">never influence</strong> our recommendations.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <div>
+              <strong class="text-slate-900">Ranking is independent</strong>
+              <p class="text-slate-600">Tools are ranked based on quality, features, and usefulness — not on commission rates.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <div>
+              <strong class="text-slate-900">We list non-affiliate tools too</strong>
+              <p class="text-slate-600">Many tools in our directory have no affiliate relationship at all. We include them because they're good.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-blue-600 text-xl mt-0.5">✓</span>
+            <div>
+              <strong class="text-slate-900">Your trust comes first</strong>
+              <p class="text-slate-600">We only recommend tools we genuinely believe are valuable for our users.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Which Tools -->
+      <div class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Which Tools Have Affiliate Relationships?</h2>
+        <p class="text-lg text-slate-600 leading-relaxed mb-4">
+          We participate in affiliate programs for select tools. This may currently include tools such as:
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+          {["Jasper", "Writesonic", "Grammarly", "Canva", "Pictory", "Murf AI", "Surfer SEO", "Descript", "Synthesia"].map(tool => (
+            <div class="px-4 py-3 bg-slate-100 rounded-lg text-center">
+              <span class="font-semibold text-slate-900 text-sm">{tool}</span>
+            </div>
+          ))}
+        </div>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          This list changes as we add new tools and affiliate programs. If you want to confirm whether a specific link is an affiliate link,
+          contact us at <a href="mailto:hello@toolaroo.com" class="text-blue-600 hover:underline">hello@toolaroo.com</a>.
+        </p>
+      </div>
+
+      <!-- Questions -->
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Questions?</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          If you have any questions about our affiliate relationships or this disclosure, we're happy to help.
+          Reach us at <a href="mailto:hello@toolaroo.com" class="text-blue-600 hover:underline">hello@toolaroo.com</a>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

@@ -27,15 +27,6 @@ const { title, description, children, seoProps = {} } = Astro.props;
     {seoProps.schema && (
       <script type="application/ld+json" set:html={JSON.stringify(seoProps.schema)} />
     )}
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2BKBV90W1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-J2BKBV90W1');
-    </script>
   </head>
 
   <body class="bg-slate-50 min-h-screen flex flex-col">
@@ -92,8 +83,12 @@ const { title, description, children, seoProps = {} } = Astro.props;
             </ul>
           </div>
         </div>
-        <div class="border-t border-slate-700 pt-8 text-sm text-center text-slate-400">
+        <div class="border-t border-slate-700 pt-8 text-sm text-center text-slate-400 space-y-2">
           <p>&copy; 2026 Toolaroo. All rights reserved. | Discover AI Tools Directory</p>
+          <p class="flex flex-wrap justify-center gap-x-4 gap-y-1">
+            <a href="/privacy-policy/" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/affiliate-disclosure/" class="hover:text-white transition-colors">Affiliate Disclosure</a>
+          </p>
         </div>
       </div>
     </footer>

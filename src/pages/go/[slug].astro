@@ -1,0 +1,60 @@
+---
+import tools from '../../data/tools.js';
+
+export async function getStaticPaths() {
+  return tools.map(tool => ({
+    params: { slug: tool.slug }
+  }));
+}
+
+const { slug } = Astro.params;
+const tool = tools.find(t => t.slug === slug);
+
+if (!tool) {
+  return Astro.redirect('/404/');
+}
+
+const destination = tool.affiliateUrl || tool.url;
+const hasAffiliate = !!tool.affiliateUrl;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Redirecting to {tool.name}...</title>
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+
+    <!-- GA4 - track affiliate/outbound click before redirect -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J2BKBV90W1"></script>
+    <script define:vars={{ toolName: tool.name, toolCategory: tool.category, destination, hasAffiliate }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J2BKBV90W1');
+
+      gtag('event', hasAffiliate ? 'affiliate_click' : 'outbound_click', {
+        'tool_name': toolName,
+        'tool_category': toolCategory,
+        'destination_url': destination,
+        'has_affiliate': hasAffiliate
+      });
+
+      // Redirect after brief delay to allow GA4 event to fire
+      setTimeout(() => {
+        window.location.replace(destination);
+      }, 150);
+    </script>
+  </head>
+  <body style="font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f8fafc;">
+    <div style="text-align: center; padding: 2rem;">
+      <p style="color: #64748b; font-size: 1rem; margin: 0 0 0.5rem;">
+        Redirecting you to <strong style="color: #1e293b;">{tool.name}</strong>...
+      </p>
+      <p style="color: #94a3b8; font-size: 0.875rem; margin: 0;">
+        If you're not redirected automatically, <a href={destination} style="color: #3b82f6;">click here</a>.
+      </p>
+    </div>
+  </body>
+</html>
