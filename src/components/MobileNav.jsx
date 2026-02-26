@@ -57,14 +57,14 @@ export default function MobileNav() {
               Home
             </a>
             <a
-              href="/category"
+              href="/category/"
               onClick={closeMenu}
               className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
             >
               Categories
             </a>
             <a
-              href="/tools"
+              href="/tools/"
               onClick={closeMenu}
               className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
             >

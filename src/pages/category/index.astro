@@ -10,11 +10,11 @@ const schemaData = {
   "@type": "CollectionPage",
   "name": "AI Tool Categories - Toolaroo",
   "description": "Browse all AI tool categories and find the perfect tool for your needs",
-  "url": "https://toolaroo.com/category",
+  "url": "https://www.toolaroo.net/category/",
   "hasPart": categories.map(cat => ({
     "@type": "Collection",
     "name": cat.name,
-    "url": `https://toolaroo.com/category/${cat.slug}`,
+    "url": `https://www.toolaroo.net/category/${cat.slug}/`,
     "numberOfItems": cat.count
   }))
 };

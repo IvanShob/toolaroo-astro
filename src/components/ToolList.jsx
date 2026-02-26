@@ -104,7 +104,7 @@ export default function ToolList({ category, featuredOnly = false }) {
             {/* Footer with Actions */}
             <div className="px-6 py-4 pt-6 border-t border-slate-100 bg-slate-50 flex flex-col sm:flex-row gap-2">
               <a
-                href={`/tool/${tool.slug}`}
+                href={`/tool/${tool.slug}/`}
                 className="flex-1 text-center text-sm font-semibold px-4 py-2.5 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 border border-blue-200 hover:border-blue-300 transition-colors"
               >
                 Learn More

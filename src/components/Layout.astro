@@ -52,8 +52,8 @@ const { title, description, children, seoProps = {} } = Astro.props;
           <!-- Desktop Navigation -->
           <nav class="hidden sm:flex items-center gap-8">
             <a href="/" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Home</a>
-            <a href="/category" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Categories</a>
-            <a href="/tools" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">All Tools</a>
+            <a href="/category/" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Categories</a>
+            <a href="/tools/" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">All Tools</a>
           </nav>
           <!-- Mobile Navigation -->
           <MobileNav client:load />
@@ -78,15 +78,15 @@ const { title, description, children, seoProps = {} } = Astro.props;
             <h4 class="text-white font-semibold mb-4">Quick Links</h4>
             <ul class="space-y-2 text-sm">
               <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-              <li><a href="/category" class="hover:text-white transition-colors">Categories</a></li>
-              <li><a href="/tools" class="hover:text-white transition-colors">All Tools</a></li>
-              <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+              <li><a href="/category/" class="hover:text-white transition-colors">Categories</a></li>
+              <li><a href="/tools/" class="hover:text-white transition-colors">All Tools</a></li>
+              <li><a href="/about/" class="hover:text-white transition-colors">About</a></li>
             </ul>
           </div>
           <div>
             <h4 class="text-white font-semibold mb-4">Support</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/contact/" class="hover:text-white transition-colors">Contact</a></li>
               <li><a href="mailto:hello@toolaroo.com" class="hover:text-white transition-colors">Email</a></li>
               <li><a href="mailto:suggest@toolaroo.com" class="hover:text-white transition-colors">Suggest Tool</a></li>
             </ul>

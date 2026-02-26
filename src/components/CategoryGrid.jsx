@@ -21,7 +21,7 @@ export default function CategoryGrid({ categories }) {
       {categories.map(cat => (
         <a
           key={cat.slug}
-          href={`/category/${cat.slug}`}
+          href={`/category/${cat.slug}/`}
           className="group p-8 bg-white rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-start border border-slate-200 hover:border-blue-300 cursor-pointer"
         >
           {/* Icon */}
