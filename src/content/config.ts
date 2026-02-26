@@ -27,6 +27,7 @@ const toolsCollection = defineCollection({
     name: z.string().optional(),
     pricingModel: z.enum(['Free', 'Freemium', 'Paid']).optional(),
     rating: z.number().optional(),
+    affiliateUrl: z.string().url().optional(),
   }),
 });
 

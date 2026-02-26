@@ -779,6 +779,44 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { name: "Scalenut", description: "AI-powered SEO content platform for keyword research, content planning, and AI writing optimized for search rankings.", category: "ai-marketing", featured: false, rank: 3, slug: "scalenut", url: "https://www.scalenut.com", pricingModel: "Paid", rating: 4.6 },
   { name: "Frase", description: "AI SEO content research and writing tool that analyzes top-ranking pages and generates optimized content briefs.", category: "ai-marketing", featured: false, rank: 4, slug: "frase", url: "https://www.frase.io", pricingModel: "Paid", rating: 4.5 },
   { name: "Clearscope", description: "AI content optimization platform that grades your content against top-ranking competitors and suggests improvements.", category: "ai-marketing", featured: false, rank: 5, slug: "clearscope", url: "https://www.clearscope.io", pricingModel: "Paid", rating: 4.7 },
+
+  // Writing new
+  { name: "Rytr", description: "Affordable AI writing assistant with 40+ use case templates for quick content generation in 30+ languages.", category: "writing", featured: false, rank: 8, slug: "rytr", url: "https://rytr.me", pricingModel: "Freemium", rating: 4.3 },
+  { name: "Wordtune", description: "AI writing companion that rewrites and improves sentences in real time with tone and clarity suggestions.", category: "writing", featured: false, rank: 9, slug: "wordtune", url: "https://www.wordtune.com", pricingModel: "Freemium", rating: 4.4 },
+
+  // Video new
+  { name: "HeyGen", description: "AI video generation platform with realistic avatars, voice cloning, and multilingual video dubbing for business.", category: "video", featured: false, rank: 3, slug: "heygen", url: "https://www.heygen.com", pricingModel: "Freemium", rating: 4.6 },
+  { name: "Pika", description: "AI video generation tool that creates and edits high-quality videos from text prompts and images.", category: "video", featured: false, rank: 4, slug: "pika", url: "https://pika.art", pricingModel: "Freemium", rating: 4.3 },
+
+  // Image new
+  { name: "Leonardo AI", description: "AI image generation platform for creating consistent, high-quality creative assets with fine-tuned models.", category: "image", featured: false, rank: 4, slug: "leonardo-ai", url: "https://leonardo.ai", pricingModel: "Freemium", rating: 4.6 },
+  { name: "Ideogram", description: "AI image generator specialized in accurate text rendering within images and creative visual compositions.", category: "image", featured: false, rank: 5, slug: "ideogram", url: "https://ideogram.ai", pricingModel: "Freemium", rating: 4.5 },
+
+  // Design new
+  { name: "Framer AI", description: "AI-powered web design tool that generates complete, responsive websites from text prompts with built-in CMS.", category: "design", featured: false, rank: 4, slug: "framer-ai", url: "https://www.framer.com", pricingModel: "Freemium", rating: 4.5 },
+  { name: "Adobe Express", description: "AI-powered design and content creation tool from Adobe for quick social, print, and web assets.", category: "design", featured: false, rank: 5, slug: "adobe-express", url: "https://www.adobe.com/express", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Locofy", description: "AI design-to-code tool that converts Figma and Adobe XD designs into production-ready React and HTML code.", category: "design", featured: false, rank: 6, slug: "locofy", url: "https://www.locofy.ai", pricingModel: "Freemium", rating: 4.3 },
+
+  // Productivity new
+  { name: "ClickUp AI", description: "AI-powered project management platform with task automation, AI writing assistance, and 1000+ workflow integrations.", category: "productivity", featured: false, rank: 4, slug: "clickup-ai", url: "https://clickup.com", pricingModel: "Freemium", rating: 4.5, affiliateUrl: null },
+  { name: "Monday AI", description: "AI-enhanced work management platform for project planning, team collaboration, and workflow automation.", category: "productivity", featured: false, rank: 5, slug: "monday-ai", url: "https://monday.com", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Reclaim AI", description: "AI scheduling assistant that automatically protects focus time, manages meetings, and optimizes your calendar.", category: "productivity", featured: false, rank: 6, slug: "reclaim-ai", url: "https://reclaim.ai", pricingModel: "Freemium", rating: 4.6 },
+
+  // Audio new
+  { name: "Speechify", description: "AI text-to-speech app that reads any content aloud at high speed with natural voices and voice cloning.", category: "audio", featured: false, rank: 9, slug: "speechify", url: "https://speechify.com", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Resemble AI", description: "AI voice cloning and speech synthesis platform for creating custom voice personas and real-time voice generation.", category: "audio", featured: false, rank: 10, slug: "resemble-ai", url: "https://www.resemble.ai", pricingModel: "Paid", rating: 4.4 },
+
+  // Research new
+  { name: "You.com", description: "AI-powered search engine and assistant combining web search with AI chat, code generation, and image creation.", category: "research", featured: false, rank: 3, slug: "you-com", url: "https://you.com", pricingModel: "Freemium", rating: 4.3 },
+  { name: "Semantic Scholar", description: "Free AI-powered academic research tool that indexes 200M+ papers with AI summaries and citation analysis.", category: "research", featured: false, rank: 4, slug: "semantic-scholar", url: "https://www.semanticscholar.org", pricingModel: "Free", rating: 4.4 },
+
+  // Coding new
+  { name: "Amazon CodeWhisperer", description: "Amazon's AI coding assistant with real-time code suggestions, security scanning, and deep AWS SDK awareness.", category: "coding", featured: false, rank: 4, slug: "amazon-codewhisperer", url: "https://aws.amazon.com/codewhisperer", pricingModel: "Freemium", rating: 4.3 },
+
+  // AI Marketing new
+  { name: "SEMrush AI", description: "All-in-one AI SEO and marketing platform for keyword research, competitor analysis, content optimization, and site audits.", category: "ai-marketing", featured: false, rank: 2, slug: "semrush-ai", url: "https://www.semrush.com", pricingModel: "Paid", rating: 4.7 },
+  { name: "MarketMuse", description: "AI content intelligence platform for content planning, topic modeling, and competitive content gap analysis.", category: "ai-marketing", featured: false, rank: 6, slug: "marketmuse", url: "https://www.marketmuse.com", pricingModel: "Paid", rating: 4.5 },
+  { name: "Rank Math", description: "AI-powered WordPress SEO plugin with real-time content optimization, schema markup, and rank tracking built-in.", category: "ai-marketing", featured: false, rank: 7, slug: "rank-math", url: "https://rankmath.com", pricingModel: "Freemium", rating: 4.7 },
 ];
 
 export default tools;

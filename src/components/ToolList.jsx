@@ -11,6 +11,7 @@ const categoryEmojis = {
   productivity: '⚡',
   research: '🔬',
   design: '🖼️',
+  'ai-marketing': '📊',
 };
 
 export default function ToolList({ category, featuredOnly = false }) {
@@ -125,7 +126,7 @@ export default function ToolList({ category, featuredOnly = false }) {
                 Learn More
               </a>
               <a
-                href={tool.url}
+                href={`/go/${tool.slug}/`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 text-center text-sm font-semibold px-4 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md"

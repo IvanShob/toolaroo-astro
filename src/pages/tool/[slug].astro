@@ -32,25 +32,74 @@ if (!tool) {
 
 const { data } = tool;
 
+const categoryToAppCategory: Record<string, string> = {
+  writing: 'Writing & Content Creation',
+  image: 'Image Generation & Editing',
+  coding: 'Developer Tools & Code Assistance',
+  video: 'Video Generation & Editing',
+  audio: 'Audio & Voice Generation',
+  productivity: 'Productivity & Workflow Automation',
+  research: 'Research & Knowledge Management',
+  design: 'Design & UI/UX Tools',
+  'ai-marketing': 'Marketing & SEO',
+};
+const appCategory = categoryToAppCategory[data.category || ''] || 'Productivity';
+
+const categoryLabel: Record<string, string> = {
+  writing: 'Writing',
+  image: 'Image',
+  coding: 'Coding',
+  video: 'Video',
+  audio: 'Audio',
+  productivity: 'Productivity',
+  research: 'Research',
+  design: 'Design',
+  'ai-marketing': 'AI Marketing',
+};
+const catLabel = categoryLabel[data.category || ''] || (data.category || 'Tools');
+const catSlug = data.category || 'writing';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.toolaroo.net/" },
+    { "@type": "ListItem", "position": 2, "name": catLabel, "item": `https://www.toolaroo.net/category/${catSlug}/` },
+    { "@type": "ListItem", "position": 3, "name": data.title, "item": `https://www.toolaroo.net/tool/${toolId}/` },
+  ]
+};
+
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": data.title,
   "description": data.description,
   "url": data.url,
-  "applicationCategory": "Productivity"
+  "applicationCategory": appCategory,
+  "operatingSystem": "Web",
 };
 
 const seoProps = {
   title: `${data.title} - AI Tool | Toolaroo`,
   description: data.description,
   type: "article",
-  schema: schemaData
+  schema: [schemaData, breadcrumbSchema]
 };
 ---
 
 <Layout title={data.title} description={data.description} seoProps={seoProps}>
-  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+  <!-- Breadcrumb -->
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-0" aria-label="Breadcrumb">
+    <ol class="flex items-center gap-2 text-sm text-slate-500">
+      <li><a href="/" class="hover:text-blue-600 transition-colors">Home</a></li>
+      <li class="text-slate-300">/</li>
+      <li><a href={`/category/${catSlug}/`} class="hover:text-blue-600 transition-colors capitalize">{catLabel}</a></li>
+      <li class="text-slate-300">/</li>
+      <li class="text-slate-900 font-medium truncate">{data.title}</li>
+    </ol>
+  </nav>
+
+  <section class="py-12 sm:py-20 pb-3 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Tool Logo and Title in Row -->
       <div class="flex items-center justify-center gap-4 mb-6">
@@ -105,7 +154,7 @@ const seoProps = {
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row gap-4">
         <a
-          href={data.url}
+          href={`/go/${toolId}/`}
           target="_blank"
           rel="noopener noreferrer"
           class="flex-1 text-center px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg hover:shadow-xl"
