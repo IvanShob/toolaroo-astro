@@ -26,10 +26,10 @@ export const GET: APIRoute = ({ params, request }) => {
   // Static pages
   const staticPages = [
     { url: '/', priority: 1.0, changefreq: 'weekly' },
-    { url: '/about', priority: 0.6, changefreq: 'monthly' },
-    { url: '/contact', priority: 0.6, changefreq: 'monthly' },
-    { url: '/tools', priority: 0.8, changefreq: 'weekly' },
-    { url: '/category', priority: 0.9, changefreq: 'weekly' },
+    { url: '/about/', priority: 0.6, changefreq: 'monthly' },
+    { url: '/contact/', priority: 0.6, changefreq: 'monthly' },
+    { url: '/tools/', priority: 0.8, changefreq: 'weekly' },
+    { url: '/category/', priority: 0.9, changefreq: 'weekly' },
   ];
 
   staticPages.forEach(page => {
@@ -44,7 +44,7 @@ export const GET: APIRoute = ({ params, request }) => {
   // Category pages
   categories.forEach(category => {
     sitemapEntries.push({
-      loc: `${SITE_URL}/category/${category.slug}`,
+      loc: `${SITE_URL}/category/${category.slug}/`,
       changefreq: 'weekly',
       priority: 0.9,
       lastmod: new Date().toISOString(),
@@ -54,7 +54,7 @@ export const GET: APIRoute = ({ params, request }) => {
   // Tool detail pages
   tools.forEach(tool => {
     sitemapEntries.push({
-      loc: `${SITE_URL}/tool/${tool.slug}`,
+      loc: `${SITE_URL}/tool/${tool.slug}/`,
       changefreq: 'weekly',
       priority: 0.8,
       lastmod: new Date().toISOString(),
