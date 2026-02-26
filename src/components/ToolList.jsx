@@ -89,11 +89,26 @@ export default function ToolList({ category, featuredOnly = false }) {
               )}
             </div>
 
-            {/* Category & Badge */}
-            <div className="px-6 pb-3">
+            {/* Category, Pricing & Rating */}
+            <div className="px-6 pb-3 flex items-center gap-2 flex-wrap">
               <span className="inline-block px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg capitalize">
                 {categoryEmojis[tool.category] || '📦'} {tool.category}
               </span>
+              {tool.pricingModel && (
+                <span className={`inline-block px-2.5 py-1 text-xs font-medium rounded-lg ${
+                  tool.pricingModel === 'Free' ? 'bg-green-100 text-green-700' :
+                  tool.pricingModel === 'Freemium' ? 'bg-blue-100 text-blue-700' :
+                  'bg-purple-100 text-purple-700'
+                }`}>
+                  {tool.pricingModel}
+                </span>
+              )}
+              {tool.rating && (
+                <span className="ml-auto flex items-center gap-0.5">
+                  <span className="text-amber-400 text-sm leading-none">★</span>
+                  <span className="text-xs font-semibold text-slate-700">{tool.rating}</span>
+                </span>
+              )}
             </div>
 
             {/* Description */}

@@ -51,4 +51,6 @@ faqItems:
     answer: "Absolutely — with Pro or Enterprise plans, teams can create consistent, branded content."
   - question: "Can multiple users collaborate on the same design?"
     answer: "Yes, real-time editing and commenting allow seamless teamwork."
+pricingModel: Freemium
+rating: 4.7
 ---

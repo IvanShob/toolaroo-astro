@@ -26,9 +26,9 @@ useCases:
   - Daily communication (Slack, social media, messaging apps)
   - Team-wide writing consistency for companies
 pricing:
-  "Free Plan": "Grammar and spelling corrections, tone detection"
-  "Premium": "Full rewrites, advanced clarity, plagiarism detection, generative AI"
-  "Business": "Admin control, brand tone, team style guides, analytics"
+  "Free": "Grammar, spelling, tone detection — $0/mo"
+  "Premium – $12/mo": "Full AI rewrites, clarity, plagiarism checker, GrammarlyGO (billed annually)"
+  "Business – $15/user/mo": "Brand tone, team style guides, admin analytics, SSO"
 pros:
   - Best grammar checker on the market
   - Easy to use with seamless integration
@@ -55,4 +55,6 @@ faqItems:
     answer: "Yes — Premium and GrammarlyGO provide powerful rewriting capabilities."
   - question: "Can it be used in Google Docs and Gmail?"
     answer: "Absolutely — it integrates directly through browser extensions."
+pricingModel: Freemium
+rating: 4.7
 ---

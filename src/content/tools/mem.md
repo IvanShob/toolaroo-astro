@@ -55,4 +55,6 @@ faqItems:
     answer: "It uses encrypted cloud storage, with added security for team plans."
   - question: "Does Mem replace tools like Notion or Obsidian?"
     answer: "It can for many users, especially those who prefer automation over manual organisation."
+pricingModel: Freemium
+rating: 4.3
 ---

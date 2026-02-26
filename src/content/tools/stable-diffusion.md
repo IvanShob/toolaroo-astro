@@ -51,4 +51,6 @@ faqItems:
     answer: "Yes, with the appropriate license and usage plan."
   - question: "Can I fine-tune the model for my specific style?"
     answer: "Absolutely — Stable Diffusion supports training and custom checkpoints."
+pricingModel: Free
+rating: 4.3
 ---

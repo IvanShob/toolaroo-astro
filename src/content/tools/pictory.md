@@ -51,4 +51,6 @@ faqItems:
     answer: "Yes — captions are generated automatically and are fully editable."
   - question: "Is Pictory good for social media content?"
     answer: "Yes — it's optimized for creating engaging short-form videos and marketing clips."
+pricingModel: Paid
+rating: 4.6
 ---

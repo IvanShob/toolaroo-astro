@@ -27,9 +27,10 @@ useCases:
   - Social media growth campaigns
   - Marketing automation and content pipelines
 pricing:
-  "Free Plan": "Limited usage, great for testing"
-  "Pro Plan": "Unlimited generations, workflows, chat"
-  "Team/Enterprise Plan": "Collaboration features, enhanced workflows, SSO, API"
+  "Free": "2,000 words/mo, 90+ templates — $0/mo"
+  "Starter – $36/mo": "Unlimited words, 5 users, Workflows, Chat"
+  "Advanced – $186/mo": "15 users, advanced workflows, API access"
+  "Enterprise": "Custom users, SSO, dedicated support (custom pricing)"
 pros:
   - Extremely user-friendly
   - Huge library of ready-made templates
@@ -59,4 +60,6 @@ faqItems:
     answer: "Marketers, founders, agencies, and content creators who need quick, consistent content."
   - question: "Does it offer a free plan?"
     answer: "Yes — Copy.ai has a free plan ideal for testing before upgrading."
+pricingModel: Freemium
+rating: 4.7
 ---

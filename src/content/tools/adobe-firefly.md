@@ -51,4 +51,6 @@ faqItems:
     answer: "Absolutely — it enhances efficiency and creative output for professional designers."
   - question: "Can Firefly generate photorealistic images?"
     answer: "Yes, it is optimized for both realistic and stylized visual content."
+pricingModel: Freemium
+rating: 4.1
 ---

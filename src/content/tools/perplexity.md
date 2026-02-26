@@ -56,4 +56,6 @@ faqItems:
     answer: "Yes — you can upload PDFs, documents, and more."
   - question: "How accurate is it?"
     answer: "It's one of the most reliable AI search tools because it grounds every answer in real-time sources."
+pricingModel: Freemium
+rating: 4.6
 ---

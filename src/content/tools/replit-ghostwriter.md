@@ -50,4 +50,6 @@ faqItems:
     answer: "It can suggest fixes and improvements but cannot fully replace human review."
   - question: "Does it support team collaboration?"
     answer: "Yes — offers collaborative coding suggestions and documentation support."
+pricingModel: Paid
+rating: 4.3
 ---

@@ -58,4 +58,6 @@ faqItems:
     answer: "Absolutely. Descript is one of the most popular podcast editing tools on the market."
   - question: "Does it support team workflows?"
     answer: "Yes — shared workspaces, comments, versions, and collaborative editing are built-in."
+pricingModel: Freemium
+rating: 4.6
 ---

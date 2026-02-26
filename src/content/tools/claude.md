@@ -27,10 +27,10 @@ useCases:
   - Legal, technical, or scientific explanation
   - Structured data extraction or reformatting
 pricing:
-  "Claude Free": "Access to the basic model with limited usage"
-  "Claude Pro": "Faster responses, higher limits, premium model access"
-  "Claude Team": "Collaboration features + admin tools"
-  "Anthropic API": "Pay-as-you-go usage for developers and apps"
+  "Free": "Claude 3.5 Haiku, limited usage — $0/mo"
+  "Pro – $20/mo": "Claude Opus 4.6, higher limits, Projects, priority access"
+  "Team – $25/user/mo": "Shared Projects, admin controls, expanded context"
+  "API (Pay-as-you-go)": "Developer access from $0.003/1K tokens (Haiku)"
 pros:
   - Best-in-class reasoning and clarity
   - Extremely long context window
@@ -57,4 +57,6 @@ faqItems:
     answer: "Absolutely. It produces clean, coherent, and natural prose with minimal editing."
   - question: "Does Claude work well for coding?"
     answer: "Yes, though not as code-specialised as tools like Copilot or Cursor."
+pricingModel: Freemium
+rating: 4.7
 ---

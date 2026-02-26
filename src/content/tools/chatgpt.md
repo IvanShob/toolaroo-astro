@@ -28,11 +28,10 @@ useCases:
   - Email and business communication
   - UX writing, product descriptions, SEO optimisation
 pricing:
-  "Free Plan": "Limited features, slower model, capped messages"
-  "ChatGPT Plus": "Access to GPT-5.1, faster speeds, priority access"
-  "ChatGPT Team": "Collaboration spaces + enhanced privacy"
-  "ChatGPT Enterprise": "Unlimited usage, admin controls, highest accuracy"
-  "API Pricing": "Pay-as-you-go for developers"
+  "Free": "GPT-4o mini, limited messages, core features — $0/mo"
+  "ChatGPT Plus – $20/mo": "GPT-4o, unlimited messages, advanced reasoning, image analysis"
+  "ChatGPT Team – $25/user/mo": "Collaboration spaces, enhanced privacy, higher limits"
+  "ChatGPT Enterprise": "Unlimited usage, custom security, admin controls (custom pricing)"
 pros:
   - Extremely versatile — not limited to writing
   - Best-in-class reasoning and accuracy
@@ -59,4 +58,6 @@ faqItems:
     answer: "Yes — PDFs, documents, images, and datasets (paid plans)."
   - question: "Is ChatGPT safe for business use?"
     answer: "Enterprise plans provide enhanced security and data privacy."
+pricingModel: Freemium
+rating: 4.7
 ---

@@ -48,4 +48,6 @@ faqItems:
     answer: "Yes, affiliate partnerships are available."
   - question: "Does Writesonic support multi-language?"
     answer: "Yes, it supports multiple languages for global campaigns."
+pricingModel: Freemium
+rating: 4.7
 ---

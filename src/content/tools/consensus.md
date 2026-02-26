@@ -54,4 +54,6 @@ faqItems:
     answer: "Absolutely — it saves time and provides citation-ready sources."
   - question: "Does it summarise full papers or only abstracts?"
     answer: "It analyses both where available and extracts key conclusions."
+pricingModel: Freemium
+rating: 4.5
 ---

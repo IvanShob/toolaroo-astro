@@ -54,4 +54,6 @@ faqItems:
     answer: "Yes — that's one of its strongest features."
   - question: "Does it support rewriting and tone changes?"
     answer: "Yes, including clarity, style, and length adjustments."
+pricingModel: Freemium
+rating: 4.7
 ---

@@ -56,4 +56,6 @@ faqItems:
     answer: "Absolutely — startups, agencies, and teams use it for investor decks and client materials."
   - question: "Do I need design experience to use Tome?"
     answer: "No — Tome handles layouts and visuals for you."
+pricingModel: Freemium
+rating: 4.5
 ---

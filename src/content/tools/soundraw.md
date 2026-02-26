@@ -58,4 +58,6 @@ faqItems:
     answer: "Absolutely — it's ideal for video creators and safe from copyright claims."
   - question: "Can I generate unlimited songs?"
     answer: "Yes with paid plans, depending on subscription level."
+pricingModel: Paid
+rating: 4.4
 ---

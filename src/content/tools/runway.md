@@ -56,4 +56,6 @@ faqItems:
     answer: "Absolutely. Filmmakers use it for concepting, pre-viz, and even full creative scenes."
   - question: "Does Runway require installation?"
     answer: "No — everything runs in the browser."
+pricingModel: Freemium
+rating: 4.3
 ---

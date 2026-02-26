@@ -51,4 +51,6 @@ faqItems:
     answer: "Yes — inpainting lets you modify specific areas while keeping the rest intact."
   - question: "Can I choose different art styles?"
     answer: "Absolutely — photorealistic, digital painting, sketch, cartoon, and more."
+pricingModel: Freemium
+rating: 4.4
 ---

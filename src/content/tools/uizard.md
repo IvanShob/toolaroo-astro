@@ -52,4 +52,6 @@ faqItems:
     answer: "Yes — export options include HTML/CSS and design files."
   - question: "Does Uizard support team collaboration?"
     answer: "Yes — real-time editing, commenting, and sharing are supported."
+pricingModel: Freemium
+rating: 4.3
 ---

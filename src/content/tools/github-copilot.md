@@ -59,4 +59,6 @@ faqItems:
     answer: "No — it requires cloud-based AI models."
   - question: "Can Copilot understand my entire project?"
     answer: "Yes — the Business and Enterprise versions support enhanced context windows."
+pricingModel: Paid
+rating: 4.5
 ---

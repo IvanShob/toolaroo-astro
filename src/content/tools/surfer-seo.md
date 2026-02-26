@@ -53,4 +53,6 @@ faqItems:
     answer: "Yes — it integrates with WordPress, Google Docs, and other platforms."
   - question: "What makes Surfer SEO unique?"
     answer: "Its AI-powered SERP analysis and content editor combine to give writers real-time SEO guidance without requiring deep SEO knowledge."
+pricingModel: Paid
+rating: 4.8
 ---

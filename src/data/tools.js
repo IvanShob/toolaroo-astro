@@ -8,6 +8,8 @@ const tools = [
     rank: 1,
     slug: "chatgpt",
     url: "https://chat.openai.com",
+    pricingModel: "Freemium",
+    rating: 4.7,
     longDescription: `ChatGPT is one of the most powerful and widely used AI models available today. Developed by OpenAI, it acts as a versatile language assistant that can understand context, generate high-quality text, write code, analyse information, create ideas, automate tasks, and help users work significantly faster. Thanks to its natural language abilities, ChatGPT feels more like collaborating with a human expert than using traditional software.
 
 The tool can be applied to nearly every digital workflow — writing content, summarising research, building applications, drafting emails, improving communication, producing creative assets, and even solving complex technical problems. Its large-scale training on text, code, and real-world data allows it to reason about instructions, follow constraints, and provide contextually aware answers that maintain coherence across long conversations.
@@ -90,6 +92,8 @@ Whether you need long-form content, concise answers, structured data, creative i
     rank: 2,
     slug: "claude",
     url: "https://www.anthropic.com/claude",
+    pricingModel: "Freemium",
+    rating: 4.7,
     longDescription: `Claude is a next-generation AI assistant created by Anthropic, known for its deep reasoning abilities, long-context understanding, and safety-focused design. Unlike many AI writing tools that primarily generate text, Claude is built as a high-level cognitive assistant — capable of analysing long documents, summarising research, generating structured content, and solving complex tasks with impressive clarity.
 
 One of Claude's biggest advantages is its ability to process extremely long inputs. Thanks to its extended context window, Claude can read full PDFs, research papers, technical documentation, or entire books and still respond with accurate, coherent summaries or insights. This makes it especially valuable for researchers, analysts, writers, students, and knowledge-intensive professionals.
@@ -172,6 +176,8 @@ Combined with its premium reasoning performance, long context, and reliability, 
     rank: 3,
     slug: "grammarly",
     url: "https://www.grammarly.com",
+    pricingModel: "Freemium",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://www.grammarly.com/affiliates - up to $20/premium signup
     longDescription: `Grammarly is one of the most widely used AI writing assistants in the world, trusted by millions of writers, students, professionals, and teams to improve clarity, correctness, and communication effectiveness. What started as a grammar-checking tool has evolved into a powerful AI writing platform that enhances tone, style, structure, and intent across every type of written content.
 
@@ -253,6 +259,8 @@ The platform's accuracy and ease of use make it a must-have productivity tool fo
     rank: 4,
     slug: "jasper",
     url: "https://www.jasper.ai",
+    pricingModel: "Paid",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://www.jasper.ai/affiliates - ~30% recurring commission
     longDescription: `Jasper (formerly known as Jarvis) is one of the most powerful AI writing tools built specifically for marketing teams and content creators who need to produce large amounts of high-quality text quickly. Unlike generic AI writing assistants, Jasper focuses heavily on brand voice, conversion-oriented copy, and professional content workflows, making it a favorite among agencies, startups, and enterprise teams.
 
@@ -336,6 +344,8 @@ Overall, Jasper stands out for anyone who creates content professionally—not j
     rank: 5,
     slug: "copy-ai",
     url: "https://www.copy.ai",
+    pricingModel: "Freemium",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://www.copy.ai/affiliates
     longDescription: `Copy.ai is one of the most widely used AI writing tools, known for its simplicity, speed, and marketing-focused templates. The platform helps individuals and teams rapidly generate digital content—from email sequences and ad copy to product descriptions, blog posts, and social media updates—without requiring deep writing or marketing skills.
 
@@ -422,7 +432,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 6,
     slug: "dalle",
-    url: "https://openai.com/dall-e"
+    url: "https://openai.com/dall-e",
+    pricingModel: "Freemium",
+    rating: 4.4,
   },
   { 
     name: "MidJourney", 
@@ -431,7 +443,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 7,
     slug: "midjourney",
-    url: "https://www.midjourney.com"
+    url: "https://www.midjourney.com",
+    pricingModel: "Paid",
+    rating: 4.5,
   },
   { 
     name: "Stable Diffusion", 
@@ -440,7 +454,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 8,
     slug: "stable-diffusion",
-    url: "https://stability.ai"
+    url: "https://stability.ai",
+    pricingModel: "Free",
+    rating: 4.3,
   },
   { 
     name: "Canva AI", 
@@ -450,6 +466,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 9,
     slug: "canva-ai",
     url: "https://www.canva.com",
+    pricingModel: "Freemium",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://www.canva.com/affiliates - ~$36/new Pro signup
   },
   {
@@ -459,7 +477,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 10,
     slug: "adobe-firefly",
-    url: "https://www.adobe.com/sensei.html"
+    url: "https://www.adobe.com/sensei.html",
+    pricingModel: "Freemium",
+    rating: 4.1,
   },
 
   // Coding
@@ -470,7 +490,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 11,
     slug: "github-copilot",
-    url: "https://github.com/features/copilot"
+    url: "https://github.com/features/copilot",
+    pricingModel: "Paid",
+    rating: 4.5,
   },
   { 
     name: "Cursor", 
@@ -479,7 +501,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 12,
     slug: "cursor",
-    url: "https://www.cursor.so"
+    url: "https://www.cursor.so",
+    pricingModel: "Freemium",
+    rating: 4.6,
   },
   { 
     name: "Replit Ghostwriter", 
@@ -488,7 +512,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 13,
     slug: "replit-ghostwriter",
-    url: "https://replit.com/site/ghostwriter"
+    url: "https://replit.com/site/ghostwriter",
+    pricingModel: "Paid",
+    rating: 4.3,
   },
   { 
     name: "Codeium", 
@@ -497,7 +523,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 14,
     slug: "codeium",
-    url: "https://www.codeium.com"
+    url: "https://www.codeium.com",
+    pricingModel: "Free",
+    rating: 4.7,
   },
   { 
     name: "Tabnine", 
@@ -506,7 +534,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 15,
     slug: "tabnine",
-    url: "https://www.tabnine.com"
+    url: "https://www.tabnine.com",
+    pricingModel: "Freemium",
+    rating: 4.4,
   },
 
   // Video
@@ -517,7 +547,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 16,
     slug: "runway",
-    url: "https://runwayml.com"
+    url: "https://runwayml.com",
+    pricingModel: "Freemium",
+    rating: 4.3,
   },
   { 
     name: "Synthesia", 
@@ -527,6 +559,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 17,
     slug: "synthesia",
     url: "https://www.synthesia.io",
+    pricingModel: "Paid",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://www.synthesia.io/affiliates
   },
   {
@@ -537,6 +571,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 18,
     slug: "descript",
     url: "https://www.descript.com",
+    pricingModel: "Freemium",
+    rating: 4.6,
     affiliateUrl: null, // TODO: Sign up at https://www.descript.com/affiliates
   },
   {
@@ -547,6 +583,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 19,
     slug: "pictory",
     url: "https://pictory.ai",
+    pricingModel: "Paid",
+    rating: 4.6,
     affiliateUrl: null, // TODO: Sign up at https://pictory.ai/affiliates - ~20% recurring
   },
 
@@ -558,7 +596,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: true, 
     rank: 20,
     slug: "elevenlabs",
-    url: "https://elevenlabs.io"
+    url: "https://elevenlabs.io",
+    pricingModel: "Freemium",
+    rating: 4.7,
   },
   { 
     name: "Murf.ai", 
@@ -568,6 +608,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 21,
     slug: "murf-ai",
     url: "https://murf.ai",
+    pricingModel: "Freemium",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://murf.ai/affiliates
   },
   {
@@ -577,7 +619,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 22,
     slug: "soundraw",
-    url: "https://soundraw.io"
+    url: "https://soundraw.io",
+    pricingModel: "Paid",
+    rating: 4.4,
   },
 
   // Productivity
@@ -588,7 +632,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 23,
     slug: "notion-ai",
-    url: "https://www.notion.so/product/ai"
+    url: "https://www.notion.so/product/ai",
+    pricingModel: "Freemium",
+    rating: 4.7,
   },
   { 
     name: "Tome", 
@@ -597,7 +643,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 24,
     slug: "tome",
-    url: "https://tome.app"
+    url: "https://tome.app",
+    pricingModel: "Freemium",
+    rating: 4.5,
   },
   { 
     name: "Otter.ai", 
@@ -606,7 +654,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 25,
     slug: "otter-ai",
-    url: "https://otter.ai"
+    url: "https://otter.ai",
+    pricingModel: "Freemium",
+    rating: 4.4,
   },
   { 
     name: "Mem", 
@@ -615,7 +665,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 26,
     slug: "mem",
-    url: "https://getmem.ai"
+    url: "https://getmem.ai",
+    pricingModel: "Freemium",
+    rating: 4.3,
   },
 
   // Research
@@ -626,7 +678,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 27,
     slug: "perplexity",
-    url: "https://www.perplexity.ai"
+    url: "https://www.perplexity.ai",
+    pricingModel: "Freemium",
+    rating: 4.6,
   },
   { 
     name: "Consensus", 
@@ -635,7 +689,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 28,
     slug: "consensus",
-    url: "https://www.consensus.app"
+    url: "https://www.consensus.app",
+    pricingModel: "Freemium",
+    rating: 4.5,
   },
   { 
     name: "Elicit", 
@@ -644,7 +700,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 29,
     slug: "elicit",
-    url: "https://elicit.org"
+    url: "https://elicit.org",
+    pricingModel: "Freemium",
+    rating: 4.4,
   },
 
   // Design
@@ -655,7 +713,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 30,
     slug: "uizard",
-    url: "https://uizard.io"
+    url: "https://uizard.io",
+    pricingModel: "Freemium",
+    rating: 4.3,
   },
   { 
     name: "Spline AI", 
@@ -664,7 +724,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     featured: false, 
     rank: 31, 
     slug: "spline-ai",
-    url: "https://spline.design"
+    url: "https://spline.design",
+    pricingModel: "Freemium",
+    rating: 4.5,
   },
 
   // AI Marketing
@@ -676,6 +738,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 1,
     slug: "writesonic",
     url: "https://writesonic.com",
+    pricingModel: "Freemium",
+    rating: 4.7,
     affiliateUrl: null, // TODO: Sign up at https://writesonic.com/affiliates - ~30% recurring
   },
   {
@@ -686,8 +750,35 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rank: 2,
     slug: "surfer-seo",
     url: "https://surferseo.com",
+    pricingModel: "Paid",
+    rating: 4.8,
     affiliateUrl: null, // TODO: Sign up at https://surferseo.com/affiliate - ~25% recurring
-  }
+  },
+
+  // Writing additions
+  { name: "QuillBot", description: "AI-powered paraphrasing and writing enhancement tool that rewrites, summarizes, and improves text.", category: "writing", featured: false, rank: 6, slug: "quillbot", url: "https://quillbot.com", pricingModel: "Freemium", rating: 4.6 },
+  { name: "Google Gemini", description: "Google's most capable AI model for text, code, images, and multimodal tasks across Google products.", category: "writing", featured: false, rank: 7, slug: "google-gemini", url: "https://gemini.google.com", pricingModel: "Freemium", rating: 4.5 },
+
+  // Design additions
+  { name: "Figma", description: "Collaborative design tool with AI-powered features for UI/UX design, prototyping, and design systems.", category: "design", featured: false, rank: 1, slug: "figma", url: "https://www.figma.com", pricingModel: "Freemium", rating: 4.7 },
+
+  // Audio additions
+  { name: "Play.ht", description: "AI text-to-speech platform with ultra-realistic voices and voice cloning for content creators and developers.", category: "audio", featured: false, rank: 4, slug: "play-ht", url: "https://play.ht", pricingModel: "Freemium", rating: 4.5 },
+  { name: "Aiva", description: "AI music composition tool that generates original royalty-free music for videos, games, and creative projects.", category: "audio", featured: false, rank: 5, slug: "aiva", url: "https://www.aiva.ai", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Beatoven", description: "AI music generator that creates mood-based, royalty-free background music for videos and podcasts.", category: "audio", featured: false, rank: 6, slug: "beatoven", url: "https://www.beatoven.ai", pricingModel: "Freemium", rating: 4.3 },
+  { name: "Soundful", description: "AI music generator for creating high-quality, royalty-free background music for content and streaming.", category: "audio", featured: false, rank: 7, slug: "soundful", url: "https://soundful.com", pricingModel: "Freemium", rating: 4.3 },
+  { name: "WellSaid Labs", description: "Enterprise-grade AI voice studio for creating professional voiceovers with realistic AI avatars.", category: "audio", featured: false, rank: 8, slug: "wellsaid-labs", url: "https://wellsaidlabs.com", pricingModel: "Paid", rating: 4.5 },
+
+  // Productivity additions
+  { name: "Fireflies.ai", description: "AI meeting assistant that automatically records, transcribes, and summarizes meetings from Zoom, Teams, and Google Meet.", category: "productivity", featured: false, rank: 5, slug: "fireflies-ai", url: "https://fireflies.ai", pricingModel: "Freemium", rating: 4.6 },
+  { name: "Notta", description: "AI transcription and meeting notes tool supporting 58 languages with real-time and file-based transcription.", category: "productivity", featured: false, rank: 6, slug: "notta", url: "https://www.notta.ai", pricingModel: "Freemium", rating: 4.5 },
+  { name: "Beautiful.ai", description: "AI presentation tool that automatically designs professional slides as you add content.", category: "productivity", featured: false, rank: 7, slug: "beautiful-ai", url: "https://www.beautiful.ai", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Evernote AI", description: "AI-enhanced note-taking app with intelligent search, content summarization, and AI writing assistance.", category: "productivity", featured: false, rank: 8, slug: "evernote-ai", url: "https://evernote.com", pricingModel: "Freemium", rating: 4.1 },
+
+  // AI Marketing additions
+  { name: "Scalenut", description: "AI-powered SEO content platform for keyword research, content planning, and AI writing optimized for search rankings.", category: "ai-marketing", featured: false, rank: 3, slug: "scalenut", url: "https://www.scalenut.com", pricingModel: "Paid", rating: 4.6 },
+  { name: "Frase", description: "AI SEO content research and writing tool that analyzes top-ranking pages and generates optimized content briefs.", category: "ai-marketing", featured: false, rank: 4, slug: "frase", url: "https://www.frase.io", pricingModel: "Paid", rating: 4.5 },
+  { name: "Clearscope", description: "AI content optimization platform that grades your content against top-ranking competitors and suggests improvements.", category: "ai-marketing", featured: false, rank: 5, slug: "clearscope", url: "https://www.clearscope.io", pricingModel: "Paid", rating: 4.7 },
 ];
 
 export default tools;

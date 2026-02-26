@@ -36,8 +36,12 @@ const { title, description, children, seoProps = {} } = Astro.props;
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div class="flex justify-between items-center">
           <a href="/" class="flex items-center gap-2">
-            <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Toolaroo 🛠️
+            <!-- Logomark: T in gradient box -->
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-sm">
+              <span class="text-white font-bold text-base leading-none select-none">T</span>
+            </div>
+            <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Toolaroo
             </span>
           </a>
           <!-- Desktop Navigation -->

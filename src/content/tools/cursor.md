@@ -59,4 +59,6 @@ faqItems:
     answer: "Yes — it explains code, fixes bugs, and guides learning."
   - question: "Does Cursor work offline?"
     answer: "No, AI features require internet access."
+pricingModel: Freemium
+rating: 4.6
 ---

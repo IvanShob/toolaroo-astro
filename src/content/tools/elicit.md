@@ -54,4 +54,6 @@ faqItems:
     answer: "It works best with academic research questions grounded in scientific literature."
   - question: "Does Elicit cite real studies?"
     answer: "Yes — all citations come from actual academic papers."
+pricingModel: Freemium
+rating: 4.4
 ---

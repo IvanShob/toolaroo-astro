@@ -61,4 +61,6 @@ faqItems:
     answer: "Absolutely — it is widely used and optimized for long-form narration and audiobook production."
   - question: "Is multilingual output good?"
     answer: "Yes — accents and pronunciations are highly accurate across dozens of supported languages."
+pricingModel: Freemium
+rating: 4.7
 ---

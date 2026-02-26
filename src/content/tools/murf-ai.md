@@ -60,4 +60,6 @@ faqItems:
     answer: "Yes — it includes a growing library of multilingual voices."
   - question: "Is voice cloning available?"
     answer: "Yes, but with compliance restrictions to ensure responsible use."
+pricingModel: Freemium
+rating: 4.7
 ---

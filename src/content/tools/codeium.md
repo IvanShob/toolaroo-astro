@@ -50,4 +50,6 @@ faqItems:
     answer: "Absolutely — it provides explanations and learning support."
   - question: "Does Codeium integrate with popular IDEs?"
     answer: "Yes — supports Visual Studio Code, JetBrains IDEs, and more."
+pricingModel: Free
+rating: 4.7
 ---

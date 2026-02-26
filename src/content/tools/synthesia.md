@@ -54,4 +54,6 @@ faqItems:
     answer: "Yes, especially for tutorials, explainers, and educational content."
   - question: "Can I create a custom avatar?"
     answer: "Yes — Synthesia offers personalised avatar creation for brands and teams."
+pricingModel: Paid
+rating: 4.7
 ---

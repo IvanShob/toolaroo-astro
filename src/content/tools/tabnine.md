@@ -50,4 +50,6 @@ faqItems:
     answer: "Absolutely — Tabnine supports many programming languages simultaneously."
   - question: "Is Tabnine suitable for beginners?"
     answer: "Yes — it provides suggestions and explanations that help beginners learn better coding practices."
+pricingModel: Freemium
+rating: 4.4
 ---

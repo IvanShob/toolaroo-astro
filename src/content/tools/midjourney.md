@@ -52,4 +52,6 @@ faqItems:
     answer: "Yes — intuitive prompts and community support make it easy for new users."
   - question: "Can I use the images commercially?"
     answer: "Yes, with the appropriate subscription plan and license terms."
+pricingModel: Paid
+rating: 4.5
 ---

@@ -27,9 +27,9 @@ useCases:
   - Branding and tone-of-voice consistency for teams
   - Marketing agencies producing content for clients
 pricing:
-  "Creator Plan": "For individuals and freelancers"
-  "Pro/Teams Plan": "Collaboration features, growing teams"
-  "Business Plan": "Brand Voice Engine, SSO, API, advanced collaboration"
+  "Creator – $39/mo": "1 seat, Brand Voice, 1 Brand Kit, unlimited AI writing"
+  "Pro – $59/mo": "3 seats, 3 Brand Kits, collaboration tools, Jasper Art"
+  "Business": "Unlimited seats, API access, SSO, custom AI model (custom pricing)"
 pros:
   - Extremely strong for marketing and branded content
   - Templates make it beginner-friendly and fast
@@ -57,4 +57,6 @@ faqItems:
     answer: "Yes — it can learn your tone, writing style, and messaging based on examples you provide."
   - question: "Can Jasper generate images?"
     answer: "Yes — Jasper Art is included for creating AI visuals."
+pricingModel: Paid
+rating: 4.7
 ---

@@ -55,4 +55,6 @@ faqItems:
     answer: "Absolutely — it transcribes lectures and provides searchable notes."
   - question: "Does it work offline?"
     answer: "Transcription requires an internet connection."
+pricingModel: Freemium
+rating: 4.4
 ---

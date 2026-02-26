@@ -52,4 +52,6 @@ faqItems:
     answer: "Yes — export to WebGL or embed directly into websites."
   - question: "Can teams collaborate in real-time?"
     answer: "Yes — Spline AI supports multiple users editing the same project simultaneously."
+pricingModel: Freemium
+rating: 4.5
 ---
