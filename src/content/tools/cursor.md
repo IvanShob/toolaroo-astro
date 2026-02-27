@@ -59,6 +59,11 @@ faqItems:
     answer: "Yes — it explains code, fixes bugs, and guides learning."
   - question: "Does Cursor work offline?"
     answer: "No, AI features require internet access."
+  - question: "Is Cursor based on VS Code?"
+    answer: "Yes — Cursor is built on top of VS Code, so it supports the same extensions, themes, keybindings, and workflows that VS Code users are already familiar with."
+  - question: "What programming languages does Cursor support?"
+    answer: "Cursor supports all languages that VS Code supports, including Python, TypeScript, JavaScript, Go, Rust, Java, C++, and many others."
 pricingModel: Freemium
 rating: 4.6
+whoIsItFor: Cursor is ideal for developers who want a fundamentally AI-native coding experience rather than a plugin layered onto an existing editor — particularly those building full-stack applications, working with large codebases, or executing complex refactors. It is especially valuable for senior engineers and engineering leads who need to make broad structural changes across many files efficiently, and for startup founders and indie developers who want to prototype and ship features significantly faster. Developers comfortable with VS Code will find Cursor's familiar interface easy to adopt while gaining dramatically more powerful AI-assisted capabilities.
 ---

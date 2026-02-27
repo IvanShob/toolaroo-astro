@@ -50,6 +50,13 @@ faqItems:
     answer: "Absolutely — it provides explanations and learning support."
   - question: "Does Codeium integrate with popular IDEs?"
     answer: "Yes — supports Visual Studio Code, JetBrains IDEs, and more."
+  - question: "Is Codeium really free?"
+    answer: "Yes — Codeium offers a completely free individual plan with no usage caps on code completions, making it one of the most generous free AI coding tools available."
+  - question: "How does Codeium compare to GitHub Copilot?"
+    answer: "Codeium is free for individuals and supports more IDEs, while GitHub Copilot has a larger training dataset and deeper GitHub integration. For most developers, Codeium offers comparable code completion quality at zero cost."
+  - question: "Does Codeium support code explanation and chat?"
+    answer: "Yes — Codeium includes an in-editor chat feature that allows developers to ask questions about code, request explanations, and get help with debugging directly within their IDE."
 pricingModel: Free
 rating: 4.7
+whoIsItFor: Codeium is ideal for individual developers, students, and open-source contributors who want a capable AI coding assistant without paying for a subscription. It is especially appealing to developers working across multiple programming languages and IDEs who want consistent, context-aware code completions that improve productivity without being locked into the GitHub ecosystem. Startups and small development teams looking for an affordable alternative to GitHub Copilot will find Codeium's free tier a compelling option with strong multi-language and multi-IDE support.
 ---

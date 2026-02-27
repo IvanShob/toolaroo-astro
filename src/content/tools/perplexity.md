@@ -56,6 +56,11 @@ faqItems:
     answer: "Yes — you can upload PDFs, documents, and more."
   - question: "How accurate is it?"
     answer: "It's one of the most reliable AI search tools because it grounds every answer in real-time sources."
+  - question: "Does Perplexity have a mobile app?"
+    answer: "Yes — Perplexity has iOS and Android apps that provide full access to its AI search capabilities, making it easy to research on the go."
+  - question: "Can Perplexity help with competitive research?"
+    answer: "Yes — Perplexity can quickly surface information about competitors, market trends, and industry news from live web sources, making it a useful tool for business analysts and marketers."
 pricingModel: Freemium
 rating: 4.6
+whoIsItFor: "Perplexity is ideal for researchers, students, analysts, and professionals who need accurate, cited answers from the web rather than potentially outdated AI responses. It suits anyone who fact-checks frequently or needs to quickly research topics without manually opening multiple browser tabs."
 ---

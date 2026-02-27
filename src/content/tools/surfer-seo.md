@@ -53,6 +53,11 @@ faqItems:
     answer: "Yes — it integrates with WordPress, Google Docs, and other platforms."
   - question: "What makes Surfer SEO unique?"
     answer: "Its AI-powered SERP analysis and content editor combine to give writers real-time SEO guidance without requiring deep SEO knowledge."
+  - question: "Can Surfer SEO help me audit existing content?"
+    answer: "Yes — Surfer SEO's content audit tool analyzes your existing pages, scores them against current top-ranking competitors, and identifies specific improvements to recover or boost rankings."
+  - question: "Does Surfer SEO include keyword research tools?"
+    answer: "Yes — Surfer SEO includes keyword research, clustering, and content planning tools that help you identify target keywords and group related topics into content strategies."
 pricingModel: Paid
 rating: 4.8
+whoIsItFor: "Surfer SEO is best suited for content marketers, SEO professionals, and digital agencies that produce regular blog content and need data-driven guidance to rank on Google. It is especially valuable for writers and strategists who want to optimize existing content and plan new articles based on competitor analysis and NLP keyword recommendations rather than guesswork."
 ---

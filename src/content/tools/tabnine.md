@@ -50,6 +50,13 @@ faqItems:
     answer: "Absolutely — Tabnine supports many programming languages simultaneously."
   - question: "Is Tabnine suitable for beginners?"
     answer: "Yes — it provides suggestions and explanations that help beginners learn better coding practices."
+  - question: "Does Tabnine offer on-premise deployment?"
+    answer: "Yes — Tabnine supports self-hosted and on-premise deployment options, making it suitable for enterprises that cannot send code to external cloud servers due to security or compliance requirements."
+  - question: "How does Tabnine protect my code privacy?"
+    answer: "Tabnine offers privacy-focused plans where your code is not used to train shared models. Enterprise plans support fully isolated deployments, ensuring your proprietary code stays within your own infrastructure."
+  - question: "Does Tabnine learn from my codebase?"
+    answer: "Yes — Tabnine can be trained on your team's codebase to deliver personalized suggestions that reflect your project's specific coding patterns, conventions, and naming styles."
 pricingModel: Freemium
 rating: 4.4
+whoIsItFor: Tabnine is ideal for enterprise development teams, security-conscious organizations, and professional developers who need an AI coding assistant with strong privacy guarantees and the option for on-premise deployment. It is especially valuable for companies in regulated industries — such as finance, healthcare, and government — where code privacy and compliance requirements make cloud-based AI tools impractical. Individual developers who want reliable, IDE-integrated code completions across multiple languages without switching to a new editor will also find Tabnine a strong choice.
 ---

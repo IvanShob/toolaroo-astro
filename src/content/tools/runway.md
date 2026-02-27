@@ -56,6 +56,11 @@ faqItems:
     answer: "Absolutely. Filmmakers use it for concepting, pre-viz, and even full creative scenes."
   - question: "Does Runway require installation?"
     answer: "No — everything runs in the browser."
+  - question: "Can Runway export to professional editing software?"
+    answer: "Yes — Runway videos can be exported and integrated directly into professional editing suites like Adobe Premiere Pro and Final Cut Pro for further refinement within established production workflows."
+  - question: "What is the Motion Brush feature in Runway?"
+    answer: "Motion Brush allows you to paint specific areas of a still image and define the direction of movement, causing only those regions to animate while the rest of the image remains static — creating dynamic, cinematic motion from a single photo."
 pricingModel: Freemium
 rating: 4.3
+whoIsItFor: Runway is best suited for filmmakers, video creators, motion designers, and creative directors who want to push the boundaries of visual storytelling using generative AI without needing a large production team or expensive equipment. It is especially valuable for content creators, ad agencies, and digital artists who need fast creative experimentation — from generating cinematic footage to animating still images and removing backgrounds with studio-level accuracy. YouTubers and social media creators who want to elevate the production quality of their content without complex software will also find Runway's browser-based toolset highly accessible.
 ---

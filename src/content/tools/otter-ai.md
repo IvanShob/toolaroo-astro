@@ -55,6 +55,11 @@ faqItems:
     answer: "Absolutely — it transcribes lectures and provides searchable notes."
   - question: "Does it work offline?"
     answer: "Transcription requires an internet connection."
+  - question: "Can I import an existing audio file to Otter.ai?"
+    answer: "Yes — you can upload pre-recorded audio or video files and Otter.ai will transcribe them, making it useful for processing recordings from any source."
+  - question: "How many minutes does the free plan include?"
+    answer: "The free plan includes a limited number of transcription minutes per month. Check the Otter.ai website for current plan details as limits are updated periodically."
 pricingModel: Freemium
 rating: 4.4
+whoIsItFor: "Otter.ai is best suited for professionals, students, journalists, and remote teams who need accurate, real-time transcription of meetings, lectures, and interviews without manual note-taking. It is especially valuable for team leaders, project managers, and educators who need searchable records of conversations and automatically generated summaries to share with colleagues or review later."
 ---

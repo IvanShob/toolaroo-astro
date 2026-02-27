@@ -52,6 +52,13 @@ faqItems:
     answer: "Yes — intuitive prompts and community support make it easy for new users."
   - question: "Can I use the images commercially?"
     answer: "Yes, with the appropriate subscription plan and license terms."
+  - question: "How do I get started with Midjourney?"
+    answer: "Midjourney operates primarily through Discord. You join the Midjourney Discord server, use the /imagine command in a bot channel, and type your prompt to generate images."
+  - question: "Can Midjourney generate images in specific aspect ratios?"
+    answer: "Yes — Midjourney supports custom aspect ratios using the --ar parameter, allowing you to generate portrait, landscape, or square images tailored to your specific use case."
+  - question: "Does Midjourney offer a web interface?"
+    answer: "Yes — Midjourney now offers a web-based interface at midjourney.com where you can generate, organize, and browse images without using Discord."
 pricingModel: Paid
 rating: 4.5
+whoIsItFor: Midjourney is best suited for digital artists, graphic designers, concept artists, and creative professionals who want to generate highly stylized, imaginative visual assets for artistic and commercial projects. It is particularly valuable for illustrators, game designers, art directors, and marketing creatives who need visually striking concept work and unique imagery that goes beyond generic stock photography. Content creators, social media managers, and brand teams that prioritize distinctive, high-quality visuals will also find Midjourney an essential part of their creative workflow.
 ---

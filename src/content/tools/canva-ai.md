@@ -51,6 +51,13 @@ faqItems:
     answer: "Absolutely — with Pro or Enterprise plans, teams can create consistent, branded content."
   - question: "Can multiple users collaborate on the same design?"
     answer: "Yes, real-time editing and commenting allow seamless teamwork."
+  - question: "Does Canva AI support video creation?"
+    answer: "Yes — Canva supports video editing, animated graphics, and short-form video creation, making it useful for social media reels, presentations with motion, and basic promotional videos."
+  - question: "Can I use Canva for print materials like flyers and business cards?"
+    answer: "Yes — Canva offers templates for a wide range of print materials including flyers, posters, business cards, and brochures, with print-ready export options for professional printing."
+  - question: "Is there a Canva mobile app?"
+    answer: "Yes — Canva has fully featured iOS and Android apps, allowing you to design and edit on the go with access to templates, AI tools, and your brand kit."
 pricingModel: Freemium
 rating: 4.7
+whoIsItFor: Canva AI is ideal for non-designers, small business owners, social media managers, and marketers who need to create professional-looking visual content quickly without advanced design skills. It is especially valuable for teams and individuals who produce high volumes of branded graphics — social media posts, presentations, flyers, and ads — and need smart AI tools to speed up the process. Students, educators, and entrepreneurs who want a single platform for design, content creation, and light AI generation will find Canva AI the most accessible and versatile option available.
 ---

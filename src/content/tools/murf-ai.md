@@ -60,6 +60,11 @@ faqItems:
     answer: "Yes — it includes a growing library of multilingual voices."
   - question: "Is voice cloning available?"
     answer: "Yes, but with compliance restrictions to ensure responsible use."
+  - question: "Can I add background music in Murf?"
+    answer: "Yes — Murf's built-in editor allows you to layer background music and sound effects alongside your generated voiceover, creating a fully produced audio track in one place."
+  - question: "Does Murf support team collaboration?"
+    answer: "Yes — Murf includes project sharing, team workspace features, and collaborative editing tools suitable for marketing and L&D teams working on shared content pipelines."
 pricingModel: Freemium
 rating: 4.7
+whoIsItFor: Murf.ai is ideal for corporate L&D teams, instructional designers, marketing professionals, and YouTube creators who need polished, professional voiceovers without recording equipment or voice actors. It is especially well-suited for businesses producing eLearning modules, product demos, and explainer videos who need consistent, studio-quality narration at scale. Agencies and content teams that regularly produce video content for clients will also benefit from Murf's built-in multimedia editor and collaboration tools.
 ---

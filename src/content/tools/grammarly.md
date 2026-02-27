@@ -55,6 +55,13 @@ faqItems:
     answer: "Yes — Premium and GrammarlyGO provide powerful rewriting capabilities."
   - question: "Can it be used in Google Docs and Gmail?"
     answer: "Absolutely — it integrates directly through browser extensions."
+  - question: "What is GrammarlyGO?"
+    answer: "GrammarlyGO is Grammarly's generative AI feature that helps you draft emails, rewrite paragraphs, create outlines, and generate content directly within the Grammarly interface."
+  - question: "Does Grammarly work on mobile devices?"
+    answer: "Yes — Grammarly has iOS and Android apps, plus a mobile keyboard that brings grammar and clarity suggestions to any app on your phone."
+  - question: "Can Grammarly detect AI-generated content?"
+    answer: "Grammarly focuses on improving writing quality rather than detecting AI content. For plagiarism detection, its Premium plan checks against billions of web pages and academic sources."
 pricingModel: Freemium
 rating: 4.7
+whoIsItFor: Grammarly is essential for professionals, students, and non-native English speakers who need to communicate clearly and correctly in writing every day. It is particularly valuable for anyone who writes frequently in email, Slack, Google Docs, or Word and wants to ensure their messages are polished and error-free. Marketing teams and businesses that need consistent brand tone across all written communications also benefit greatly from Grammarly Business.
 ---

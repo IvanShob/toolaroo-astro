@@ -169,6 +169,14 @@ const seoProps = {
         </a>
       </div>
 
+      {/* Who is this for */}
+      {data.whoIsItFor && (
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-8">
+          <h2 class="text-2xl font-bold text-slate-900 mb-3">Who Is This For?</h2>
+          <p class="text-lg text-slate-700 leading-relaxed">{data.whoIsItFor}</p>
+        </div>
+      )}
+
       {/* Long Description */}
       {data.longDescription && (
         <div class="prose prose-slate max-w-none">

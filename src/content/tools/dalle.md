@@ -51,6 +51,13 @@ faqItems:
     answer: "Yes — inpainting lets you modify specific areas while keeping the rest intact."
   - question: "Can I choose different art styles?"
     answer: "Absolutely — photorealistic, digital painting, sketch, cartoon, and more."
+  - question: "Is DALL-E integrated with ChatGPT?"
+    answer: "Yes — DALL-E 3 is built directly into ChatGPT on paid plans, allowing you to generate images within the same conversation where you write prompts, ask questions, and get edits."
+  - question: "What is inpainting and how does it work in DALL-E?"
+    answer: "Inpainting allows you to select a specific area of a generated image and ask DALL-E to replace or modify just that region while keeping the rest of the image intact — useful for fixing details or adding elements."
+  - question: "How does DALL-E compare to Midjourney?"
+    answer: "DALL-E is more accessible and better integrated into the OpenAI ecosystem, while Midjourney produces more artistically stylized outputs. DALL-E is generally better for photorealistic and semantically accurate images."
 pricingModel: Freemium
 rating: 4.4
+whoIsItFor: DALL-E is ideal for marketers, content creators, bloggers, and designers who need quick, high-quality images generated directly from text descriptions without deep prompt engineering skills. It is especially accessible for ChatGPT users who already use OpenAI's ecosystem and want image generation seamlessly integrated into their AI workflow. Product teams, educators, and social media managers who need custom visuals on demand — from concept art to blog illustrations — will find DALL-E a versatile and easy-to-use creative tool.
 ---

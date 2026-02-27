@@ -54,6 +54,11 @@ faqItems:
     answer: "It works best with academic research questions grounded in scientific literature."
   - question: "Does Elicit cite real studies?"
     answer: "Yes — all citations come from actual academic papers."
+  - question: "Can Elicit compare multiple studies side by side?"
+    answer: "Yes — Elicit can extract structured information from multiple papers and display them in a table format, making it easy to compare methodologies, sample sizes, and findings across studies."
+  - question: "Is Elicit free to use?"
+    answer: "Elicit offers a free plan with limited searches and summaries per month. A paid Pro plan unlocks full research workflows, unlimited summaries, and faster processing."
 pricingModel: Freemium
 rating: 4.4
+whoIsItFor: "Elicit is ideal for academic researchers, PhD students, policy analysts, and scientists who need to rapidly navigate large bodies of scientific literature and extract structured insights from papers. It is especially valuable for anyone conducting systematic literature reviews, evidence-based policy work, or academic thesis research who wants to save hours of manual reading and paper organization."
 ---

@@ -50,6 +50,13 @@ faqItems:
     answer: "It can suggest fixes and improvements but cannot fully replace human review."
   - question: "Does it support team collaboration?"
     answer: "Yes — offers collaborative coding suggestions and documentation support."
+  - question: "Does Replit Ghostwriter require installation?"
+    answer: "No — Replit is entirely browser-based. You can write, run, and get AI assistance without downloading or configuring any software, making it ideal for learners and quick prototyping."
+  - question: "What programming languages does Replit Ghostwriter support?"
+    answer: "Replit supports over 50 programming languages including Python, JavaScript, Java, C++, Ruby, and Go, so Ghostwriter's AI assistance is available regardless of which language you are working in."
+  - question: "Can Ghostwriter help me learn to code?"
+    answer: "Yes — Ghostwriter is particularly well-suited for learners because it explains code, suggests fixes, and walks through logic step by step, acting as an accessible AI tutor alongside the coding experience."
 pricingModel: Paid
 rating: 4.3
+whoIsItFor: Replit Ghostwriter is ideal for beginner programmers, students, educators, and hobbyist developers who want an all-in-one browser-based coding environment with AI assistance built directly in. It is especially valuable for learners who are just getting started with programming and want a zero-setup experience where they can write, run, and get AI help in the same interface without installing anything. Coding bootcamp students and educators teaching introductory programming will also find Ghostwriter a frictionless AI-enhanced learning environment.
 ---

@@ -54,6 +54,11 @@ faqItems:
     answer: "Yes, especially for tutorials, explainers, and educational content."
   - question: "Can I create a custom avatar?"
     answer: "Yes — Synthesia offers personalised avatar creation for brands and teams."
+  - question: "How many languages does Synthesia support?"
+    answer: "Synthesia supports over 120 languages and accents, making it one of the most capable AI video platforms for producing multilingual content without separate recordings for each language."
+  - question: "Can I update a Synthesia video after it is created?"
+    answer: "Yes — one of Synthesia's biggest advantages is that updating a video is as simple as editing the script. The AI regenerates the avatar's speech and lip sync instantly, eliminating the need for re-recording sessions."
 pricingModel: Paid
 rating: 4.7
+whoIsItFor: Synthesia is ideal for corporate training departments, HR teams, e-learning course creators, and product marketers who need to produce professional presenter-led videos at scale without cameras, actors, or video production expertise. It is especially valuable for companies that need to create and update training, onboarding, and compliance videos frequently, since script edits instantly update the video without re-recording. Organizations producing multilingual video content across international teams will also benefit from Synthesia's support for 120+ languages and consistent AI avatar presenters.
 ---

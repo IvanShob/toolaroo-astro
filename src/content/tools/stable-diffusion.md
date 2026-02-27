@@ -51,6 +51,13 @@ faqItems:
     answer: "Yes, with the appropriate license and usage plan."
   - question: "Can I fine-tune the model for my specific style?"
     answer: "Absolutely — Stable Diffusion supports training and custom checkpoints."
+  - question: "What hardware do I need to run Stable Diffusion locally?"
+    answer: "A modern GPU with at least 4–8GB of VRAM is recommended for local use. NVIDIA GPUs typically offer the best performance, though optimized versions can run on lower-spec hardware and even CPU-only setups."
+  - question: "What are LoRAs and how are they used in Stable Diffusion?"
+    answer: "LoRA (Low-Rank Adaptation) files are small model add-ons that modify the base Stable Diffusion model to produce specific styles, characters, or aesthetics. They are widely shared by the community and can be layered for highly customized outputs."
+  - question: "Is Stable Diffusion available as a hosted service?"
+    answer: "Yes — if you prefer not to run it locally, services like DreamStudio (Stability AI's official platform) and third-party tools like Automatic1111 via cloud providers offer hosted access to Stable Diffusion models."
 pricingModel: Free
 rating: 4.3
+whoIsItFor: Stable Diffusion is ideal for developers, AI researchers, artists, and technically proficient creators who want maximum control and customization over AI image generation without being locked into a subscription platform. It is especially valuable for teams and individuals who want to fine-tune models on their own data, run generation locally for privacy reasons, or build custom image generation pipelines into their own applications. Open-source enthusiasts and hobbyists who enjoy experimenting with community models, LoRAs, and custom checkpoints will find Stable Diffusion's ecosystem unmatched in flexibility.
 ---

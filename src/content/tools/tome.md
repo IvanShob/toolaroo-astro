@@ -56,6 +56,11 @@ faqItems:
     answer: "Absolutely — startups, agencies, and teams use it for investor decks and client materials."
   - question: "Do I need design experience to use Tome?"
     answer: "No — Tome handles layouts and visuals for you."
+  - question: "Can I embed videos and external content in Tome presentations?"
+    answer: "Yes — Tome supports embeds from YouTube, Figma, Loom, and other platforms alongside text and images in the same deck."
+  - question: "Does Tome allow real-time collaboration?"
+    answer: "Yes — multiple team members can edit and view the same Tome presentation simultaneously, making it suitable for collaborative pitch development."
 pricingModel: Freemium
 rating: 4.5
+whoIsItFor: "Tome is ideal for founders, startup teams, marketers, and educators who need to produce polished presentations quickly without spending hours on design. It is particularly valuable for anyone preparing investor pitch decks, product overviews, or client presentations who wants a fast, narrative-driven output rather than manually building slides from scratch."
 ---

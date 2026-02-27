@@ -54,6 +54,11 @@ faqItems:
     answer: "Absolutely — it saves time and provides citation-ready sources."
   - question: "Does it summarise full papers or only abstracts?"
     answer: "It analyses both where available and extracts key conclusions."
+  - question: "How many papers does Consensus search?"
+    answer: "Consensus searches a large database of peer-reviewed academic papers spanning medicine, biology, psychology, economics, and other scientific disciplines, continuously expanding its index."
+  - question: "Can Consensus be used for health and medical questions?"
+    answer: "Yes — Consensus is well-suited for finding scientific evidence on health topics, though results should be reviewed by a qualified medical professional before making any clinical decisions."
 pricingModel: Freemium
 rating: 4.5
+whoIsItFor: "Consensus is best suited for students, academics, healthcare professionals, and evidence-based practitioners who need quick access to peer-reviewed scientific research without spending hours searching databases. It is particularly valuable for anyone who needs to support claims or decisions with credible scientific evidence — including medical practitioners, policy researchers, and university students writing research papers."
 ---

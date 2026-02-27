@@ -58,6 +58,13 @@ faqItems:
     answer: "Yes — PDFs, documents, images, and datasets (paid plans)."
   - question: "Is ChatGPT safe for business use?"
     answer: "Enterprise plans provide enhanced security and data privacy."
+  - question: "What is the difference between GPT-4o and GPT-4o mini?"
+    answer: "GPT-4o is the full-capability flagship model with superior reasoning and multimodal support, while GPT-4o mini is a faster, cheaper version suited for simpler tasks and higher-volume use cases."
+  - question: "Can ChatGPT browse the internet?"
+    answer: "Yes — ChatGPT can search the web in real time on paid plans, allowing it to retrieve current information beyond its training cutoff."
+  - question: "Does ChatGPT support plugins or integrations?"
+    answer: "Yes — ChatGPT supports custom GPTs, API integrations, and connections with tools like Zapier, Make, and various third-party platforms."
 pricingModel: Freemium
 rating: 4.7
+whoIsItFor: ChatGPT is ideal for knowledge workers, writers, developers, and students who need a versatile AI assistant for daily tasks. It works best for anyone who wants to speed up writing, coding, research, or problem-solving without switching between multiple specialized tools. Businesses and individuals across virtually every industry benefit from its flexibility and broad capability set.
 ---

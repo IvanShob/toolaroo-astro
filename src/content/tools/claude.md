@@ -57,6 +57,13 @@ faqItems:
     answer: "Absolutely. It produces clean, coherent, and natural prose with minimal editing."
   - question: "Does Claude work well for coding?"
     answer: "Yes, though not as code-specialised as tools like Copilot or Cursor."
+  - question: "What makes Claude's context window special?"
+    answer: "Claude has one of the longest context windows available, allowing it to process entire books, lengthy PDFs, or large codebases in a single session without losing coherence."
+  - question: "Is Claude safe to use with sensitive information?"
+    answer: "Anthropic builds Claude with a strong emphasis on safety and responsible AI. Enterprise and Team plans offer enhanced privacy controls to protect confidential data."
+  - question: "Can Claude help with legal or technical documents?"
+    answer: "Yes — Claude excels at summarising, explaining, and structuring complex legal, scientific, and technical documents thanks to its strong reasoning and long-context capabilities."
 pricingModel: Freemium
 rating: 4.7
+whoIsItFor: Claude is best suited for researchers, analysts, lawyers, academics, and knowledge professionals who regularly work with long documents and need precise, structured reasoning. It is especially valuable for anyone processing large volumes of text — such as legal briefs, research papers, or technical reports — where accuracy and low hallucination rates matter most. Writers and professionals who prioritize clean, nuanced prose over raw creativity will also find Claude an excellent fit.
 ---

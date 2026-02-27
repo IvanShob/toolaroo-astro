@@ -52,6 +52,13 @@ faqItems:
     answer: "Yes — export to WebGL or embed directly into websites."
   - question: "Can teams collaborate in real-time?"
     answer: "Yes — Spline AI supports multiple users editing the same project simultaneously."
+  - question: "Can I embed Spline 3D scenes directly into my website?"
+    answer: "Yes — Spline generates an embed code that you can paste into any HTML page, allowing the interactive 3D scene to render inside your website without additional setup."
+  - question: "Does Spline AI require any coding knowledge?"
+    answer: "No coding is required to create and export most Spline projects. However, developers may want to customize WebGL or Three.js output for advanced integration into custom web applications."
+  - question: "What file formats can I export from Spline AI?"
+    answer: "Spline supports exporting to WebGL, Three.js, GLTF, USDZ, and video formats, giving you flexibility to use 3D assets across web, mobile, and augmented reality projects."
 pricingModel: Freemium
 rating: 4.5
+whoIsItFor: "Spline AI is ideal for web designers, front-end developers, and creative agencies that want to add immersive 3D elements to websites and digital products without deep 3D modeling expertise. It is particularly valuable for designers and developers building modern SaaS landing pages, interactive portfolios, and product visualizations who want WebGL-ready 3D content without learning Blender or Three.js from scratch."
 ---

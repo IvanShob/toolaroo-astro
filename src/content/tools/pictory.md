@@ -51,6 +51,11 @@ faqItems:
     answer: "Yes — captions are generated automatically and are fully editable."
   - question: "Is Pictory good for social media content?"
     answer: "Yes — it's optimized for creating engaging short-form videos and marketing clips."
+  - question: "Can I use my own voiceover with Pictory?"
+    answer: "Yes — you can upload a custom voiceover or use Pictory's AI-generated voice options."
+  - question: "Does Pictory support multiple languages?"
+    answer: "Yes — Pictory supports multiple languages for captions and voiceovers, making it useful for international content teams."
 pricingModel: Paid
 rating: 4.6
+whoIsItFor: "Pictory is best suited for content marketers, bloggers, social media managers, and businesses that want to repurpose written content into video without hiring a video editor. It is especially useful for teams that need to produce high volumes of video content quickly, such as agencies running multiple social media accounts or educators converting long-form lessons into digestible clips."
 ---

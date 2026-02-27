@@ -59,6 +59,11 @@ faqItems:
     answer: "No — it requires cloud-based AI models."
   - question: "Can Copilot understand my entire project?"
     answer: "Yes — the Business and Enterprise versions support enhanced context windows."
+  - question: "What IDEs does GitHub Copilot support?"
+    answer: "GitHub Copilot works with Visual Studio Code, JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.), Neovim, and GitHub.com's web editor, covering the most widely used development environments."
+  - question: "Does GitHub Copilot support all programming languages?"
+    answer: "Copilot works with a wide range of languages including Python, JavaScript, TypeScript, Ruby, Go, Java, C#, C++, and many more. It performs best with the most widely used languages that are well-represented in its training data."
 pricingModel: Paid
 rating: 4.5
+whoIsItFor: GitHub Copilot is designed for professional software developers, engineering teams, and students learning to code who want to accelerate their development workflow with AI-powered autocomplete and code generation inside their existing IDE. It is especially valuable for developers who spend significant time writing boilerplate, repetitive logic, or unit tests and want to focus more energy on architecture and problem-solving. Engineering teams at companies using GitHub for version control will find Copilot's deep GitHub integration and Business plan features a natural extension of their existing development environment.
 ---

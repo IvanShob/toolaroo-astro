@@ -58,6 +58,11 @@ faqItems:
     answer: "Absolutely. Descript is one of the most popular podcast editing tools on the market."
   - question: "Does it support team workflows?"
     answer: "Yes — shared workspaces, comments, versions, and collaborative editing are built-in."
+  - question: "What file formats can I export from Descript?"
+    answer: "Descript supports exporting to MP4 for video, MP3 for audio, and various transcript formats including SRT for captions."
+  - question: "Is Descript good for remote teams?"
+    answer: "Yes — the shared workspace and real-time collaboration features make it well-suited for remote content teams working asynchronously."
 pricingModel: Freemium
 rating: 4.6
+whoIsItFor: "Descript is ideal for podcasters, YouTubers, online course creators, and marketers who produce video or audio content regularly but lack advanced editing skills. It is especially valuable for teams and solo creators who want to edit media as fast as editing a document, fix dialogue mistakes without re-recording, and publish polished content without a steep learning curve."
 ---

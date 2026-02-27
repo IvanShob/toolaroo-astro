@@ -52,6 +52,13 @@ faqItems:
     answer: "Yes — export options include HTML/CSS and design files."
   - question: "Does Uizard support team collaboration?"
     answer: "Yes — real-time editing, commenting, and sharing are supported."
+  - question: "Can Uizard convert a screenshot into an editable design?"
+    answer: "Yes — Uizard can import screenshots of apps or websites and convert them into editable UI components that you can modify and build upon."
+  - question: "Does Uizard integrate with Figma?"
+    answer: "Yes — Uizard integrates with Figma, allowing you to import Figma designs or export Uizard prototypes for further refinement in a more advanced design environment."
+  - question: "Is Uizard suitable for mobile app design?"
+    answer: "Yes — Uizard provides mobile app templates and allows you to design and prototype both iOS and Android interfaces alongside web app layouts."
 pricingModel: Freemium
 rating: 4.3
+whoIsItFor: "Uizard is ideal for non-designers, startup founders, and product managers who need to quickly produce wireframes, mockups, and interactive prototypes without deep design skills. It is especially useful for early-stage teams that need to visualize and communicate product ideas rapidly, and for developers or entrepreneurs who want to go from hand-drawn sketches to testable digital prototypes in minutes."
 ---
