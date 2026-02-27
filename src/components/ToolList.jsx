@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import tools_data from '../data/tools.js';
 
 // Category emoji mapping
@@ -14,24 +14,39 @@ const categoryEmojis = {
   'ai-marketing': '📊',
 };
 
+const CATEGORIES = [
+  { value: '', label: 'All' },
+  { value: 'writing', label: '✍️ Writing' },
+  { value: 'image', label: '🎨 Image' },
+  { value: 'coding', label: '💻 Coding' },
+  { value: 'video', label: '🎬 Video' },
+  { value: 'audio', label: '🎵 Audio' },
+  { value: 'productivity', label: '⚡ Productivity' },
+  { value: 'research', label: '🔬 Research' },
+  { value: 'design', label: '🖼️ Design' },
+  { value: 'ai-marketing', label: '📊 Marketing' },
+];
+
+const PRICES = [
+  { value: '', label: 'Any Price' },
+  { value: 'Free', label: '🆓 Free' },
+  { value: 'Freemium', label: '⚡ Freemium' },
+  { value: 'Paid', label: '💳 Paid' },
+];
+
 export default function ToolList({ category, featuredOnly = false }) {
-  const [tools, setTools] = useState(tools_data);
   const [query, setQuery] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [priceFilter, setPriceFilter] = useState('');
+  const [catFilter, setCatFilter] = useState('');
 
-  // Data is already loaded, no need for useEffect
+  const activeCategory = category || catFilter;
 
-  if (loading)
-    return <p className="text-center py-12 text-slate-500">Loading tools...</p>;
-  if (error)
-    return <p className="text-center py-12 text-red-500">Failed to load tools.</p>;
-
-  let filtered = tools.filter(tool => {
+  let filtered = tools_data.filter(tool => {
     const matchQuery = tool.name.toLowerCase().includes(query.toLowerCase());
-    const matchCategory = category ? tool.category === category : true;
+    const matchCategory = activeCategory ? tool.category === activeCategory : true;
     const matchFeatured = featuredOnly ? tool.featured : true;
-    return matchQuery && matchCategory && matchFeatured;
+    const matchPrice = priceFilter ? tool.pricingModel === priceFilter : true;
+    return matchQuery && matchCategory && matchFeatured && matchPrice;
   });
 
   // Home page: limit top 12
@@ -40,22 +55,64 @@ export default function ToolList({ category, featuredOnly = false }) {
   // Sort by rank
   filtered.sort((a, b) => (a.rank || 999) - (b.rank || 999));
 
+  const clearAll = () => {
+    setQuery('');
+    setPriceFilter('');
+    setCatFilter('');
+  };
+
   return (
-    <div className="w-full space-y-8">
+    <div className="w-full space-y-6">
       {/* Search Input */}
-      <div>
-        <input
-          type="text"
-          placeholder="🔍 Search AI tools..."
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          className="w-full px-6 py-3 rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm transition-colors bg-white text-slate-900 placeholder-slate-500"
-        />
-      </div>
+      <input
+        type="text"
+        placeholder="🔍 Search AI tools..."
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+        className="w-full px-6 py-3 rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm transition-colors bg-white text-slate-900 placeholder-slate-500"
+      />
+
+      {/* Category Filter — only on all-tools page (no category prop) */}
+      {!category && (
+        <div className="flex flex-wrap gap-2">
+          {CATEGORIES.map(c => (
+            <button
+              key={c.value}
+              onClick={() => setCatFilter(c.value)}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                catFilter === c.value
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              {c.label}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Price Filter */}
+      {!featuredOnly && (
+        <div className="flex flex-wrap gap-2">
+          {PRICES.map(p => (
+            <button
+              key={p.value}
+              onClick={() => setPriceFilter(p.value)}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                priceFilter === p.value
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              {p.label}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Results Count */}
       {filtered.length > 0 && (
-        <div className="text-sm text-slate-600 px-2">
+        <div className="text-sm text-slate-600 px-1">
           Found <span className="font-semibold text-slate-900">{filtered.length}</span> tool{filtered.length !== 1 ? 's' : ''}
         </div>
       )}
@@ -70,14 +127,11 @@ export default function ToolList({ category, featuredOnly = false }) {
             {/* Header with Logo and Category Badge */}
             <div className="flex items-start justify-between p-6 pb-4 gap-3">
               <div className="flex items-start gap-3 flex-1">
-                {/* Tool Logo */}
                 <img
                   src={`https://www.google.com/s2/favicons?sz=32&domain=${tool.url}`}
                   alt={`${tool.name} logo`}
                   className="w-8 h-8 rounded flex-shrink-0 mt-1"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
+                  onError={(e) => { e.target.style.display = 'none'; }}
                 />
                 <h3 className="text-lg sm:text-xl font-bold text-slate-900 flex-1 group-hover:text-blue-600 transition-colors">
                   {tool.name}
@@ -143,10 +197,10 @@ export default function ToolList({ category, featuredOnly = false }) {
         <div className="text-center py-12">
           <p className="text-slate-600 mb-2">No tools found matching your search.</p>
           <button
-            onClick={() => setQuery('')}
+            onClick={clearAll}
             className="text-blue-600 hover:text-blue-700 font-medium text-sm"
           >
-            Clear search
+            Clear all filters
           </button>
         </div>
       )}

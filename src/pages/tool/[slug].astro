@@ -32,6 +32,15 @@ if (!tool) {
 
 const { data } = tool;
 
+// Related tools: same category, exclude current, top 3 by rank
+const relatedTools = allTools
+  .filter(t => {
+    const tSlug = t.id.replace(/\.md$/, '');
+    return t.data.category === data.category && tSlug !== toolId;
+  })
+  .sort((a, b) => (a.data.rank || 999) - (b.data.rank || 999))
+  .slice(0, 3);
+
 const categoryToAppCategory: Record<string, string> = {
   writing: 'Writing & Content Creation',
   image: 'Image Generation & Editing',
@@ -290,6 +299,48 @@ const seoProps = {
                 <p class="text-slate-700">{item.answer}</p>
               </div>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* Related Tools */}
+      {relatedTools.length > 0 && (
+        <div class="border-t border-slate-200 pt-12">
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">Similar {catLabel} Tools</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {relatedTools.map((t) => {
+              const tSlug = t.id.replace(/\.md$/, '');
+              return (
+                <div class="bg-white rounded-xl shadow-md border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all flex flex-col overflow-hidden">
+                  <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center gap-3 mb-3">
+                      <img
+                        src={`https://www.google.com/s2/favicons?sz=32&domain=${t.data.url}`}
+                        alt={`${t.data.title} logo`}
+                        class="w-8 h-8 rounded flex-shrink-0"
+                      />
+                      <h3 class="font-bold text-slate-900 group-hover:text-blue-600">{t.data.title}</h3>
+                    </div>
+                    {t.data.pricingModel && (
+                      <span class={`self-start mb-3 px-2.5 py-1 text-xs font-medium rounded-lg ${
+                        t.data.pricingModel === 'Free' ? 'bg-green-100 text-green-700' :
+                        t.data.pricingModel === 'Freemium' ? 'bg-blue-100 text-blue-700' :
+                        'bg-purple-100 text-purple-700'
+                      }`}>{t.data.pricingModel}</span>
+                    )}
+                    <p class="text-sm text-slate-600 flex-grow line-clamp-2 mb-4">{t.data.description}</p>
+                  </div>
+                  <div class="px-6 py-4 border-t border-slate-100 bg-slate-50 flex gap-2">
+                    <a href={`/tool/${tSlug}/`} class="flex-1 text-center text-sm font-semibold px-3 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 border border-blue-200 transition-colors">
+                      Learn More
+                    </a>
+                    <a href={`/go/${tSlug}/`} target="_blank" rel="noopener noreferrer" class="flex-1 text-center text-sm font-semibold px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                      Open →
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
