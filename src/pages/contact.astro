@@ -54,7 +54,12 @@ const seoProps = {
         <div>
           <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Send us a Message</h2>
           
-          <form class="space-y-4" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2ff2c080-eef1-411d-b979-61350c3b1362" />
+            <input type="hidden" name="subject" value="New message from Toolaroo contact form" />
+            <input type="hidden" name="from_name" value="Toolaroo Contact Form" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
             <!-- Name -->
             <div>
               <label for="name" class="block text-sm font-semibold text-slate-900 mb-2">Name</label>

@@ -1,0 +1,259 @@
+---
+import '../../styles/global.css';
+import Layout from '../../components/Layout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id.replace(/\.md$/, '') }
+  }));
+}
+
+const { slug } = Astro.params;
+const postId = slug.endsWith('.md') ? slug.slice(0, -3) : slug;
+const post = await getEntry('blog', postId);
+
+if (!post) {
+  throw new Error(`Blog post "${postId}" not found`);
+}
+
+const { data, render } = post;
+const { Content } = await render();
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": data.title,
+  "description": data.description,
+  "datePublished": data.date,
+  "author": { "@type": "Organization", "name": "Toolaroo" },
+  "publisher": { "@type": "Organization", "name": "Toolaroo", "url": "https://www.toolaroo.net/" },
+  "url": `https://www.toolaroo.net/blog/${postId}/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.toolaroo.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.toolaroo.net/blog/" },
+    { "@type": "ListItem", "position": 3, "name": data.title, "item": `https://www.toolaroo.net/blog/${postId}/` },
+  ]
+};
+
+const seoProps = {
+  title: `${data.title} | Toolaroo Blog`,
+  description: data.description,
+  type: "article",
+  schema: [articleSchema, breadcrumbSchema]
+};
+---
+
+<Layout title={data.title} description={data.description} seoProps={seoProps}>
+
+  <!-- Hero with gradient -->
+  <div class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #3b82f6 0%, transparent 50%), radial-gradient(circle at 80% 20%, #8b5cf6 0%, transparent 40%);"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-0">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-slate-400">
+          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+          <li class="text-slate-600">/</li>
+          <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
+          <li class="text-slate-600">/</li>
+          <li class="text-slate-300 truncate">{data.title}</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 border border-blue-500/30 text-sm font-semibold rounded-full">
+          {data.category}
+        </span>
+        <span class="text-sm text-slate-400">{data.readTime} min read</span>
+        <span class="text-slate-600">·</span>
+        <time class="text-sm text-slate-400">
+          {new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+        {data.title}
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
+        {data.description}
+      </p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <section class="py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="blog-content prose prose-slate prose-lg max-w-none">
+        <Content />
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to blog -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 border-t border-slate-200 pt-8">
+    <a href="/blog/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors">
+      ← Back to Blog
+    </a>
+  </div>
+
+</Layout>
+
+<style>
+  /* H2 — numbered sections with blue accent bar */
+  .blog-content :global(h2) {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid #2563eb;
+    line-height: 1.3;
+  }
+
+  .blog-content :global(h3) {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Paragraphs */
+  .blog-content :global(p) {
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+  }
+
+  /* Links */
+  .blog-content :global(a) {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .blog-content :global(a:hover) {
+    text-decoration: underline;
+  }
+
+  /* Blockquote → CTA box */
+  .blog-content :global(blockquote) {
+    margin: 2rem 0;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #2563eb;
+    border-radius: 0.75rem;
+    font-style: normal;
+    color: #1e293b;
+    font-size: 1rem;
+  }
+  .blog-content :global(blockquote p) {
+    margin: 0;
+    font-size: 1rem;
+    color: #1e3a5f;
+    font-weight: 500;
+  }
+  .blog-content :global(blockquote a) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 1rem;
+    background: #2563eb;
+    color: white !important;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+  }
+  .blog-content :global(blockquote a:hover) {
+    background: #1d4ed8;
+    text-decoration: none !important;
+  }
+
+  /* HR — gradient divider */
+  .blog-content :global(hr) {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #e2e8f0, #2563eb, #e2e8f0);
+    margin: 3rem 0;
+    opacity: 0.4;
+  }
+
+  /* Table */
+  .blog-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .blog-content :global(thead) {
+    background: linear-gradient(135deg, #1e40af, #4f46e5);
+    color: white;
+  }
+  .blog-content :global(th) {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .blog-content :global(td) {
+    padding: 0.75rem 1rem;
+    color: #374151;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .blog-content :global(tbody tr:nth-child(even)) {
+    background: #f8fafc;
+  }
+  .blog-content :global(tbody tr:hover) {
+    background: #eff6ff;
+  }
+  .blog-content :global(tbody tr:last-child td) {
+    border-bottom: none;
+  }
+
+  /* Lists */
+  .blog-content :global(ul) {
+    padding-left: 0;
+    list-style: none;
+    margin: 1rem 0;
+  }
+  .blog-content :global(ul li) {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #374151;
+    line-height: 1.7;
+  }
+  .blog-content :global(ul li::before) {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 700;
+  }
+
+  /* Strong */
+  .blog-content :global(strong) {
+    color: #0f172a;
+    font-weight: 700;
+  }
+</style>

@@ -32,6 +32,19 @@ const toolsCollection = defineCollection({
   }),
 });
 
+const blogCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.string(),
+    category: z.string(),
+    readTime: z.number(),
+    featured: z.boolean().optional(),
+  }),
+});
+
 export const collections = {
   tools: toolsCollection,
+  blog: blogCollection,
 };
