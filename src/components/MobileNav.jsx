@@ -70,6 +70,13 @@ export default function MobileNav() {
             >
               All Tools
             </a>
+            <a
+              href="/blog/"
+              onClick={closeMenu}
+              className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
+            >
+              Blog
+            </a>
           </nav>
         </div>
       )}
