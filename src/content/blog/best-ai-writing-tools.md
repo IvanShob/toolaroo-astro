@@ -7,6 +7,8 @@ readTime: 10
 featured: true
 ---
 
+![AI writing tools ranked and compared — robots competing at typewriters](/blog/blog1.jpg)
+
 There are now hundreds of AI writing tools. Most of them are variations of the same thing with a different logo. A few are genuinely worth your time and money.
 
 We tested the most popular options — not just the demos, but actual day-to-day use — and ranked them honestly. Some surprised us. Some didn't live up to the hype. Here's what we found.
@@ -140,11 +142,11 @@ It won't blow you away. Long-form content is where it shows its limits most clea
 
 ## Our honest take
 
-If you're starting from scratch and don't want to overthink it: **start with ChatGPT Plus ($20/month)**. It covers 90% of writing use cases and you'll end up using it for far more than just writing.
+If you're starting from scratch and don't want to overthink it: **start with [ChatGPT](/tool/chatgpt/) Plus ($20/month)**. It covers 90% of writing use cases and you'll end up using it for far more than just writing.
 
-If your team is producing content at volume and brand consistency matters: **Jasper** is worth the price — reluctantly, but genuinely.
+If your team is producing content at volume and brand consistency matters: **[Jasper](/tool/jasper/)** is worth the price — reluctantly, but genuinely.
 
-If you just need something to catch mistakes before content goes live: **Grammarly** is a no-brainer. Install it once and it just works.
+If you just need something to catch mistakes before content goes live: **[Grammarly](/tool/grammarly/)** is a no-brainer. Install it once and it just works.
 
 Everything else on this list fills specific gaps. All of them offer free plans or trials, so there's no reason not to test before committing to anything.
 
