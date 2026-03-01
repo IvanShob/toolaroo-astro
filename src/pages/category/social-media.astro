@@ -1,0 +1,78 @@
+---
+import '../../styles/global.css';
+import ToolList from '../../components/ToolList.jsx';
+import SEO from '../../components/SEO.astro';
+import Layout from '../../components/Layout.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "AI Social Media Tools - Toolaroo",
+  "description": "Discover the best AI social media tools for scheduling, content creation, and analytics.",
+  "url": "https://www.toolaroo.net/category/social-media/"
+};
+
+const seoProps = {
+  title: "Best AI Social Media Tools in 2026 – Toolaroo Directory",
+  description: "Discover the best AI tools for social media scheduling, content creation, and analytics. Grow your audience faster with AI-powered social media management.",
+  type: "website",
+  schema: schemaData
+};
+---
+
+<Layout title="AI Social Media Tools" description="AI tools for social media scheduling, content creation, and analytics" seoProps={seoProps}>
+  <section class="py-20 sm:py-32 pb-3 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+        AI<span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Social Media Tools</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600">Schedule smarter, create faster, and grow your audience with AI.</p>
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 prose prose-slate max-w-none">
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          AI social media tools have transformed how creators, marketers, and businesses manage their online presence. Instead of manually writing captions, researching hashtags, and remembering to post at the right time, these tools handle the heavy lifting — letting you focus on strategy and engagement rather than logistics.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-4">
+          The best AI social media tools go well beyond scheduling. They analyze your historical performance data to predict which content will land, generate on-brand captions in your voice, recycle evergreen content automatically, and surface insights about when your audience is most active.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Whether you're a solo creator managing a personal brand or an agency handling dozens of clients, there's a tool built for your workflow and budget.
+        </p>
+      </div>
+
+      <div class="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <p class="text-lg font-semibold text-slate-900">Stop posting manually. Let AI handle your social media content calendar.</p>
+      </div>
+
+      <ToolList client:load category="social-media" />
+
+      <div class="mt-16 pt-16 border-t border-slate-200 prose prose-slate max-w-none">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">What to Look for in an AI Social Media Tool</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          Not all social media tools are built the same. Some are pure schedulers, some focus on AI content generation, and others combine both with deep analytics. Before picking one, figure out where your biggest bottleneck is — creating content or managing it.
+        </p>
+
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Key Features to Evaluate</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg text-slate-700 mb-6">
+          <li>AI caption and content generation in your brand voice</li>
+          <li>Multi-platform scheduling (Instagram, LinkedIn, Twitter/X, TikTok, Facebook)</li>
+          <li>Best time to post recommendations based on your data</li>
+          <li>Content recycling and repurposing automation</li>
+          <li>Hashtag research and performance tracking</li>
+          <li>Analytics and engagement reporting</li>
+          <li>Team collaboration and approval workflows</li>
+          <li>Unified inbox for managing comments and DMs</li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Most tools in this category offer free trials, so the best approach is to test two or three against your actual workflow before committing to a subscription.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

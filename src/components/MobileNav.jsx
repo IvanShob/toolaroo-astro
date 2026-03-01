@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
-export default function MobileNav() {
+export default function MobileNav({ pathname = '/' }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const isActive = (href) => href === '/' ? pathname === '/' : pathname.startsWith(href);
+  const linkClass = (href) => isActive(href)
+    ? "block px-4 py-2 text-blue-600 bg-blue-50 rounded-lg font-semibold transition-colors"
+    : "block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors";
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -49,34 +54,10 @@ export default function MobileNav() {
       {isOpen && (
         <div className="absolute top-16 left-0 right-0 bg-white border-b border-slate-200 shadow-lg z-40">
           <nav className="max-w-6xl mx-auto px-4 py-4 space-y-3">
-            <a
-              href="/"
-              onClick={closeMenu}
-              className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
-            >
-              Home
-            </a>
-            <a
-              href="/category/"
-              onClick={closeMenu}
-              className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
-            >
-              Categories
-            </a>
-            <a
-              href="/tools/"
-              onClick={closeMenu}
-              className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
-            >
-              All Tools
-            </a>
-            <a
-              href="/blog/"
-              onClick={closeMenu}
-              className="block px-4 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-colors"
-            >
-              Blog
-            </a>
+            <a href="/" onClick={closeMenu} className={linkClass('/')}>Home</a>
+            <a href="/category/" onClick={closeMenu} className={linkClass('/category/')}>Categories</a>
+            <a href="/tools/" onClick={closeMenu} className={linkClass('/tools/')}>All Tools</a>
+            <a href="/blog/" onClick={closeMenu} className={linkClass('/blog/')}>Blog</a>
           </nav>
         </div>
       )}

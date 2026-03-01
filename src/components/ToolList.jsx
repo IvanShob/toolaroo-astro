@@ -11,7 +11,10 @@ const categoryEmojis = {
   productivity: '⚡',
   research: '🔬',
   design: '🖼️',
-  'ai-marketing': '📊',
+  'ai-marketing': '📈',
+  'social-media': '📱',
+  meetings: '🎙️',
+  presentations: '🖥️',
 };
 
 const CATEGORIES = [
@@ -24,7 +27,10 @@ const CATEGORIES = [
   { value: 'productivity', label: '⚡ Productivity' },
   { value: 'research', label: '🔬 Research' },
   { value: 'design', label: '🖼️ Design' },
-  { value: 'ai-marketing', label: '📊 Marketing' },
+  { value: 'ai-marketing', label: '📈 Marketing' },
+  { value: 'social-media', label: '📱 Social Media' },
+  { value: 'meetings', label: '🎙️ Meetings' },
+  { value: 'presentations', label: '🖥️ Presentations' },
 ];
 
 const PRICES = [
@@ -48,6 +54,15 @@ export default function ToolList({ category, featuredOnly = false }) {
     const matchPrice = priceFilter ? tool.pricingModel === priceFilter : true;
     return matchQuery && matchCategory && matchFeatured && matchPrice;
   });
+
+  // Fallback: if featuredOnly + category selected + no results → show rank 1 of that category
+  const isFallback = featuredOnly && activeCategory && filtered.length === 0;
+  if (isFallback) {
+    filtered = tools_data
+      .filter(t => t.category === activeCategory)
+      .sort((a, b) => (a.rank || 999) - (b.rank || 999))
+      .slice(0, 1);
+  }
 
   // Home page: limit top 12
   if (featuredOnly) filtered = filtered.slice(0, 12);
@@ -113,7 +128,10 @@ export default function ToolList({ category, featuredOnly = false }) {
       {/* Results Count */}
       {filtered.length > 0 && (
         <div className="text-sm text-slate-600 px-1">
-          Found <span className="font-semibold text-slate-900">{filtered.length}</span> tool{filtered.length !== 1 ? 's' : ''}
+          {isFallback
+            ? <span>No featured tool in this category — showing <span className="font-semibold text-slate-900">top pick</span></span>
+            : <>Found <span className="font-semibold text-slate-900">{filtered.length}</span> tool{filtered.length !== 1 ? 's' : ''}</>
+          }
         </div>
       )}
 

@@ -14,7 +14,7 @@ const schemaData = {
 
 const seoProps = {
   title: "All AI Tools Directory – Toolaroo",
-  description: "Explore 95+ AI tools across all categories: writing, image, coding, video, audio & more. Find your perfect AI tool.",
+  description: "Explore 105+ AI tools across 12 categories: writing, image, coding, video, social media, meetings & more. Find your perfect AI tool.",
   type: "website",
   schema: schemaData
 };
@@ -37,4 +37,31 @@ const seoProps = {
       <ToolList client:load />
     </div>
   </section>
+
+  <!-- Back to Top Button -->
+  <button
+    id="back-to-top"
+    aria-label="Back to top"
+    class="fixed bottom-8 right-8 z-50 w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <script>
+    const btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.remove('opacity-0', 'invisible');
+        btn.classList.add('opacity-100', 'visible');
+      } else {
+        btn.classList.add('opacity-0', 'invisible');
+        btn.classList.remove('opacity-100', 'visible');
+      }
+    });
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </Layout>

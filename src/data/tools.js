@@ -252,10 +252,10 @@ The platform's accuracy and ease of use make it a must-have productivity tool fo
     ]
   },
   { 
-    name: "Jasper", 
-    description: "Creates marketing copy, blog posts, and AI-generated content.", 
-    category: "writing", 
-    featured: true, 
+    name: "Jasper",
+    description: "Creates marketing copy, blog posts, and AI-generated content.",
+    category: "writing",
+    featured: false,
     rank: 4,
     slug: "jasper",
     url: "https://www.jasper.ai",
@@ -448,10 +448,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rating: 4.5,
   },
   { 
-    name: "Stable Diffusion", 
-    description: "Open-source image generation model for creating art and designs.", 
-    category: "image", 
-    featured: true, 
+    name: "Stable Diffusion",
+    description: "Open-source image generation model for creating art and designs.",
+    category: "image",
+    featured: false,
     rank: 8,
     slug: "stable-diffusion",
     url: "https://stability.ai",
@@ -459,10 +459,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rating: 4.3,
   },
   { 
-    name: "Canva AI", 
-    description: "Design tool with AI features for images, graphics, and presentations.", 
-    category: "image", 
-    featured: false, 
+    name: "Canva AI",
+    description: "Design tool with AI features for images, graphics, and presentations.",
+    category: "image",
+    featured: true,
     rank: 9,
     slug: "canva-ai",
     url: "https://www.canva.com",
@@ -552,10 +552,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
     rating: 4.3,
   },
   { 
-    name: "Synthesia", 
-    description: "Creates AI-generated video content from text scripts.", 
-    category: "video", 
-    featured: true, 
+    name: "Synthesia",
+    description: "Creates AI-generated video content from text scripts.",
+    category: "video",
+    featured: false,
     rank: 17,
     slug: "synthesia",
     url: "https://www.synthesia.io",
@@ -639,9 +639,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { 
     name: "Tome", 
     description: "AI-powered storytelling and presentation generator.", 
-    category: "productivity", 
-    featured: false, 
-    rank: 24,
+    category: "presentations",
+    featured: false,
+    rank: 3,
     slug: "tome",
     url: "https://tome.app",
     pricingModel: "Freemium",
@@ -650,9 +650,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { 
     name: "Otter.ai", 
     description: "AI meeting assistant for transcription and note-taking.", 
-    category: "productivity", 
-    featured: false, 
-    rank: 25,
+    category: "meetings",
+    featured: false,
+    rank: 1,
     slug: "otter-ai",
     url: "https://otter.ai",
     pricingModel: "Freemium",
@@ -672,10 +672,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
 
   // Research
   { 
-    name: "Perplexity", 
-    description: "AI-powered search engine with cited sources and answers.", 
-    category: "research", 
-    featured: false, 
+    name: "Perplexity",
+    description: "AI-powered search engine with cited sources and answers.",
+    category: "research",
+    featured: true,
     rank: 27,
     slug: "perplexity",
     url: "https://www.perplexity.ai",
@@ -731,10 +731,10 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
 
   // AI Marketing
   { 
-    name: "Writesonic", 
-    description: "AI platform that generates marketing copy, ads, blog posts, and landing pages with a focus on conversions and engagement.", 
-    category: "ai-marketing", 
-    featured: true, 
+    name: "Writesonic",
+    description: "AI platform that generates marketing copy, ads, blog posts, and landing pages with a focus on conversions and engagement.",
+    category: "ai-marketing",
+    featured: false,
     rank: 1,
     slug: "writesonic",
     url: "https://writesonic.com",
@@ -770,9 +770,9 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { name: "WellSaid Labs", description: "Enterprise-grade AI voice studio for creating professional voiceovers with realistic AI avatars.", category: "audio", featured: false, rank: 8, slug: "wellsaid-labs", url: "https://wellsaidlabs.com", pricingModel: "Paid", rating: 4.5 },
 
   // Productivity additions
-  { name: "Fireflies.ai", description: "AI meeting assistant that automatically records, transcribes, and summarizes meetings from Zoom, Teams, and Google Meet.", category: "productivity", featured: false, rank: 5, slug: "fireflies-ai", url: "https://fireflies.ai", pricingModel: "Freemium", rating: 4.6 },
-  { name: "Notta", description: "AI transcription and meeting notes tool supporting 58 languages with real-time and file-based transcription.", category: "productivity", featured: false, rank: 6, slug: "notta", url: "https://www.notta.ai", pricingModel: "Freemium", rating: 4.5 },
-  { name: "Beautiful.ai", description: "AI presentation tool that automatically designs professional slides as you add content.", category: "productivity", featured: false, rank: 7, slug: "beautiful-ai", url: "https://www.beautiful.ai", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Fireflies.ai", description: "AI meeting assistant that automatically records, transcribes, and summarizes meetings from Zoom, Teams, and Google Meet.", category: "meetings", featured: false, rank: 2, slug: "fireflies-ai", url: "https://fireflies.ai", pricingModel: "Freemium", rating: 4.6 },
+  { name: "Notta", description: "AI transcription and meeting notes tool supporting 58 languages with real-time and file-based transcription.", category: "meetings", featured: false, rank: 5, slug: "notta", url: "https://www.notta.ai", pricingModel: "Freemium", rating: 4.5 },
+  { name: "Beautiful.ai", description: "AI presentation tool that automatically designs professional slides as you add content.", category: "presentations", featured: false, rank: 2, slug: "beautiful-ai", url: "https://www.beautiful.ai", pricingModel: "Freemium", rating: 4.4 },
   { name: "Evernote AI", description: "AI-enhanced note-taking app with intelligent search, content summarization, and AI writing assistance.", category: "productivity", featured: false, rank: 8, slug: "evernote-ai", url: "https://evernote.com", pricingModel: "Freemium", rating: 4.1 },
 
   // AI Marketing additions
@@ -837,7 +837,7 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { name: "Motion", description: "AI-powered daily planner that automatically schedules your tasks, meetings, and projects into your calendar based on priorities and deadlines.", category: "productivity", featured: false, rank: 12, slug: "motion", url: "https://www.usemotion.com", pricingModel: "Paid", rating: 4.4 },
   { name: "Clockwise", description: "AI calendar optimization tool that automatically arranges meetings and focus blocks to maximize deep work time across your entire team.", category: "productivity", featured: false, rank: 13, slug: "clockwise", url: "https://www.getclockwise.com", pricingModel: "Freemium", rating: 4.4 },
   { name: "Calendly", description: "Automated meeting scheduling platform that eliminates back-and-forth emails by letting others book directly into your available calendar slots.", category: "productivity", featured: false, rank: 14, slug: "calendly", url: "https://calendly.com", pricingModel: "Freemium", rating: 4.6 },
-  { name: "Pitch", description: "Collaborative presentation tool built for modern teams with AI content generation, real-time co-editing, and startup-focused pitch deck templates.", category: "productivity", featured: false, rank: 15, slug: "pitch", url: "https://pitch.com", pricingModel: "Freemium", rating: 4.4 },
+  { name: "Pitch", description: "Collaborative presentation tool built for modern teams with AI content generation, real-time co-editing, and startup-focused pitch deck templates.", category: "presentations", featured: false, rank: 9, slug: "pitch", url: "https://pitch.com", pricingModel: "Freemium", rating: 4.4 },
   { name: "Rev", description: "Professional transcription service combining human-verified accuracy with AI-powered speed for audio and video transcription needs.", category: "productivity", featured: false, rank: 16, slug: "rev", url: "https://www.rev.com", pricingModel: "Paid", rating: 4.5 },
   { name: "Roam Research", description: "Networked thought tool for building a personal knowledge graph with bidirectional links, block-level references, and daily notes journaling.", category: "productivity", featured: false, rank: 17, slug: "roam-research", url: "https://roamresearch.com", pricingModel: "Paid", rating: 4.2 },
 
@@ -858,6 +858,22 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { name: "Moz Pro", description: "SEO software suite known for its Domain Authority metric, keyword research tools, site audits, and local SEO capabilities.", category: "ai-marketing", featured: false, rank: 9, slug: "moz-pro", url: "https://moz.com/products/pro", pricingModel: "Paid", rating: 4.3 },
   { name: "Yoast SEO", description: "The most widely used WordPress SEO plugin for on-page optimization, readability analysis, schema markup, and sitemap management.", category: "ai-marketing", featured: false, rank: 10, slug: "yoast-seo", url: "https://yoast.com", pricingModel: "Freemium", rating: 4.5 },
   { name: "All in One SEO", description: "Comprehensive WordPress SEO plugin with on-page optimization, schema markup, local SEO, WooCommerce SEO, and sitemaps in a beginner-friendly interface.", category: "ai-marketing", featured: false, rank: 11, slug: "all-in-one-seo", url: "https://aioseo.com", pricingModel: "Freemium", rating: 4.4 },
+
+  // Social Media tools
+  { name: "Buffer", description: "AI-powered social media scheduling and analytics platform for growing your audience across all major social channels.", category: "social-media", featured: false, rank: 1, slug: "buffer", url: "https://buffer.com", pricingModel: "Freemium", rating: 4.5 },
+  { name: "Hootsuite", description: "Enterprise social media management platform with bulk scheduling, social listening, analytics, and team collaboration tools.", category: "social-media", featured: false, rank: 2, slug: "hootsuite", url: "https://hootsuite.com", pricingModel: "Paid", rating: 4.3 },
+  { name: "Taplio", description: "AI-powered LinkedIn growth tool for creating viral content, scheduling posts, and building meaningful professional relationships.", category: "social-media", featured: false, rank: 3, slug: "taplio", url: "https://taplio.com", pricingModel: "Paid", rating: 4.4 },
+  { name: "Ocoya", description: "All-in-one AI social media platform that generates captions, designs graphics, and schedules posts across every major network.", category: "social-media", featured: false, rank: 4, slug: "ocoya", url: "https://www.ocoya.com", pricingModel: "Paid", rating: 4.2 },
+  { name: "FeedHive", description: "AI social media tool with performance prediction, content recycling, and conditional posting automation for smarter publishing.", category: "social-media", featured: false, rank: 5, slug: "feedhive", url: "https://feedhive.com", pricingModel: "Freemium", rating: 4.3 },
+
+  // Meetings tools
+  { name: "Fathom", description: "Free AI meeting recorder and note-taker that captures, transcribes, and summarizes Zoom, Teams, and Google Meet calls automatically.", category: "meetings", featured: false, rank: 3, slug: "fathom", url: "https://fathom.video", pricingModel: "Freemium", rating: 4.7 },
+  { name: "Grain", description: "AI meeting recorder that creates highlight clips, searchable transcripts, and shareable stories from your video calls.", category: "meetings", featured: false, rank: 4, slug: "grain", url: "https://grain.com", pricingModel: "Freemium", rating: 4.4 },
+
+  // Presentations tools
+  { name: "Gamma", description: "AI presentation generator that creates beautiful, shareable decks, documents, and webpages from a text prompt in seconds.", category: "presentations", featured: true, rank: 1, slug: "gamma", url: "https://gamma.app", pricingModel: "Freemium", rating: 4.7 },
+  { name: "Slidebean", description: "AI-powered pitch deck builder designed for startups, with professional templates and an optional design-as-a-service offering.", category: "presentations", featured: false, rank: 4, slug: "slidebean", url: "https://slidebean.com", pricingModel: "Freemium", rating: 4.2 },
+  { name: "Decktopus", description: "AI presentation maker that generates complete slide decks with content, layout, and design from a single prompt.", category: "presentations", featured: false, rank: 5, slug: "decktopus", url: "https://www.decktopus.com", pricingModel: "Freemium", rating: 4.1 },
 ];
 
 export default tools;

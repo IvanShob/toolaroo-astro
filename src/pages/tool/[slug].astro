@@ -51,6 +51,9 @@ const categoryToAppCategory: Record<string, string> = {
   research: 'Research & Knowledge Management',
   design: 'Design & UI/UX Tools',
   'ai-marketing': 'Marketing & SEO',
+  'social-media': 'Social Media Management',
+  meetings: 'Meeting Transcription & Productivity',
+  presentations: 'Presentation & Slide Creation',
 };
 const appCategory = categoryToAppCategory[data.category || ''] || 'Productivity';
 
@@ -64,6 +67,9 @@ const categoryLabel: Record<string, string> = {
   research: 'Research',
   design: 'Design',
   'ai-marketing': 'AI Marketing',
+  'social-media': 'Social Media',
+  meetings: 'Meetings',
+  presentations: 'Presentations',
 };
 const catLabel = categoryLabel[data.category || ''] || (data.category || 'Tools');
 const catSlug = data.category || 'writing';
@@ -139,6 +145,9 @@ const seoProps = {
           <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg font-medium">⭐ Featured</span>
         )}
       </div>
+      <p class="text-sm text-slate-400 mt-4">
+        Last updated: {data.lastModified || 'February 2026'}
+      </p>
     </div>
   </section>
 

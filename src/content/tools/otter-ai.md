@@ -1,65 +1,61 @@
 ---
 title: Otter.ai
-description: AI meeting assistant that automatically transcribes conversations, generates summaries, captures action items, and syncs across your devices — making meetings smarter, faster, and more productive.
-category: productivity
-featured: true
-rank: 3
+description: AI-powered meeting transcription and note-taking tool that automatically captures, transcribes, and summarizes conversations in real time.
+category: meetings
+featured: false
+rank: 1
+slug: otter-ai
 url: https://otter.ai
-name: Otter.ai
-longDescription: "Otter.ai is one of the most advanced AI transcription and meeting-assistant tools designed to help professionals capture conversations effortlessly. Instead of relying on manual note-taking or struggling to remember key points from meetings, Otter records, transcribes, and organizes discussions in real time. It enables teams, students, and individuals to stay focused on the conversation while Otter handles the documentation with precision.\n\nThe tool's core strength lies in its AI-powered live transcription engine. As you speak, Otter generates accurate, timestamped text with speaker identification, making follow-up actions and reference significantly easier. Whether used for online meetings, in-person conversations, interviews, or lectures, Otter ensures nothing important is missed.\n\nOne of Otter's most powerful features is its integration with major conferencing platforms such as Zoom, Microsoft Teams, and Google Meet. Otter can automatically join a meeting, record audio, transcribe discussions, highlight key moments, and generate structured notes without any user intervention. After the meeting ends, users receive a clean summary with bullets, action points, and searchable text.\n\nBeyond transcription, Otter uses natural language processing to analyse the meeting and create automated summaries. It identifies the main topics, decisions, and tasks discussed, providing users with a streamlined overview that can be shared with colleagues or saved for reference. This makes it an invaluable tool for team leaders, project managers, journalists, and educators who depend on accurate documentation."
+longDescription: "Otter.ai is one of the most widely used AI transcription and meeting assistant tools on the market. It joins your Zoom, Google Meet, or Microsoft Teams calls automatically, listening and transcribing everything said in real time. Beyond raw transcription, Otter generates meeting summaries, identifies action items, and highlights key moments — so you can stay focused on the conversation instead of scrambling to take notes.\n\nThe platform uses speaker identification to label who said what throughout the meeting, making transcripts far more readable and useful for review. Otter's AI can distinguish between multiple voices and assign names to each speaker, creating a structured record of every discussion. The fully searchable transcript archive means you can go back weeks or months later and find any conversation by keyword, topic, or speaker.\n\nOtter.ai integrates with the most popular video conferencing tools and calendar apps, including Zoom, Google Meet, Microsoft Teams, Google Calendar, and Outlook. Its browser extension and mobile apps make it easy to record and transcribe both in-person conversations and remote calls from virtually any device. Teams can collaborate directly within the transcript by leaving comments, highlighting passages, and assigning follow-up tasks to specific team members.\n\nFor individuals and teams that run frequent meetings, Otter.ai dramatically reduces the manual work of note-taking and follow-up documentation. Sales teams use it to capture client calls, recruiters use it to document interviews, and project teams use it to maintain accurate meeting records. The free plan offers a solid starting point for individual users, while paid tiers unlock unlimited recordings, advanced AI summaries, and team collaboration features."
 features:
-  - "Real-time AI transcription"
-  - "Automatic speaker identification"
-  - "Meeting summaries & action items"
-  - "Integrations with Zoom, Teams & Google Meet"
-  - "Mobile & desktop apps for synced access"
-  - "Searchable transcripts with highlights"
-  - "Collaborative note-taking and editing"
-  - "Import external audio for transcription"
-  - "Timestamps for easy navigation"
+  - "Real-time AI transcription for meetings and conversations"
+  - "Automatic meeting summaries with action items"
+  - "Speaker identification and labeling"
+  - "Searchable transcript archive"
+  - "Integration with Zoom, Google Meet, and Microsoft Teams"
+  - "In-transcript comments, highlights, and task assignment"
 useCases:
-  - "Business meetings & daily standups"
-  - "Online classes and lectures"
-  - "Interviews and podcast transcription"
-  - "Research sessions & focus groups"
-  - "Journalism and documentary production"
-  - "Team collaboration and knowledge management"
+  - Capturing sales call notes automatically
+  - Documenting job interviews for hiring teams
+  - Recording project kickoff and status meetings
+  - Transcribing in-person interviews and focus groups
+  - Creating searchable archives of all team conversations
 pricing:
-  "Basic (Free)": "Limited monthly transcription"
-  "Pro": "Higher transcription limits, advanced summaries"
-  "Business": "Team collaboration, shared workspaces, admin controls"
-  "Enterprise": "Custom features, enhanced security, compliance tools"
+  "Free": "300 minutes/month transcription, 30-min per session cap — $0/mo"
+  "Pro": "1,200 minutes/month, unlimited imports, advanced search — $16.99/mo"
+  "Business": "6,000 minutes/month, team features, usage analytics — $30/user/mo"
+  "Enterprise": "Custom minutes, SSO, compliance controls — custom pricing"
 pros:
-  - "Highly accurate real-time transcription"
-  - "Excellent meeting integrations"
-  - "Automated summaries save time"
-  - "Easy to search, organise, and collaborate"
-  - "Great for students, professionals, and teams"
+  - Real-time transcription with high accuracy
+  - Easy calendar and video conferencing integrations
+  - Speaker identification works well across multiple voices
+  - Generous free plan for individual users
 cons:
-  - "Free plan is limited"
-  - "Occasional transcription errors in noisy environments"
-  - "AI meeting bot may require permission in some workflows"
+  - Free plan has strict monthly minute limits
+  - Accuracy drops with heavy accents or noisy environments
+  - Some advanced features locked behind Business or Enterprise plans
 alternatives:
-  - name: Rev
-    reason: Human-verified transcription for higher accuracy
   - name: Fireflies.ai
-    reason: AI meeting bot with workflow automation
-  - name: Notta
-    reason: Lightweight transcription app with strong multilingual support
+    reason: stronger CRM integrations and team collaboration features for sales teams
+  - name: Fathom
+    reason: completely free unlimited recordings with no minute caps for individuals
+  - name: tl;dv
+    reason: excellent for teams wanting timestamped video clips alongside transcripts
 faqItems:
-  - question: "Does Otter.ai work with Zoom and Google Meet?"
-    answer: "Yes — it integrates directly and can auto-join meetings."
-  - question: "Can Otter identify different speakers?"
-    answer: "Yes, it automatically labels speakers once trained."
-  - question: "Is Otter good for students?"
-    answer: "Absolutely — it transcribes lectures and provides searchable notes."
-  - question: "Does it work offline?"
-    answer: "Transcription requires an internet connection."
-  - question: "Can I import an existing audio file to Otter.ai?"
-    answer: "Yes — you can upload pre-recorded audio or video files and Otter.ai will transcribe them, making it useful for processing recordings from any source."
-  - question: "How many minutes does the free plan include?"
-    answer: "The free plan includes a limited number of transcription minutes per month. Check the Otter.ai website for current plan details as limits are updated periodically."
+  - question: "Does Otter.ai work with Zoom?"
+    answer: "Yes — Otter.ai integrates directly with Zoom and can automatically join and transcribe your Zoom meetings without any manual setup during the call."
+  - question: "Can Otter.ai identify different speakers?"
+    answer: "Yes — Otter.ai uses speaker diarization to label who said what, and you can assign real names to each speaker directly within the transcript."
+  - question: "Is Otter.ai free to use?"
+    answer: "Otter.ai has a free plan that includes 300 minutes of transcription per month with a 30-minute per session cap, which is sufficient for light individual use."
+  - question: "How accurate is Otter.ai's transcription?"
+    answer: "Otter.ai achieves strong accuracy for clear audio in English, typically above 85-90%. Accuracy can decrease with heavy accents, multiple simultaneous speakers, or poor audio quality."
+  - question: "Can Otter.ai transcribe pre-recorded audio files?"
+    answer: "Yes — paid plans allow you to import and transcribe pre-recorded audio or video files, not just live meeting recordings."
+  - question: "Does Otter.ai store my meeting data securely?"
+    answer: "Otter.ai encrypts data in transit and at rest. Enterprise plans offer additional compliance controls and data governance options suitable for regulated industries."
 pricingModel: Freemium
-rating: 4.4
-whoIsItFor: "Otter.ai is best suited for professionals, students, journalists, and remote teams who need accurate, real-time transcription of meetings, lectures, and interviews without manual note-taking. It is especially valuable for team leaders, project managers, and educators who need searchable records of conversations and automatically generated summaries to share with colleagues or review later."
+rating: 4.6
+whoIsItFor: Otter.ai is ideal for professionals, teams, and businesses that run frequent meetings and want to eliminate manual note-taking. It is especially well-suited for sales professionals, recruiters, journalists, and project managers who need accurate, searchable records of conversations. Both individual contributors and team administrators benefit from its straightforward setup and broad video conferencing integrations.
+lastModified: "March 2026"
 ---

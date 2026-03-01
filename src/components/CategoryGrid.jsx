@@ -6,10 +6,13 @@ const categoryMeta = {
   coding:         { emoji: '💻', description: 'AI code completion, debugging & developer productivity tools', bg: '#dcfce7', accent: '#16a34a' },
   video:          { emoji: '🎬', description: 'AI video generation, editing & content creation platforms', bg: '#fee2e2', accent: '#dc2626' },
   audio:          { emoji: '🎵', description: 'AI voice synthesis, music generation & audio editing tools', bg: '#fef9c3', accent: '#ca8a04' },
-  productivity:   { emoji: '⚡', description: 'AI task management, meeting tools & workflow automation', bg: '#ffedd5', accent: '#ea580c' },
+  productivity:   { emoji: '⚡', description: 'AI task management, note-taking & workflow automation', bg: '#ffedd5', accent: '#ea580c' },
   research:       { emoji: '🔬', description: 'AI research assistants, data analysis & knowledge tools', bg: '#ccfbf1', accent: '#0d9488' },
   design:         { emoji: '🖼️', description: 'UI/UX design tools, prototyping & visual collaboration', bg: '#fce7f3', accent: '#db2777' },
-  'ai-marketing': { emoji: '📊', description: 'AI SEO tools, content optimization & marketing analytics', bg: '#e0e7ff', accent: '#4f46e5' },
+  'ai-marketing': { emoji: '📈', description: 'AI SEO tools, content optimization & marketing analytics', bg: '#e0e7ff', accent: '#4f46e5' },
+  'social-media': { emoji: '📱', description: 'AI social media scheduling, content creation & analytics tools', bg: '#ede9fe', accent: '#7c3aed' },
+  meetings:       { emoji: '🎙️', description: 'AI meeting recorders, transcription & automated note-taking', bg: '#ecfdf5', accent: '#059669' },
+  presentations:  { emoji: '🖥️', description: 'AI presentation builders, slide generators & pitch deck tools', bg: '#fff1f2', accent: '#be123c' },
 };
 
 export default function CategoryGrid({ categories }) {
