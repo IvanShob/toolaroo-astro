@@ -2,7 +2,7 @@
 title: Google Slides
 name: Google Slides
 description: Free cloud-based presentation tool with real-time collaboration, AI writing assistance, and seamless Google Workspace integration.
-category: productivity
+category: presentations
 featured: false
 rank: 9
 url: https://slides.google.com

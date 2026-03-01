@@ -2,7 +2,7 @@
 title: Rev
 name: Rev
 description: Professional transcription service combining human-verified accuracy with AI-powered speed for audio and video transcription needs.
-category: productivity
+category: meetings
 featured: false
 rank: 7
 url: https://www.rev.com
