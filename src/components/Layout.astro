@@ -14,7 +14,7 @@ const pathname = Astro.url.pathname;
 const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
 const navClass = (href: string) => isActive(href)
   ? "text-blue-600 font-semibold border-b-2 border-blue-600 pb-0.5 transition-colors"
-  : "text-slate-700 hover:text-blue-600 font-medium transition-colors";
+  : "text-slate-700 hover:text-blue-600 font-medium border-b-2 border-transparent pb-0.5 transition-colors";
 ---
 
 <!DOCTYPE html>
