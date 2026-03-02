@@ -74,6 +74,41 @@ const categoryLabel: Record<string, string> = {
 const catLabel = categoryLabel[data.category || ''] || (data.category || 'Tools');
 const catSlug = data.category || 'writing';
 
+const toolToBlogPosts: Record<string, {slug: string, title: string}[]> = {
+  'chatgpt': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+    { slug: 'chatgpt-vs-claude', title: 'ChatGPT vs Claude: Which AI Is Actually Better?' },
+  ],
+  'claude': [
+    { slug: 'chatgpt-vs-claude', title: 'ChatGPT vs Claude: Which AI Is Actually Better?' },
+  ],
+  'jasper': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+  ],
+  'copy-ai': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+  ],
+  'writesonic': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+  ],
+  'grammarly': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+  ],
+  'quillbot': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+  ],
+  'rytr': [
+    { slug: 'best-ai-writing-tools', title: 'Best AI Writing Tools in 2026 – Ranked & Tested' },
+  ],
+  'github-copilot': [
+    { slug: 'chatgpt-vs-claude', title: 'ChatGPT vs Claude: Which AI Is Actually Better?' },
+  ],
+  'cursor': [
+    { slug: 'chatgpt-vs-claude', title: 'ChatGPT vs Claude: Which AI Is Actually Better?' },
+  ],
+};
+const relatedBlogPosts = toolToBlogPosts[toolId] || [];
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -307,6 +342,22 @@ const seoProps = {
                 <h3 class="font-bold text-lg text-slate-900 mb-2">{item.question}</h3>
                 <p class="text-slate-700">{item.answer}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Related Blog Posts */}
+      {relatedBlogPosts.length > 0 && (
+        <div class="border-t border-slate-200 pt-12">
+          <h2 class="text-2xl font-bold text-slate-900 mb-4">Related Reading</h2>
+          <div class="space-y-3">
+            {relatedBlogPosts.map((post) => (
+              <a href={`/blog/${post.slug}/`} class="flex items-center gap-3 p-4 bg-blue-50 border border-blue-200 rounded-xl hover:border-blue-400 hover:bg-blue-100 transition-all group">
+                <span class="text-blue-600 font-bold text-lg">📖</span>
+                <span class="text-slate-900 font-medium group-hover:text-blue-700 transition-colors">{post.title}</span>
+                <span class="ml-auto text-blue-600 text-sm font-medium">Read →</span>
+              </a>
             ))}
           </div>
         </div>
