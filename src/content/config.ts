@@ -42,6 +42,8 @@ const blogCollection = defineCollection({
     category: z.string(),
     readTime: z.number(),
     featured: z.boolean().optional(),
+    image: z.string().optional(),
+    lastModified: z.string().optional(),
   }),
 });
 

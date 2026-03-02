@@ -8,7 +8,7 @@ interface Props {
   schemaData?: any;
 }
 
-const { title, description, imageUrl = '/og-image.png', canonical, type = 'website', schemaData } = Astro.props;
+const { title, description, imageUrl = '/og-image.jpeg', canonical, type = 'website', schemaData } = Astro.props;
 const fullUrl = canonical || Astro.url.pathname;
 const siteUrl = 'https://www.toolaroo.net';
 ---

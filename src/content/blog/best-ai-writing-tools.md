@@ -5,6 +5,8 @@ date: "2026-02-27"
 category: "Writing"
 readTime: 10
 featured: true
+image: "/blog/blog1.jpg"
+lastModified: "February 2026"
 ---
 
 ![AI writing tools ranked and compared — robots competing at typewriters](/blog/blog1.jpg)

@@ -5,6 +5,7 @@ date: "2026-03-01"
 category: "Comparison"
 readTime: 9
 featured: false
+image: "/blog/blog2.jpg"
 lastModified: "March 2026"
 ---
 
