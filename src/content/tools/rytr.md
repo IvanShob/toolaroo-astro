@@ -6,6 +6,7 @@ category: writing
 featured: false
 rank: 6
 url: https://rytr.me
+affiliateUrl: https://rytr.me/?via=is-toolaroo
 pricingModel: Freemium
 rating: 4.3
 whoIsItFor: Rytr is ideal for freelancers, solo content creators, bloggers, and small business owners who need fast, affordable AI writing assistance without committing to expensive premium tools. It works especially well for people who produce content regularly across multiple formats — social posts, emails, product descriptions, and blog outlines — and want a simple, distraction-free tool to speed up their workflow. Content creators interested in supplementing their income will also appreciate Rytr's one of the most generous affiliate programs in the AI writing space.

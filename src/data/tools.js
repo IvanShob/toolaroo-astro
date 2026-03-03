@@ -781,7 +781,7 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { name: "Clearscope", description: "AI content optimization platform that grades your content against top-ranking competitors and suggests improvements.", category: "ai-marketing", featured: false, rank: 5, slug: "clearscope", url: "https://www.clearscope.io", pricingModel: "Paid", rating: 4.7 },
 
   // Writing new
-  { name: "Rytr", description: "Affordable AI writing assistant with 40+ use case templates for quick content generation in 30+ languages.", category: "writing", featured: false, rank: 8, slug: "rytr", url: "https://rytr.me", pricingModel: "Freemium", rating: 4.3 },
+  { name: "Rytr", description: "Affordable AI writing assistant with 40+ use case templates for quick content generation in 30+ languages.", category: "writing", featured: true, rank: 0, slug: "rytr", url: "https://rytr.me", pricingModel: "Freemium", rating: 4.3 },
   { name: "Wordtune", description: "AI writing companion that rewrites and improves sentences in real time with tone and clarity suggestions.", category: "writing", featured: false, rank: 9, slug: "wordtune", url: "https://www.wordtune.com", pricingModel: "Freemium", rating: 4.4 },
 
   // Video new
