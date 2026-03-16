@@ -787,10 +787,13 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   // Video new
   { name: "HeyGen", description: "AI video generation platform with realistic avatars, voice cloning, and multilingual video dubbing for business.", category: "video", featured: false, rank: 3, slug: "heygen", url: "https://www.heygen.com", pricingModel: "Freemium", rating: 4.6 },
   { name: "Pika", description: "AI video generation tool that creates and edits high-quality videos from text prompts and images.", category: "video", featured: false, rank: 4, slug: "pika", url: "https://pika.art", pricingModel: "Freemium", rating: 4.3 },
+  { name: "Opus Clip", description: "AI video clipping tool that turns long-form videos into viral short-form clips for TikTok, YouTube Shorts, and Instagram Reels.", category: "video", featured: false, rank: 5, slug: "opus-clip", url: "https://www.opus.pro", pricingModel: "Freemium", rating: 4.5 },
+  { name: "InVideo AI", description: "AI video creation platform that generates complete videos from text prompts with stock footage, voiceover, music, and editing.", category: "video", featured: false, rank: 7, slug: "invideo", url: "https://invideo.io", pricingModel: "Freemium", rating: 4.4 },
 
   // Image new
   { name: "Leonardo AI", description: "AI image generation platform for creating consistent, high-quality creative assets with fine-tuned models.", category: "image", featured: false, rank: 4, slug: "leonardo-ai", url: "https://leonardo.ai", pricingModel: "Freemium", rating: 4.6 },
   { name: "Ideogram", description: "AI image generator specialized in accurate text rendering within images and creative visual compositions.", category: "image", featured: false, rank: 5, slug: "ideogram", url: "https://ideogram.ai", pricingModel: "Freemium", rating: 4.5 },
+  { name: "Flux AI", description: "Advanced open-source AI image generator by Black Forest Labs producing photorealistic images with exceptional text rendering and prompt adherence.", category: "image", featured: false, rank: 6, slug: "flux-ai", url: "https://blackforestlabs.ai", pricingModel: "Freemium", rating: 4.6 },
 
   // Design new
   { name: "Framer AI", description: "AI-powered web design tool that generates complete, responsive websites from text prompts with built-in CMS.", category: "design", featured: false, rank: 4, slug: "framer-ai", url: "https://www.framer.com", pricingModel: "Freemium", rating: 4.5 },
@@ -801,6 +804,8 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   { name: "ClickUp AI", description: "AI-powered project management platform with task automation, AI writing assistance, and 1000+ workflow integrations.", category: "productivity", featured: false, rank: 4, slug: "clickup-ai", url: "https://clickup.com", pricingModel: "Freemium", rating: 4.5, affiliateUrl: null },
   { name: "Monday AI", description: "AI-enhanced work management platform for project planning, team collaboration, and workflow automation.", category: "productivity", featured: false, rank: 5, slug: "monday-ai", url: "https://monday.com", pricingModel: "Freemium", rating: 4.4 },
   { name: "Reclaim AI", description: "AI scheduling assistant that automatically protects focus time, manages meetings, and optimizes your calendar.", category: "productivity", featured: false, rank: 6, slug: "reclaim-ai", url: "https://reclaim.ai", pricingModel: "Freemium", rating: 4.6 },
+  { name: "DeepL", description: "AI-powered translation tool delivering human-quality translations across 30+ languages with context-aware accuracy that outperforms Google Translate.", category: "productivity", featured: false, rank: 7, slug: "deepl", url: "https://deepl.com", pricingModel: "Freemium", rating: 4.8 },
+  { name: "Zapier AI", description: "AI-powered workflow automation platform connecting 7,000+ apps with natural language automation builder and AI-generated workflows.", category: "productivity", featured: false, rank: 9, slug: "zapier-ai", url: "https://zapier.com", pricingModel: "Freemium", rating: 4.6 },
 
   // Audio new
   { name: "Speechify", description: "AI text-to-speech app that reads any content aloud at high speed with natural voices and voice cloning.", category: "audio", featured: false, rank: 9, slug: "speechify", url: "https://speechify.com", pricingModel: "Freemium", rating: 4.4 },
@@ -809,6 +814,7 @@ Overall, Copy.ai excels in speed, workflow automation, and simplicity — making
   // Research new
   { name: "You.com", description: "AI-powered search engine and assistant combining web search with AI chat, code generation, and image creation.", category: "research", featured: false, rank: 3, slug: "you-com", url: "https://you.com", pricingModel: "Freemium", rating: 4.3 },
   { name: "Semantic Scholar", description: "Free AI-powered academic research tool that indexes 200M+ papers with AI summaries and citation analysis.", category: "research", featured: false, rank: 4, slug: "semantic-scholar", url: "https://www.semanticscholar.org", pricingModel: "Free", rating: 4.4 },
+  { name: "DeepSeek", description: "Open-source AI assistant and reasoning model rivaling GPT-4 performance at a fraction of the cost, with strong coding and math capabilities.", category: "research", featured: false, rank: 7, slug: "deepseek", url: "https://chat.deepseek.com", pricingModel: "Free", rating: 4.4 },
 
   // Coding new
   { name: "Amazon CodeWhisperer", description: "Amazon's AI coding assistant with real-time code suggestions, security scanning, and deep AWS SDK awareness.", category: "coding", featured: false, rank: 4, slug: "amazon-codewhisperer", url: "https://aws.amazon.com/codewhisperer", pricingModel: "Freemium", rating: 4.3 },
