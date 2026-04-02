@@ -1,64 +1,60 @@
 ---
 title: Consensus
-description: AI-powered research tool that instantly finds answers from peer-reviewed scientific papers, helping you access evidence-based insights without reading dozens of studies manually.
-category: research
-featured: true
-rank: 2
-url: https://consensus.app
 name: Consensus
-longDescription: "Consensus is a specialised AI research engine built to solve one of the biggest problems in modern information overload: finding trustworthy, evidence-backed answers quickly. Instead of searching blogs, forums, or unverified websites, Consensus scans thousands of peer-reviewed academic papers and extracts scientific findings in seconds. It's designed for students, researchers, healthcare practitioners, analysts, and anyone who wants reliable information rooted in published science.\n\nCompared to traditional AI assistants that rely heavily on internal training data, Consensus focuses exclusively on scientific literature. This includes journals, medical studies, clinical trials, psychology research, economics papers, biology findings, and high-quality academic sources. When you ask a question, the tool identifies relevant papers, analyses abstracts and full texts, and summarises the conclusions into clear, digestible insights.\n\nOne of Consensus's most impressive strengths is its ability to produce evidence summaries. The AI extracts statements of effect, evaluates the direction of findings (positive, negative, neutral), and presents a compact overview of what the research supports. This eliminates hours of searching, reading, and evaluating academic documents manually.\n\nAnother key feature is Consensus's quality filtering. It prioritises reputable journals, excludes low-quality content, and highlights methodological details like sample size, study design, and type of evidence. This helps users determine not only what the science says but also how strong the evidence is."
-features:
-  - "Searches academic and peer-reviewed studies"
-  - "Evidence-backed summaries from real scientific papers"
-  - "Extraction of study conclusions, effect direction, and sample size"
-  - "AI-powered literature review assistance"
-  - "Citation-ready references"
-  - "Fast, accurate filtering of high-quality research"
-  - "Topic exploration and related research suggestions"
-  - "Easy-to-read summaries of complex academic language"
-useCases:
-  - "Academic writing and research"
-  - "Literature review preparation"
-  - "Healthcare and medical decision support"
-  - "Scientific fact-checking"
-  - "Policy analysis and evaluation"
-  - "Product R&D and evidence validation"
-  - "Behavioural science and psychology research"
-  - "University assignments, essays, and reports"
-pricing:
-  "Free Plan": "Limited searches, basic summaries"
-  "Consensus Pro": "Deep summaries, faster results, research insights, advanced filters"
-pros:
-  - "Only uses peer-reviewed scientific research"
-  - "Highly accurate and trustworthy"
-  - "Saves hours of reading"
-  - "Clear, digestible summaries"
-  - "Excellent for academic work"
-cons:
-  - "Not ideal for general or non-scientific topics"
-  - "Some papers are behind journal paywalls"
-  - "Best features require a Pro subscription"
-alternatives:
-  - name: Perplexity
-    reason: Best for general research with citations
-  - name: Elicit
-    reason: Academic assistant focused on study-level reasoning
-  - name: Google Scholar
-    reason: Manual academic search without AI summarisation
-faqItems:
-  - question: "Does Consensus show real citations?"
-    answer: "Yes — all insights come from peer-reviewed academic papers."
-  - question: "Is it suitable for medical research?"
-    answer: "Yes, but it should not replace professional medical advice or clinical judgment."
-  - question: "Can I use it for university essays?"
-    answer: "Absolutely — it saves time and provides citation-ready sources."
-  - question: "Does it summarise full papers or only abstracts?"
-    answer: "It analyses both where available and extracts key conclusions."
-  - question: "How many papers does Consensus search?"
-    answer: "Consensus searches a large database of peer-reviewed academic papers spanning medicine, biology, psychology, economics, and other scientific disciplines, continuously expanding its index."
-  - question: "Can Consensus be used for health and medical questions?"
-    answer: "Yes — Consensus is well-suited for finding scientific evidence on health topics, though results should be reviewed by a qualified medical professional before making any clinical decisions."
+description: AI-powered academic search engine that finds and summarizes evidence from peer-reviewed research papers to answer scientific questions.
+category: research
+featured: false
+rank: 5
+slug: consensus
+url: https://consensus.app
 pricingModel: Freemium
 rating: 4.5
-whoIsItFor: "Consensus is best suited for students, academics, healthcare professionals, and evidence-based practitioners who need quick access to peer-reviewed scientific research without spending hours searching databases. It is particularly valuable for anyone who needs to support claims or decisions with credible scientific evidence — including medical practitioners, policy researchers, and university students writing research papers."
+lastModified: "April 2026"
+whoIsItFor: "Consensus is for researchers, students, healthcare professionals, policy makers, and anyone who needs evidence-based answers from scientific literature. It's especially valuable when you need to quickly understand what the research says about a specific question without reading dozens of papers."
+longDescription: "Consensus is an AI search engine that answers questions using evidence from peer-reviewed scientific papers. Instead of searching for keywords and scrolling through results, you ask a question — 'Does creatine improve cognitive performance?' — and Consensus returns a synthesized answer based on findings from relevant studies, with citations and links to the original papers.\n\nThe Consensus Meter shows the overall scientific consensus on a topic — what percentage of studies support, oppose, or are neutral on a claim. This bird's-eye view of the research landscape is incredibly useful for quickly understanding where the science stands without reading every paper yourself.\n\nEach result shows the study's key finding, sample size, methodology type, and a direct link to the full paper. The AI summaries are grounded in the actual paper text, reducing the hallucination problem that makes general AI chatbots unreliable for scientific claims.\n\nConsensus indexes over 200 million papers across all scientific disciplines — medicine, psychology, economics, environmental science, nutrition, and more. The free plan gives you generous daily searches. For students writing research papers and professionals who need evidence-based decision making, it's one of the most immediately useful AI tools available."
+features:
+  - "AI-powered scientific question answering"
+  - "Consensus Meter showing research agreement levels"
+  - "Citations linked directly to peer-reviewed papers"
+  - "200M+ indexed academic papers"
+  - "Study methodology and sample size indicators"
+  - "AI summaries grounded in paper text"
+  - "Cross-discipline research coverage"
+useCases:
+  - "Answering evidence-based health and nutrition questions"
+  - "Literature review for academic research"
+  - "Policy research with scientific backing"
+  - "Quick fact-checking against peer-reviewed sources"
+  - "Understanding scientific consensus on controversial topics"
+  - "Supporting claims in papers and reports with citations"
+pricing:
+  "Free – $0/mo": "20 searches/month, basic features"
+  "Premium – $9/mo": "Unlimited searches, AI summaries, advanced filters"
+  "Enterprise": "API access, team features — contact for pricing"
+pros:
+  - "Consensus Meter is uniquely useful for understanding research landscape"
+  - "Answers grounded in actual papers, not AI hallucinations"
+  - "Covers all scientific disciplines"
+  - "Direct links to source papers for verification"
+cons:
+  - "Free plan limited to 20 searches/month"
+  - "Only covers peer-reviewed literature — not grey literature or reports"
+  - "Some niche topics have limited paper coverage"
+  - "AI summaries occasionally oversimplify complex findings"
+alternatives:
+  - name: Semantic Scholar
+    reason: Broader academic paper search with citation network analysis — less AI synthesis
+  - name: Perplexity
+    reason: General AI search with web sources — broader but less scientifically rigorous
+  - name: Elicit
+    reason: AI research assistant focused on systematic literature review workflows
+faqItems:
+  - question: "Is Consensus free?"
+    answer: "Yes — Consensus offers a free plan with 20 searches per month. Premium at $9/month gives unlimited searches and advanced AI features."
+  - question: "What is the Consensus Meter?"
+    answer: "The Consensus Meter shows the percentage of studies that support, oppose, or are neutral on a given claim — giving you a quick overview of where the scientific evidence stands."
+  - question: "Is Consensus accurate?"
+    answer: "Consensus grounds its answers in peer-reviewed paper text, making it more reliable than general AI chatbots for scientific claims. Every answer includes citations you can verify."
+  - question: "What subjects does Consensus cover?"
+    answer: "Consensus indexes 200M+ papers across all scientific disciplines including medicine, psychology, economics, environmental science, nutrition, computer science, and more."
 ---
