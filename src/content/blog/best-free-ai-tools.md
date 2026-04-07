@@ -192,4 +192,4 @@ The best AI tool isn't the most expensive one. It's the one you actually use.
 
 ---
 
-*Looking for a deeper dive into specific categories? Check out our [Best AI Writing Tools](/blog/best-ai-writing-tools/) comparison or browse [all 115+ tools](/tools/) by category.*
+*Looking for a deeper dive into specific categories? Check out our [Best AI Writing Tools](/blog/best-ai-writing-tools/) comparison or browse [all 135+ tools](/tools/) by category.*
