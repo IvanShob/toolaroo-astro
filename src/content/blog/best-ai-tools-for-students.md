@@ -182,4 +182,4 @@ The students who use AI tools well end up learning more, not less. The ones who 
 
 ---
 
-*Want to explore more? Browse our [full directory of 135+ AI tools](/tools/) or read our [Best Free AI Tools](/blog/best-free-ai-tools/) guide.*
+*Want to explore more? Browse our [full directory of 150+ AI tools](/tools/) or read our [Best Free AI Tools](/blog/best-free-ai-tools/) guide.*
