@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { getCollection } from 'astro:content';
 import tools from '../data/tools.js';
 import categories from '../data/categories.js';
 
@@ -17,11 +18,12 @@ interface SitemapEntry {
   loc: string;
   changefreq: string;
   priority: number;
-  lastmod?: string;
+  lastmod: string;
 }
 
-export const GET: APIRoute = ({ params, request }) => {
+export const GET: APIRoute = async () => {
   const sitemapEntries: SitemapEntry[] = [];
+  const today = new Date().toISOString().split('T')[0];
 
   // Static pages
   const staticPages = [
@@ -30,6 +32,7 @@ export const GET: APIRoute = ({ params, request }) => {
     { url: '/contact/', priority: 0.6, changefreq: 'monthly' },
     { url: '/tools/', priority: 0.8, changefreq: 'weekly' },
     { url: '/category/', priority: 0.9, changefreq: 'weekly' },
+    { url: '/blog/', priority: 0.8, changefreq: 'weekly' },
   ];
 
   staticPages.forEach(page => {
@@ -37,7 +40,7 @@ export const GET: APIRoute = ({ params, request }) => {
       loc: `${SITE_URL}${page.url}`,
       changefreq: page.changefreq,
       priority: page.priority,
-      lastmod: new Date().toISOString(),
+      lastmod: today,
     });
   });
 
@@ -47,7 +50,7 @@ export const GET: APIRoute = ({ params, request }) => {
       loc: `${SITE_URL}/category/${category.slug}/`,
       changefreq: 'weekly',
       priority: 0.9,
-      lastmod: new Date().toISOString(),
+      lastmod: today,
     });
   });
 
@@ -55,16 +58,28 @@ export const GET: APIRoute = ({ params, request }) => {
   tools.forEach(tool => {
     sitemapEntries.push({
       loc: `${SITE_URL}/tool/${tool.slug}/`,
-      changefreq: 'weekly',
+      changefreq: 'monthly',
       priority: 0.8,
-      lastmod: new Date().toISOString(),
+      lastmod: today,
+    });
+  });
+
+  // Blog posts
+  const blogPosts = await getCollection('blog');
+  blogPosts.forEach(post => {
+    const slug = post.id.replace(/\.md$/, '');
+    const postDate = post.data.date || today;
+    sitemapEntries.push({
+      loc: `${SITE_URL}/blog/${slug}/`,
+      changefreq: 'monthly',
+      priority: 0.9,
+      lastmod: postDate,
     });
   });
 
   // Generate XML
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${sitemapEntries
     .map(
       entry => `
